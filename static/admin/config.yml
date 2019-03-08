@@ -18,7 +18,21 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  
+  - name: "article"
+    label: "Artikel"
+    folder: "src/pages/article"
+    create: true
+    fields:
+      - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
+      - {label: "Kategorie", name: "category", widget: "string"}
+      - {label: "Tabelle", name: "table", widget: "number"}
+      - {label: "Position", name: "order", widget: "number"}
+      - {label: "Artikel Nummer", name: "articleNr", widget: "string"}
+      - {label: "Beschreibung", name: "description", widget: "string"}
+      - {label: "Einheit", name: "unit", widget: "string"}
+      - {label: "Preis", name: "price", widget: "string"}
+              
   - name: "pages"
     label: "Pages"
     files:
