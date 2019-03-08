@@ -24,11 +24,12 @@ collections:
     folder: "src/pages/article"
     create: true
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page"}
       - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
+      - {label: "Artikel Nummer", name: "articleNr", widget: "string"}
       - {label: "Kategorie", name: "category", widget: "string"}
       - {label: "Tabelle", name: "table", widget: "number"}
       - {label: "Position", name: "order", widget: "number"}
-      - {label: "Artikel Nummer", name: "articleNr", widget: "string"}
       - {label: "Beschreibung", name: "description", widget: "string"}
       - {label: "Einheit", name: "unit", widget: "string"}
       - {label: "Preis", name: "price", widget: "string"}
