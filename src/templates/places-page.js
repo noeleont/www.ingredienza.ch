@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({
+export const PlacesPageTemplate = ({
   image,
   title,
   heading,
@@ -59,7 +59,7 @@ export const IndexPageTemplate = ({
   </div>
 )
 
-IndexPageTemplate.propTypes = {
+PlacesPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -71,12 +71,12 @@ IndexPageTemplate.propTypes = {
   }),
 }
 
-const IndexPage = ({ data }) => {
+const PlacesPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <IndexPageTemplate
+      <PlacesPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -87,7 +87,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-IndexPage.propTypes = {
+PlacesPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -95,10 +95,10 @@ IndexPage.propTypes = {
   }),
 }
 
-export default IndexPage
+export default PlacesPage
 
 export const pageQuery = graphql`
-query IndexPageTemplate {
+query PlacesPageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title

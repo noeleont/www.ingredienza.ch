@@ -1,5 +1,5 @@
 ---
-templateKey: 'index-page'
+templateKey: 'places-page'
 title: 'Great coffee with a conscience'
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
@@ -12,6 +12,6 @@ meta:
       too. We source all of our beans directly from small scale
       sustainable farmers and make sure part of the profits are
       reinvested in their communities.
-  keywords: assa 
+  keywords:    asad
 ---
 
