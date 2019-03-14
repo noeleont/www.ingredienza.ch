@@ -11,7 +11,7 @@ export const FattoPageTemplate = ({
   intro,
   heading,
   subheading,
-  articles,
+  table,
 }) => (
     <div>
         <div
@@ -58,10 +58,10 @@ export const FattoPageTemplate = ({
       </h3>
       </div>
       <HTMLContent className="content" content={intro} /> 
-      {articles ? 
+      {table.products ? 
         (<ul>
-          {articles.map(article => (
-            <li>{article.frontmatter.description}</li>
+          {table.products.map(product => (
+            <li>{product.article.frontmatter.description}</li>
           ))}
         </ul>) : null}
     </div>
@@ -73,14 +73,20 @@ FattoPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   intro: PropTypes.string,
-  articles: PropTypes.arrayOf(PropTypes.shape({
-    frontmatter: PropTypes.shape({
-      articleNr: PropTypes.string,
-      description: PropTypes.string,
-      unit: PropTypes.string,
-      price: PropTypes.string,
-    })
-  })),
+  table: PropTypes.shape({
+    showColName: PropTypes.bool,
+    products: PropTypes.arrayOf(PropTypes.shape({
+      showArticleNr: PropTypes.bool,
+      article: PropTypes.shape({
+        frontmatter: PropTypes.shape({
+          articleNr: PropTypes.string,
+          description: PropTypes.string,
+          unit: PropTypes.string,
+          price: PropTypes.string,
+        })
+      })
+    }))
+  })
 }
 
 const FattoPage = ({ data }) => {
@@ -106,7 +112,7 @@ const FattoPage = ({ data }) => {
         image={frontmatter.image}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        articles={frontmatter.articles}
+        table={frontmatter.fatto_table}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -142,12 +148,18 @@ query FattoPageTemplate {
           description
           keywords
         }
-        articles {
-          frontmatter {
-            articleNr
-            description
-            unit
-            price
+        fatto_table {
+          showColName
+          products {
+            showArticleNr
+            article {
+              frontmatter {
+                articleNr
+                description
+                unit
+                price
+              }
+            }
           }
         }
       }

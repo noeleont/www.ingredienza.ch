@@ -76,6 +76,6 @@ module.exports = {
   ],
   mapping: {
     'MarkdownRemark.frontmatter.articles': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.activities': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.fatto_table.products.article': `MarkdownRemark.frontmatter.articleNr`,
   }
 }

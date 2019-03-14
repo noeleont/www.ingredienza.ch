@@ -57,6 +57,7 @@ collections:
             widget: 'object'
             fields:
               - {label: "Überschrift", name: "heading", required: false, widget: string}
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
               - label: "Produkte"
                 name: "products"
                 widget: list
