@@ -16,11 +16,8 @@ meta:
     von Ingredienza
   keywords: Gourmet Pasta
   title: Gourmet Ravioli von Ingredienza | Ingredienza
-articles:
-  - '70020'
-  - 70020S
-  - '700110'
-  - '70070'
-  - '70050'
+table:
+  heading: 
+  products:
 ---
 

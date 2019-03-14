@@ -52,20 +52,29 @@ collections:
             {label: Beschreibung, name: description, widget: text},
             {label: Keywords, name: keywords, widget: string}
           ]}  
-          - label: 'Artikel'
-            name: 'articles'
-            widget: 'list'
-            field:
-              {
-                 label: "Artikel",
-                 name: "article",
-                 widget: "relation",
-                 collection: "article",
-                 searchFields: ["articleNr"],
-                 displayFields: ["articleNr", "description"],
-                 valueField: "articleNr", 
-              }
-            
+          - label: 'Tabelle'
+            name: 'table'
+            widget: 'object'
+            fields:
+              [
+                      {label: "Überschrift", name: "heading", required: false, widget: string},
+                {label: "Produkte", name: "products", widget: list, fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description"],
+                   valueField: "articleNr", 
+                  },
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+                }
+              ]
       - file: "src/pages/places/index.md"
         label: "Standort Seite"
         name: "Places Page"
