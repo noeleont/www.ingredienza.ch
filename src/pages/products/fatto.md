@@ -1,9 +1,18 @@
 ---
 templateKey: fatto-page
-image: /img/placesbg.png
+image: /img/fattobg.png
 heading: Fatto a Mano
 subheading: von Hand gemacht
 intro: >-
+  # Test H1
+
+
+  **test bold**
+
+
+  _test italic_
+
+
   Die Linie „Fatto a mano“ hält, was ihr Name verspricht – die Pasta wird mit
   viel Sorgfalt von Hand hergestellt. „Fatto a mano“ gehört zum Exklusivsten,
   was es im Pastasektor zu entdecken gibt.
