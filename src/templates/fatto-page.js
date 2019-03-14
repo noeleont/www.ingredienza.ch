@@ -1,15 +1,16 @@
 import React from 'react'
+import Helmet from "react-helmet";
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import { HTMLContent } from '../components/Content'
 
 import Layout from '../components/Layout'
 
 export const FattoPageTemplate = ({
   image,
-  title,
+  intro,
   heading,
   subheading,
-  meta,
   articles,
 }) => (
     <div>
@@ -42,7 +43,7 @@ export const FattoPageTemplate = ({
           padding: '0.25em'
         }}
       >
-        {title}
+        {heading}
       </h1>
       <h3 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
@@ -56,10 +57,11 @@ export const FattoPageTemplate = ({
         {subheading}
       </h3>
       </div>
+      <HTMLContent className="content" content={intro} /> 
       {articles ? 
         (<ul>
           {articles.map(article => (
-            <li>{article.description}</li>
+            <li>{article.frontmatter.description}</li>
           ))}
         </ul>) : null}
     </div>
@@ -68,34 +70,44 @@ export const FattoPageTemplate = ({
 
 FattoPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  meta: PropTypes.shape({
-    title: PropTypes.string,
-    description: PropTypes.string,
-    keywords: PropTypes.string,
-  }),
-  articles: PropTypes.shape({
-    articleNr: PropTypes.string,
-    description: PropTypes.string,
-    unit: PropTypes.string,
-    price: PropTypes.string,
-  }),
+  intro: PropTypes.string,
+  articles: PropTypes.arrayOf(PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      articleNr: PropTypes.string,
+      description: PropTypes.string,
+      unit: PropTypes.string,
+      price: PropTypes.string,
+    })
+  })),
 }
 
 const FattoPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const { meta } = frontmatter;
 
   return (
     <Layout>
+      <Helmet
+        title={meta.title}
+        meta={[
+          {
+            name: "description",
+            content: `${meta.description}`
+          },
+          {
+            name: "keywords",
+            content: `${meta.keywords}`
+          }
+        ]}
+      />
       <FattoPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        meta={frontmatter.meta}
         articles={frontmatter.articles}
+        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -124,6 +136,7 @@ query FattoPageTemplate {
         }
         heading
         subheading
+        intro
         meta {
           title
           description
