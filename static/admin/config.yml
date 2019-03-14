@@ -38,8 +38,21 @@ collections:
             {label: Beschreibung, name: description, widget: text},
             {label: Keywords, name: keywords, widget: string}
           ]}  
-          - {label: "Post Author",
-             name: "author",
+          - label: 'Activities'
+            name: 'activities'
+            widget: 'list'
+            field:
+              {
+                 label: "Artikel",
+                 name: "articles",
+                 widget: "relation",
+                 collection: "article",
+                 searchFields: ["articleNr"],
+                 displayFields: ["description"],
+                 valueField: "articleNr", 
+              }
+          - {label: "Artikel",
+             name: "articles",
              widget: "relation",
              collection: "article",
              searchFields: ["articleNr", "category"],
