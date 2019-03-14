@@ -48,7 +48,7 @@ collections:
                  widget: "relation",
                  collection: "article",
                  searchFields: ["articleNr"],
-                 displayFields: ["description"],
+                 displayFields: ["description", "articleNr"],
                  valueField: "articleNr", 
               }
           - {label: "Artikel",
