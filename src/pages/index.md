@@ -12,9 +12,11 @@ meta:
     profits are reinvested in their communities.
   keywords: assa
   title: Why Kaldi
-author:
+activities:
+  - '10003'
+  - '30002'
+articles:
+  - 30001P
   - '20002'
-  - '40002'
-  - '40005'
 ---
 
