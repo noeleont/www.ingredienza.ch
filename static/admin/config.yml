@@ -56,9 +56,11 @@ collections:
             name: 'table'
             widget: 'object'
             fields:
-              [
-                      {label: "Überschrift", name: "heading", required: false, widget: string},
-                {label: "Produkte", name: "products", widget: list, fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string}
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
                   - {
                    label: "Artikel",
                    name: "article",
@@ -67,14 +69,12 @@ collections:
                    searchFields: ["articleNr"],
                    displayFields: ["articleNr", "description"],
                    valueField: "articleNr", 
-                  },
+                  }
                   - {
                    label: "Artikel-Nr. anzeigen?",
                    name: "showArticleNr",
                    widget: "boolean",
                   }
-                }
-              ]
       - file: "src/pages/places/index.md"
         label: "Standort Seite"
         name: "Places Page"
