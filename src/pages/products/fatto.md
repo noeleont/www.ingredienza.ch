@@ -1,5 +1,6 @@
 ---
 templateKey: fatto-page
+path: /produkte/fatto_a_mano
 image: /img/fattobg.png
 heading: Fatto a Mano
 subheading: von Hand gemacht

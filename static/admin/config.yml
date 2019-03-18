@@ -22,38 +22,150 @@ collections:
       - {label: "Preis", name: "price", widget: "string"}
               
   - name: "pages"
-    label: "Pages"
+    label: "Seiten"
     files:
       - file: "src/pages/index.md"
         label: "Hauptseite"
         name: "Index Page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: Path, name: path, widget: hidden, default: "/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, required: false, name: heading, widget: string}
+          - {label: Heading, name: heading, widget: string}
           - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
-            {label: Title, name: title, widget: string},
+            {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
             {label: Keywords, name: keywords, widget: string}
           ]}  
           - {label: Body, name: body, widget: markdown}
-      - file: "src/pages/products/fatto.md"
+      - file: "src/pages/places/index.md"
+        label: "Standort Seite"
+        name: "Places Page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "places-page"}
+          - {label: Path, name: path, widget: hidden, default: "/standorte/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, required: false, name: subheading, widget: string}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Standorte'
+            name: 'places'
+            widget: list
+            fields:
+              - { label: "Name", name: name, widget: string }        
+              - { label: "Adresse", name: address, widget: string }
+              - label: "Öffnungszeiten unter der Woche" 
+                name: week
+                widget: object
+                fields:
+                  - label: "Tage"
+                    hint: "Mo. - Fr."
+                    widget: string
+                  - label: "Stunden"
+                    hint: "08:00 - 12:30 Uhr"
+                    widget: string
+              - label: "Öffnungszeiten am Wochenende" 
+                name: weekend
+                widget: object
+                fields:
+                  - label: "Tage"
+                    hint: "Sa."
+                    widget: string
+                  - label: "Stunden"
+                    hint: "08:00 - 12:30 Uhr"
+                    widget: string
+              - label: "Infos" 
+                name: info 
+                hint: "z.B. immer Montags geschlossen"
+                widget: string
+      - file: "src/pages/pricelist/index.md"
+        label: "Preisliste"
+        name: "Preisliste"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pricelist-page"}
+          - {label: Path, name: path, widget: hidden, default: "/preisliste/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, required: false, name: subheading, widget: string}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Preisliste, name: pricelist_pdf, widget: file}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/terms/index.md"
+        label: "Konditionen"
+        name: "Konditionen"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "terms-page"}
+          - {label: Path, name: path, widget: hidden, default: "/konditionen/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, required: false, name: subheading, widget: string}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/contact/index.md"
+        label: "Kontakt"
+        name: "Kontakt"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: Path, name: path, widget: hidden, default: "/kontakt/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, required: false, name: subheading, widget: string}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+
+  - name: "product_pages"
+    label: "Produkt-Seiten"
+    files:
+      - file: "src/pages/products/index.md"
+        label: "Hauptseite"
+        name: "Hauptseite"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, required: false, name: subheading, widget: string}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/products/fatto_a_mano.md"
         label: "Fatto a Mano"
         name: "Fatto a Mano"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "fatto-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/fatto_a_mano/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, required: false, name: heading, widget: string}
+          - {label: Heading, name: heading, widget: string}
           - {label: Subheading, required: false, name: subheading, widget: string}
-          - {label: Intro, name: intro, widget: string}  
+          - {label: Intro, name: intro, widget: text}  
           - {label: Meta, name: meta, widget: object, fields: [
-            {label: Title, name: title, widget: string},
+            {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
             {label: Keywords, name: keywords, widget: string}
           ]}  
-          - label: 'Tabelle'
-            name: 'table'
+          - label: 'Produkt Tabelle'
+            name: 'fatto_table'
             widget: 'object'
             fields:
               - {label: "Überschrift", name: "heading", required: false, widget: string}
@@ -76,18 +188,3 @@ collections:
                    name: "showArticleNr",
                    widget: "boolean",
                   }
-      - file: "src/pages/places/index.md"
-        label: "Standort Seite"
-        name: "Places Page"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "places-page"}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, required: false, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
-          - {label: Meta, name: meta, widget: object, fields: [
-            {label: Title, name: title, widget: string},
-            {label: Beschreibung, name: description, widget: text},
-            {label: Keywords, name: keywords, widget: string}
-          ]}  
-          - {label: Body, name: body, widget: markdown}
-

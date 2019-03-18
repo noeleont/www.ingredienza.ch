@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+path: /
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
@@ -12,14 +12,5 @@ meta:
     profits are reinvested in their communities.
   keywords: assa
   title: Why Kaldi
-activities:
-  - '10003'
-  - '30002'
-  - '40015'
-  - '20002'
-  - '40009'
-articles:
-  - 30001P
-  - '20002'
 ---
 
