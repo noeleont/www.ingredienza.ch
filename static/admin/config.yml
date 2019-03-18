@@ -104,7 +104,7 @@ collections:
         label: "Konditionen"
         name: "Konditionen"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "terms-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
           - {label: Path, name: path, widget: hidden, default: "/konditionen/"}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
@@ -122,6 +122,36 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Path, name: path, widget: hidden, default: "/kontakt/"}
           - {label: Image, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, required: false, name: subheading, widget: string}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/dataprotection/index.md"
+        label: "Datenschutz"
+        name: "Datenschutz"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: Path, name: path, widget: hidden, default: "/datenschutz/"}
+          - {label: Image, required: false, name: image, widget: image}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, required: false, name: subheading, widget: string}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/imprint/index.md"
+        label: "Impressum"
+        name: "Impressum"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: Path, name: path, widget: hidden, default: "/impressum/"}
+          - {label: Image, required: false, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
