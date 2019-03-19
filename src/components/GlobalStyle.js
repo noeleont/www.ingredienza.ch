@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   body {
+    margin: 0px;
 
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-overflow-scrolling: touch;
