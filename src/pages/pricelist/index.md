@@ -2,17 +2,17 @@
 templateKey: 'pricelist-page'
 path: /preisliste/
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
 meta:
-  title: Why Kaldi
+  title: Pasta-Preisliste | Ingredienza 
   description: >
-      Kaldi is the coffee store for everyone who believes that
-      great coffee shouldn't just taste good, it should do good
-      too. We source all of our beans directly from small scale
-      sustainable farmers and make sure part of the profits are
-      reinvested in their communities.
-  keywords:    asad
+    Ingredienza – das ist feinste Pasta aus Bern. Frisch, bunt und in jeder
+    Jahreszeit genau das Richtige. Wir l(i)eben Pasta. Unser Sortiment ist
+    vielfältig und bunt. Bei uns gibt es beinahe alles – und dies zum
+    angemessenen Preis. ► Sehen Sie ich unsere Pasta-Preisliste an
+  keywords: Pasta-Preisliste 
 pricelist_pdf: /pdfs/preisliste.pdf  
 ---
 
+# Unsere Preislisten für Pasta
+
+Unsere Preisliste können Sie als .pdf Datei 

@@ -31,8 +31,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Path, name: path, widget: hidden, default: "/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -46,8 +44,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "places-page"}
           - {label: Path, name: path, widget: hidden, default: "/standorte/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -91,8 +87,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pricelist-page"}
           - {label: Path, name: path, widget: hidden, default: "/preisliste/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -107,8 +101,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
           - {label: Path, name: path, widget: hidden, default: "/konditionen/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -122,8 +114,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: Path, name: path, widget: hidden, default: "/kontakt/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -137,8 +127,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
           - {label: Path, name: path, widget: hidden, default: "/datenschutz/"}
           - {label: Image, required: false, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -152,8 +140,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
           - {label: Path, name: path, widget: hidden, default: "/impressum/"}
           - {label: Image, required: false, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -171,8 +157,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
@@ -186,8 +170,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "fatto-page"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/fatto_a_mano/"}
           - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, required: false, name: subheading, widget: string}
           - {label: Intro, name: intro, widget: text}  
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},

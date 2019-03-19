@@ -1,8 +1,6 @@
 import React from 'react'
-import Helmet from "react-helmet";
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import { HTMLContent } from '../components/Content'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 
@@ -57,7 +55,7 @@ export const FattoPageTemplate = ({
         {subheading}
       </h3>
       </div>
-      <HTMLContent className="content" content={intro} /> 
+    
       {table.products ? 
         (<ul>
           {table.products.map(product => (
@@ -91,23 +89,9 @@ FattoPageTemplate.propTypes = {
 
 const FattoPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const { meta } = frontmatter;
 
   return (
-    <Layout>
-      <Helmet
-        title={meta.title}
-        meta={[
-          {
-            name: "description",
-            content: `${meta.description}`
-          },
-          {
-            name: "keywords",
-            content: `${meta.keywords}`
-          }
-        ]}
-      />
+    <Layout meta={frontmatter.meta}>
       <FattoPageTemplate
         image={frontmatter.image}
         heading={frontmatter.heading}

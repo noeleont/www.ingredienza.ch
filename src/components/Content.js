@@ -1,19 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import styled from 'styled-components';
 
-export const HTMLContent = ({ content, className }) => (
-  <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
-)
+const Content = styled.div`
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: content;
 
-const Content = ({ content, className }) => (
-  <div className={className}>{content}</div>
-)
-
-Content.propTypes = {
-  content: PropTypes.node,
-  className: PropTypes.string,
-}
-
-HTMLContent.propTypes = Content.propTypes
+  img {
+    /* needed for IE9+ polyfill */
+    font-family: 'object-fit: cover !important; object-position: 0% 0% !important;'
+  }
+`;
 
 export default Content

@@ -1,18 +1,40 @@
 ---
 templateKey: 'places-page'
 path: /standorte/
-title: 'Great coffee with a conscience'
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+image: /img/placesbg.png
 meta:
-  title: Why Kaldi
+  title: Bezugsquellen Privatpersonen | Ingredienza 
   description: >
-      Kaldi is the coffee store for everyone who believes that
-      great coffee shouldn't just taste good, it should do good
-      too. We source all of our beans directly from small scale
-      sustainable farmers and make sure part of the profits are
-      reinvested in their communities.
-  keywords:    asad
+    Wir sind Ingredienza – bei uns dreht sich alles um vielfältige
+    Pastakreationen und hochwertige Zutaten. Unser Sortiment gibt es nun auch
+    für Privatpersonen an unterschieldlichen Standorten in Bern. ► Entdecken Sie
+    unsere Standorte
+  keywords: Ingreidenza, Standorte 
 ---
 
+# Bezugs&shy;quellen für Privat&shy;personen
+
+Nicht nur Gastrobetriebe, sondern auch Private sollen bei uns auf ihre Kosten
+kommen. Deshalb bieten wir unsere feine Pasta und köstlichen Gnocchi an
+unterschiedlichen Standorten in Bern an, wo Sie als Privatkunde einen Teil
+unseres Sortiments direkt beziehen können.
+
+Kommen Sie in unserer **Teigwaren-Manufaktur an der Güterstrasse 7** vorbei, wo wir
+von Montag bis Freitag unser Kernsortiment in Portionen abgepackt anbieten. Sie
+haben ebenfalls die Möglichkeit, Gastroeinheiten zu Gastropreisen zu kaufen.
+<br />
+Öffnungszeiten Fabrikladen: Montag bis Freitag 08:00 bis 16:00 Uhr<br />
+an der Güterstrasse 7, 3008 Bern<br />
+
+Auch auf dem **Wochenmarkt in Bern** sind wir vertreten. Entdecken Sie eine breite
+Auswahl unserer Pasta und Gnocchi jeweils samstags zwischen 07:30 und 12:00 Uhr
+auf dem Bundesplatz vor der Nationalbank.
+
+Unsere Produkte sind zudem auch in der Berner Altstadt im gleichnamigen
+**„Ingredienza der Laden“** erhältlich. Dort finden Sie neben italienischen
+Delikatessen auch unsere hausgemachte Pasta und Gnocchi aus Bern. <br />
+Öffnungszeiten Ingredienza der Laden: Dienstag bis Freitag 09.30 bis 19.00 Uhr
+<br />
+und Samstag 08.00 bis 17.00 Uhr an der Kramgasse 80, 3011 Bern.
+
+## Weitere Verkaufs&shy;standorte

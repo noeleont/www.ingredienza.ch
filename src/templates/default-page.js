@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 import Layout from '../components/Layout'
 
-export const IndexPageTemplate = ({
+export const DefaultPageTemplate = ({
   image,
-  heading,
-  subheading,
 	html,
 }) => (
 	<div>
@@ -20,40 +20,34 @@ export const IndexPageTemplate = ({
 					height: "100vh",
 					width: "100vw",  
 				}}
-				fluid={img.childImageSharp.fluid}
+				fluid={image.childImageSharp.fluid}
 			/> : <div />
 		}
-		<h1> {heading} </h1>
-		<h2> {subheading} </h2>
 		<div dangerouslySetInnerHTML={{ __html: html }} />
 	</div>
 )
 
-IndexPageTemplate.propTypes = {
+DefaultPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
 	html: PropTypes.object,
 }
 
-const IndexPage = ({ data }) => {
+const DefaultPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
     <Layout meta={frontmatter.meta}>
-      <IndexPageTemplate
+      <DefaultPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
 				html={html}
       />
     </Layout>
   )
 }
 
-IndexPage.propTypes = {
+DefaultPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -61,13 +55,12 @@ IndexPage.propTypes = {
   }),
 }
 
-export default IndexPage
+export default DefaultPage
 
 export const pageQuery = graphql`
   query DefaultPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -75,8 +68,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        subheading
         meta {
           title
           description

@@ -1,98 +1,233 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import styled from "styled-components" 
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-      navBarActiveClass: ""
-    };
+import seal from "../img/bestswiss.png";
+
+const Header = styled.header`
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: header;
+
+  display: -ms-grid; 
+  display: grid;
+  -ms-grid-rows: 70px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template:
+    " language . . toggle " 70px /
+    1fr 1fr 1fr 1fr;
+
+  width: 100%;  
+  -ms-grid-column-align: center;  
+      justify-self: center;  
+  z-index: 10000;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    
+    transition: all 0.3s ease;
+    border-bottom: .1rem solid transparent;
+  }
+`;
+
+const Navigation = styled.nav`
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  grid-area: toggle;
+  height: 100vh;
+`;
+
+const LanguageSelector = styled.div`
+  margin-left: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: language;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    
+    transition: all 0.3s ease;
+    border-bottom: .1rem solid transparent;
+  }
+  > a:hover {
+    border-bottom-color: rgba( 0, 0, 0, .35 );
+  }
+`;
+
+const Toggle = styled.div`
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  > input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
   }
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active"
-            })
-          : this.setState({
-              navBarActiveClass: ""
-            });
-      }
-    );
-  };
+  > span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin-bottom: 3px;
+      position: relative;
+      
+      background: black;
+      border-radius: 2px;
+      
+      z-index: 1;
+      
+      -webkit-transform-origin: 4px 0px;
+      
+              transform-origin: 4px 0px;
+      
+      transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease,
+                    -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease,
+                    -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  > span:first-child {
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+  }
 
-  render() {
-    return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+  > span:nth-last-child(2) {
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+  }
+  > input:checked ~ span {
+      opacity: 1;
+      -webkit-transform: rotate(45deg) translate(-2px, -1px);
+              transform: rotate(45deg) translate(-2px, -1px);
+  }
+  > input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  > input:checked ~ span:nth-last-child(2) {
+      opacity: 1;
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+              transform: rotate(-45deg) translate(0, 0);
+  }
+
+  > input:checked ~ ul {
+      -webkit-transform: scale(1.0, 1.0);
+              transform: scale(1.0, 1.0);
+      opacity: 1;
+  }
+
+`;
+
+const Menu = styled.ul`
+  position: absolute;
+  width: 350px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  -webkit-transform-origin: 0% 0%;
+  
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  
+  transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  li {
+      display: table;
+      padding: 10px 0 0 0;
+      font-size: 22px;
+      transition: all 0.3s ease;
+      border-bottom: .1rem solid transparent;
+  }
+  li:hover  {
+      border-bottom-color: rgba( 0, 0, 0, .35 );
+  }
+`;
+
+const Seal = styled.img`
+  height: 100px;
+  width: 100px;
+  margin-top: -20px;
+`;
+
+export default ({ links }) => (
+  <Header>
+    <LanguageSelector>
+      <Link to="/">De</Link>  <span> | </span> <Link to="/fr">Fr</Link>
+    </LanguageSelector>
+    <Navigation>
+      <Toggle>
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <Menu>
+          {links.map(link =>(
+            <Link to={link.to} key={link.to}>
+              <li>{link.text}</li>
             </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    );
-  }
-};
-
-export default Navbar;
+          ))}
+          <a 
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://bestswiss.ch/marken/ingredienza">
+            <Seal src={seal} alt="Best of Swiss Logo" />
+          </a>
+        </Menu>
+      </Toggle>
+    </Navigation>
+  </Header>
+);
