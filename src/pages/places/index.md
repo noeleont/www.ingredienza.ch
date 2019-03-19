@@ -20,6 +20,60 @@ places:
     weekend:
       days: Sa.
       hours: '07:30 - 17:00 Uhr'
+  - address: 'Schüpfenried, 3043 Uettligen'
+    info: ' '
+    name: Hofladen und ängelibeck 
+    week:
+      days: Mo. - Fr.
+      hours: '07:30 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '07:30 - 17:00 Uhr'
+  - address: 'Monbijoustrasse 6, 3011 Bern'
+    info: ' '
+    name: Petit Couteau AG 
+    week:
+      days: Di. - Fr.
+      hours: '11:00 - 19:00 Uhr'
+    weekend:
+      days: Sa.
+      hours: '10:00 - 16:00 Uhr'
+  - address: 'Länggassstrasse 36, 3012 Bern'
+    info: 'Mittwoch ganzer Tag geschlossen'
+    name: Bio-Metzgerei Wegmüller AU COCHON ROSE 
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 12:30 Uhr\n14:30 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 16:00 Uhr'
+  - address: 'Weite Gasse 17, 5400 Baden'
+    info: 'Montag ganzer Tag geschlossen'
+    name: PARADEIS 
+    week:
+      days: Di. - Fr.
+      hours: '09:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '09:00 - 16:00 Uhr'
+  - address: 'Untere Hauptgasse 5, 3600 Thun'
+    info: ' '
+    name: Simplyfine 
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 19:00 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 17:00 Uhr'
+  - address: 'Konradstrasse 32, 4600 Olten'
+    info: 'Montag ganzer Tag geschlossen'
+    name: Eguete delikat-essen-trinken GmbH 
+    week:
+      days: Di. - Fr.
+      hours: '09:00 - 14:00 Uhr\n16:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:30 - 16:00 Uhr'
 ---
 
 # Bezugs&shy;quellen für Privat&shy;personen

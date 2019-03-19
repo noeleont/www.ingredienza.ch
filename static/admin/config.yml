@@ -61,9 +61,11 @@ collections:
                 widget: object
                 fields:
                   - label: "Tage"
+                    name: days
                     hint: "Mo. - Fr."
                     widget: string
                   - label: "Stunden"
+                    name: hours
                     hint: "08:00 - 12:30 Uhr"
                     widget: string
               - label: "Öffnungszeiten am Wochenende" 
@@ -71,14 +73,17 @@ collections:
                 widget: object
                 fields:
                   - label: "Tage"
+                    name: days
                     hint: "Sa."
                     widget: string
                   - label: "Stunden"
+                    name: hours
                     hint: "08:00 - 12:30 Uhr"
                     widget: string
               - label: "Infos" 
                 name: info 
                 hint: "z.B. immer Montags geschlossen"
+                required: false
                 widget: string
       - file: "src/pages/pricelist/index.md"
         label: "Preisliste"
