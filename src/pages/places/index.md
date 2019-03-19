@@ -1,15 +1,25 @@
 ---
-templateKey: 'places-page'
+templateKey: places-page
 path: /standorte/
 image: /img/placesbg.png
 meta:
-  title: Bezugsquellen Privatpersonen | Ingredienza 
   description: >
     Wir sind Ingredienza – bei uns dreht sich alles um vielfältige
     Pastakreationen und hochwertige Zutaten. Unser Sortiment gibt es nun auch
     für Privatpersonen an unterschieldlichen Standorten in Bern. ► Entdecken Sie
     unsere Standorte
-  keywords: Ingreidenza, Standorte 
+  keywords: 'Ingreidenza, Standorte'
+  title: Bezugsquellen Privatpersonen | Ingredienza
+places:
+  - address: 'Könizstrasse 291, 3089 Köniz'
+    info: ' '
+    name: ängelibeck Boulangerie und Grand Café
+    week:
+      days: Mo. - Fr.
+      hours: '06:30 - 19:00 Uhr'
+    weekend:
+      days: Sa.
+      hours: '07:30 - 17:00 Uhr'
 ---
 
 # Bezugs&shy;quellen für Privat&shy;personen
