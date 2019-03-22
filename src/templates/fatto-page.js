@@ -1,76 +1,39 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
+import ProductTable from '../components/ProductTable'
 
 export const FattoPageTemplate = ({
   image,
-  intro,
-  heading,
-  subheading,
   table,
+  html,
 }) => (
     <div>
-        <div
-          className="full-width-image margin-top-0"
-          style={{
-            backgroundImage: `url(${
-              !!image.childImageSharp
-                ? image.childImageSharp.fluid.src
-                : image
-            })`,
-            backgroundPosition: `top left`,
-            backgroundAttachment: `fixed`,
-          }}
-    >
-  <div style={{
-        display: 'flex',
-        height: '150px',
-        lineHeight: '1',
-        justifyContent: 'space-around',
-        alignItems: 'left',
-        flexDirection: 'column' }}>
-      <h1
-        className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-        style={{
-          boxShadow: 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-          backgroundColor: 'rgb(255, 68, 0)',
-          color: 'white',
-          lineHeight: '1',
-          padding: '0.25em'
-        }}
-      >
-        {heading}
-      </h1>
-      <h3 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow: 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em'
-          }}
-      >
-        {subheading}
-      </h3>
-      </div>
-    
+		{ image ?
+			<Img
+				style={{
+					zIndex: -1,
+					position: "fixed",
+					right: 0,
+					bottom: 0,
+					height: "100vh",
+					width: "100vw",  
+				}}
+				fluid={image.childImageSharp.fluid}
+			/> : <div />
+		}
+    <div dangerouslySetInnerHTML={{ __html: html }} /> 
       {table.products ? 
-        (<ul>
-          {table.products.map(product => (
-            <li>{product.article.frontmatter.description}</li>
-          ))}
-        </ul>) : null}
-    </div>
+        (<ProductTable showHeader={table.showColName} products={table.products} />) : null}
   </div>
 )
 
 FattoPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  intro: PropTypes.string,
+  html: PropTypes.string,
   table: PropTypes.shape({
     showColName: PropTypes.bool,
     products: PropTypes.arrayOf(PropTypes.shape({
@@ -88,16 +51,18 @@ FattoPageTemplate.propTypes = {
 }
 
 const FattoPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter, html } = data.markdownRemark
+  const products = frontmatter.fatto_table.products.map(
+    ({ article, showArticleNr }) => ( {...article.frontmatter, showArticleNr} ))
+  
+  const table = {products, showColName: frontmatter.fatto_table.showColName}
 
   return (
     <Layout meta={frontmatter.meta}>
       <FattoPageTemplate
         image={frontmatter.image}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        table={frontmatter.fatto_table}
-        intro={frontmatter.intro}
+        table={table}
+        html={html}
       />
     </Layout>
   )
@@ -124,9 +89,6 @@ query FattoPageTemplate {
             }
           }
         }
-        heading
-        subheading
-        intro
         meta {
           title
           description
@@ -147,6 +109,7 @@ query FattoPageTemplate {
           }
         }
       }
+      html
     }
   }
 `

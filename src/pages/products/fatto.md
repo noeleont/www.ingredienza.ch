@@ -2,12 +2,6 @@
 templateKey: fatto-page
 path: /produkte/fatto_a_mano
 image: /img/fattobg.png
-heading: Fatto a Mano
-subheading: von Hand gemacht
-intro: >-
-  Die Linie „Fatto a mano“ hält, was ihr Name verspricht – die Pasta wird mit
-  viel Sorgfalt von Hand hergestellt. „Fatto a mano“ gehört zum Exklusivsten,
-  was es im Pastasektor zu entdecken gibt.
 meta:
   description: >-
     Wir von Ingredienza kümmern uns um Ihre Pasta-Wünsche. Gerne präsentieren
@@ -32,3 +26,10 @@ fatto_table:
       showArticleNr: true
 ---
 
+# Fatto a Mano
+
+## von Hand gemacht
+
+Die Linie „Fatto a mano“ hält, was ihr Name verspricht – die Pasta wird mit
+viel Sorgfalt von Hand hergestellt. „Fatto a mano“ gehört zum Exklusivsten,
+was es im Pastasektor zu entdecken gibt.

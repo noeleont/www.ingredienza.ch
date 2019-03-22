@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 import Layout from '../components/Layout'
+import ProductNav from '../components/ProductNav'
 
 export const ProductPageTemplate = ({
   image,
@@ -24,6 +25,16 @@ export const ProductPageTemplate = ({
 			/> : <div />
 		}
 		<div dangerouslySetInnerHTML={{ __html: html }} />
+    <ProductNav links={[
+      { to: "/produkte/gnocchi", text: "Gnocchi" },
+      { to: "/produkte/ravioli", text: "Ravioli" },
+      { to: "/produkte/nudeln", text: "Nudeln" },
+      { to: "/produkte/saison_und_spez", text: "Saisonprodukte & Spezialitäten" },
+      { to: "/produkte/spezial", text: "Teigwaren mit Spezialfüllung" },
+      { to: "/produkte/vegan", text: "Ingredienza goes vegan" },
+      { to: "/produkte/fatto_a_mano", text: "Fatto a mano" }
+    ]}
+    />
 	</div>
 )
 

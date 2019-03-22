@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
 path: /produkte/
-image: /img/home-jumbotron.jpg
+image: /img/productsbg.png
 meta:
   description: >
     Teigwaren für jeden Geschmack – denn Ingredienza bietet eine beinahe grenzenlose

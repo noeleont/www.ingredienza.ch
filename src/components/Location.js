@@ -175,7 +175,6 @@ const WeekendHours = styled.div`
 `;
 
 export const Location = ({ name, address, info, week, weekend }) => {
-	console.log(week);
   return (
   <Container>
     <Name>

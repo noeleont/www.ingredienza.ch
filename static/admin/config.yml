@@ -175,12 +175,12 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "fatto-page"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/fatto_a_mano/"}
           - {label: Image, name: image, widget: image}
-          - {label: Intro, name: intro, widget: text}  
           - {label: Meta, name: meta, widget: object, fields: [
             {label: Titel, name: title, widget: string},
             {label: Beschreibung, name: description, widget: text},
             {label: Keywords, name: keywords, widget: string}
           ]}  
+          - {label: Body, name: body, widget: markdown}
           - label: 'Produkt Tabelle'
             name: 'fatto_table'
             widget: 'object'
