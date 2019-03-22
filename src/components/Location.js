@@ -40,7 +40,7 @@ const Name = styled.div`
   }
 `;
 
-const Location = styled.div`
+const Address = styled.div`
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 2;
@@ -104,7 +104,7 @@ const HoursDescription = styled.div`
   }
 `;
 
-const HoursSpecial = styled.div`
+const Info = styled.div`
   grid-column: 1 / 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -133,6 +133,8 @@ const WeekDescription = styled.div`
 `;
 
 const WeekHours = styled.div`
+  white-space: pre-line;
+  display: block;
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 2;
@@ -159,6 +161,7 @@ const WeekendDescription = styled.div`
 `;
 
 const WeekendHours = styled.div`
+  white-space: pre-line;
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 3;
@@ -171,48 +174,40 @@ const WeekendHours = styled.div`
   }
 `;
 
-class LocationClass extends React.Component {
+export const Location = ({ name, address, info, week, weekend }) => {
+	console.log(week);
+  return (
+  <Container>
+    <Name>
+      <strong>{name}</strong>
+    </Name>
+    <Address>{address}</Address>
+    <Hours>
+      <HoursDescription>
+        Öffnungszeiten:
+      </HoursDescription>
+      <WeekDescription>
+        {week.days}
+      </WeekDescription>
+      <WeekHours>
+				{week.hours.split('\\n').map((hour, key) => (
+					<span key={key}>{hour}<br /></span>
+				))}
+      </WeekHours>
+      <WeekendDescription>
+        {weekend.days}
+      </WeekendDescription>
+      <WeekendHours>
+				{weekend.hours}
+      </WeekendHours>
+      {info ? (
+        <Info>
+          <strong>{info}</strong>
+        </Info>
+      ) : (
+        <div />
+      )}
+    </Hours>
+  </Container>
+)}
 
-  constructor(props) {
-    super(props);
-    var hours = JSON.parse(props.hours);
-    this.state = {
-      name: props.name,
-      location: props.location,
-      hours: hours,
-    }
-  }
-  render () { 
-    const { name, location, hours } = this.state;
-    return (
-      <Container>
-        <Name>
-          <strong>{name}</strong>
-        </Name>
-        <Location>{location}</Location>
-        <Hours>
-          <HoursDescription>
-            Öffnungszeiten:
-          </HoursDescription>
-          <WeekDescription>
-            {hours.week.description}
-          </WeekDescription>
-          <WeekHours>
-            {hours.week.times}
-          </WeekHours>
-          <WeekendDescription>Sa.</WeekendDescription>
-          <WeekendHours>{hours.weekend}</WeekendHours>
-          {hours.special ? (
-            <HoursSpecial>
-              <strong>{hours.special}</strong>
-            </HoursSpecial>
-          ) : (
-            <div />
-          )}
-        </Hours>
-      </Container>
-    )
-  }
-}
-
-export default LocationClass;

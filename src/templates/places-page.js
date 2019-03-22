@@ -4,10 +4,12 @@ import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 import Layout from '../components/Layout'
+import { Location } from '../components/Location'
 
 export const PlacesPageTemplate = ({
   image,
   html,
+  places,
 }) => (
 	<div>
 		{ image ?
@@ -24,12 +26,17 @@ export const PlacesPageTemplate = ({
 			/> : <div />
 		}
 		<div dangerouslySetInnerHTML={{ __html: html }} />
+    { places.map(place => (
+      <Location key={place.name} {...place}
+      />
+    )) }
 	</div>
 )
 
 PlacesPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  html: PropTypes.object,
+  html: PropTypes.string,
+  places: PropTypes.array,
 }
 
 const PlacesPage = ({ data }) => {
@@ -40,6 +47,7 @@ const PlacesPage = ({ data }) => {
       <PlacesPageTemplate
         image={frontmatter.image}
         html={html}
+        places={frontmatter.places}
       />
     </Layout>
   )
@@ -70,6 +78,19 @@ query PlacesPageTemplate {
           title
           description
           keywords
+        }
+        places {
+          address
+          info
+          name
+          week {
+            days
+            hours
+          }
+          weekend {
+            days
+            hours
+          }
         }
       }
       html

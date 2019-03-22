@@ -12,6 +12,7 @@ import Content from '../components/Content'
 const TemplateWrapper = ({ children, meta }) => (
   <Container>
     <GlobalStyle />
+    { meta ? 
     <Helmet>
       <html lang="de" />
       <title>{meta.title}</title>
@@ -28,7 +29,7 @@ const TemplateWrapper = ({ children, meta }) => (
       <meta property="og:type" content="business.business" />
       <meta property="og:title" content={meta.title} />
       <meta property="og:url" content="/" />
-    </Helmet>
+    </Helmet> : null }
     <Navbar
       links={[
         { to: "/", text: "Home" },

@@ -12,7 +12,6 @@ meta:
   title: Bezugsquellen Privatpersonen | Ingredienza
 places:
   - address: 'Könizstrasse 291, 3089 Köniz'
-    info: ' '
     name: ängelibeck Boulangerie und Grand Café
     week:
       days: Mo. - Fr.
@@ -21,7 +20,6 @@ places:
       days: Sa.
       hours: '07:30 - 17:00 Uhr'
   - address: 'Schüpfenried, 3043 Uettligen'
-    info: ' '
     name: Hofladen und ängelibeck 
     week:
       days: Mo. - Fr.
@@ -30,7 +28,6 @@ places:
       days: Sa.
       hours: '07:30 - 17:00 Uhr'
   - address: 'Monbijoustrasse 6, 3011 Bern'
-    info: ' '
     name: Petit Couteau AG 
     week:
       days: Di. - Fr.
@@ -57,7 +54,6 @@ places:
       days: Sa.
       hours: '09:00 - 16:00 Uhr'
   - address: 'Untere Hauptgasse 5, 3600 Thun'
-    info: ' '
     name: Simplyfine 
     week:
       days: Mo. - Fr.
@@ -86,9 +82,9 @@ unseres Sortiments direkt beziehen können.
 Kommen Sie in unserer **Teigwaren-Manufaktur an der Güterstrasse 7** vorbei, wo wir
 von Montag bis Freitag unser Kernsortiment in Portionen abgepackt anbieten. Sie
 haben ebenfalls die Möglichkeit, Gastroeinheiten zu Gastropreisen zu kaufen.
-<br />
-Öffnungszeiten Fabrikladen: Montag bis Freitag 08:00 bis 16:00 Uhr<br />
-an der Güterstrasse 7, 3008 Bern<br />
+
+Öffnungszeiten Fabrikladen: Montag bis Freitag 08:00 bis 16:00 Uhr
+an der Güterstrasse 7, 3008 Bern
 
 Auch auf dem **Wochenmarkt in Bern** sind wir vertreten. Entdecken Sie eine breite
 Auswahl unserer Pasta und Gnocchi jeweils samstags zwischen 07:30 und 12:00 Uhr
@@ -96,9 +92,9 @@ auf dem Bundesplatz vor der Nationalbank.
 
 Unsere Produkte sind zudem auch in der Berner Altstadt im gleichnamigen
 **„Ingredienza der Laden“** erhältlich. Dort finden Sie neben italienischen
-Delikatessen auch unsere hausgemachte Pasta und Gnocchi aus Bern. <br />
+Delikatessen auch unsere hausgemachte Pasta und Gnocchi aus Bern.
+
 Öffnungszeiten Ingredienza der Laden: Dienstag bis Freitag 09.30 bis 19.00 Uhr
-<br />
 und Samstag 08.00 bis 17.00 Uhr an der Kramgasse 80, 3011 Bern.
 
 ## Weitere Verkaufs&shy;standorte
