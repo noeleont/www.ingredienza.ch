@@ -1,7 +1,7 @@
 ---
 templateKey: 'default-page'
 path: /konditionen/
-image: /img/home-jumbotron.jpg
+image: /assets/termsbg.png
 meta:
   title: Konditionen Gastronomie | Ingredienza 
   description: >

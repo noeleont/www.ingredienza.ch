@@ -2,8 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image"
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+
+// Always show a bottom border for download link
+const Content = styled.div`
+  a {
+    text-decoration: none;
+    border-bottom: .1rem solid rgba( 0, 0, 0, .35 );
+    color: #000;
+  }
+`
 
 export const PricelistPageTemplate = ({
   image,
@@ -21,15 +31,14 @@ export const PricelistPageTemplate = ({
 					width: "100vw",  
 				}}
 				fluid={image.childImageSharp.fluid}
-			/> : <div />
+			/> : null
 		}
-		<div dangerouslySetInnerHTML={{ __html: html }} />
+		<Content dangerouslySetInnerHTML={{ __html: html }} />
 	</div>
 )
 
 PricelistPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricelist_pdf: PropTypes.string,
   html: PropTypes.object,
 }
 
@@ -40,7 +49,6 @@ const PricelistPage = ({ data }) => {
     <Layout meta={frontmatter.meta}>
       <PricelistPageTemplate
         image={frontmatter.image}
-        pricelist_pdf={frontmatter.pricelist_pdf}
         html={html}
       />
     </Layout>
@@ -73,7 +81,6 @@ query PricelistPageTemplate {
           description
           keywords
         }
-        pricelist_pdf
       }
       html
     }

@@ -1,7 +1,7 @@
 ---
 templateKey: 'pricelist-page'
 path: /preisliste/
-image: /img/home-jumbotron.jpg
+image: /assets/pricelistbg.png
 meta:
   title: Pasta-Preisliste | Ingredienza 
   description: >
@@ -10,9 +10,8 @@ meta:
     vielfältig und bunt. Bei uns gibt es beinahe alles – und dies zum
     angemessenen Preis. ► Sehen Sie ich unsere Pasta-Preisliste an
   keywords: Pasta-Preisliste 
-pricelist_pdf: /pdfs/preisliste.pdf  
 ---
 
 # Unsere Preislisten für Pasta
 
-Unsere Preisliste können Sie als .pdf Datei 
+Unsere Preisliste können Sie als .pdf Datei [herunterladen](/assets/preisliste.pdf)

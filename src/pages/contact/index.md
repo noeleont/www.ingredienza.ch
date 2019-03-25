@@ -1,7 +1,7 @@
 ---
 templateKey: 'contact-page'
 path: /kontakt/
-image: /img/home-jumbotron.jpg
+image: /assets/contactbg.png
 meta:
   title: Kontakt | Ingredienza 
   description: >

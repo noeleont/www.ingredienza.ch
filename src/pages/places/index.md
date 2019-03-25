@@ -1,7 +1,7 @@
 ---
 templateKey: places-page
 path: /standorte/
-image: /img/placesbg.png
+image: /assets/placesbg.png
 meta:
   description: >
     Wir sind Ingredienza – bei uns dreht sich alles um vielfältige

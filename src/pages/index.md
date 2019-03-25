@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 path: /
-image: /img/indexbg.png
+image: /assets/indexbg.png
 meta:
   description: >
     Ingredienza – Ihre Teigwaren-Manufaktur aus Bern. Holen Sie sich frische

@@ -39,7 +39,6 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
-    font-size: 20px;
     color: #000;
     transition: all .2s ease-in-out;
     border-bottom: .1rem solid transparent;

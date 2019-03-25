@@ -1,7 +1,7 @@
 ---
 templateKey: fatto-page
 path: /produkte/fatto_a_mano
-image: /img/fattobg.png
+image: /assets/fattobg.png
 meta:
   description: >-
     Wir von Ingredienza kümmern uns um Ihre Pasta-Wünsche. Gerne präsentieren
