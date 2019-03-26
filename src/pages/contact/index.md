@@ -1,5 +1,5 @@
 ---
-templateKey: 'contact-page'
+templateKey: 'default-page'
 path: /kontakt/
 image: /assets/contactbg.png
 meta:

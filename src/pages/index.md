@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: default-page
 path: /
 image: /assets/indexbg.png
 meta:

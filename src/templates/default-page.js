@@ -1,13 +1,20 @@
 import React from 'react'
+import rehypeReact from 'rehype-react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 import Layout from '../components/Layout'
+import Contact from '../components/Contact'
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "contact": Contact }
+}).Compiler
 
 export const DefaultPageTemplate = ({
   image,
-	html,
+	htmlAst,
 }) => (
 	<div>
 		{ image ?
@@ -23,25 +30,25 @@ export const DefaultPageTemplate = ({
 				fluid={image.childImageSharp.fluid}
 			/> : <div />
 		}
-		<div dangerouslySetInnerHTML={{ __html: html }} />
+    <div>{renderAst(htmlAst)}</div> 
 	</div>
 )
 
 DefaultPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-	html: PropTypes.object,
+	htmlAst: PropTypes.object,
 }
 
 const DefaultPage = ({ data }) => {
-  const { frontmatter, html } = data.markdownRemark
+  const { frontmatter, htmlAst } = data.markdownRemark
 
   return (
     <Layout meta={frontmatter.meta}>
       <DefaultPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-				html={html}
+				htmlAst={htmlAst}
       />
     </Layout>
   )
@@ -74,7 +81,7 @@ export const pageQuery = graphql`
           keywords
         }
       }
-      html
+      htmlAst
     }
   }
 `
