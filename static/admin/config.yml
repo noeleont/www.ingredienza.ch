@@ -204,3 +204,91 @@ collections:
                    name: "showArticleNr",
                    widget: "boolean",
                   }
+      - file: "src/pages/products/gnocchi.md"
+        label: "Gnocchi"
+        name: "Gnocchi"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gnocchi-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/gnocchi/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Kernsortiment'
+            name: 'gnocchi_table_1'
+            widget: 'object'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string}
+              - {label: "Info Text", name: "outro", required:false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+          - label: 'Saison'
+            name: 'gnocchi_table_2'
+            widget: 'object'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string}
+              - {label: "Info Text", name: "outro", required:false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+          - label: 'Spezial'
+            name: 'gnocchi_table_3'
+            widget: 'object'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string}
+              - {label: "Info Text", name: "outro", required:false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }

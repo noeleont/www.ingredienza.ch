@@ -70,5 +70,8 @@ module.exports = {
   ],
   mapping: {
     'MarkdownRemark.frontmatter.fatto_table.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.gnocchi_table_1.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.gnocchi_table_2.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.gnocchi_table_3.products.article': `MarkdownRemark.frontmatter.articleNr`,
   }
 }

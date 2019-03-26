@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
+import ProductNav from '../components/ProductNav'
 import ProductTable from '../components/ProductTable'
 
 export const FattoPageTemplate = ({
@@ -28,6 +29,16 @@ export const FattoPageTemplate = ({
     <div dangerouslySetInnerHTML={{ __html: html }} /> 
       {table.products ? 
         (<ProductTable showHeader={table.showColName} products={table.products} />) : null}
+    <ProductNav links={[
+      { to: "/produkte/gnocchi", text: "Gnocchi" },
+      { to: "/produkte/ravioli", text: "Ravioli" },
+      { to: "/produkte/nudeln", text: "Nudeln" },
+      { to: "/produkte/saison_und_spez", text: "Saisonprodukte & Spezialitäten" },
+      { to: "/produkte/spezial", text: "Teigwaren mit Spezialfüllung" },
+      { to: "/produkte/vegan", text: "Ingredienza goes vegan" },
+      { to: "/produkte/fatto_a_mano", text: "Fatto a mano" }
+    ]}
+    />
   </div>
 )
 
