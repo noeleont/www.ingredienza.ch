@@ -73,5 +73,12 @@ module.exports = {
     'MarkdownRemark.frontmatter.gnocchi_table_1.products.article': `MarkdownRemark.frontmatter.articleNr`,
     'MarkdownRemark.frontmatter.gnocchi_table_2.products.article': `MarkdownRemark.frontmatter.articleNr`,
     'MarkdownRemark.frontmatter.gnocchi_table_3.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.ravioli_table_1.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.ravioli_table_2.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.ravioli_table_3.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.ravioli_table_4.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.noodles_tables.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.season_tables.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.tables.products.article': `MarkdownRemark.frontmatter.articleNr`,
   }
 }

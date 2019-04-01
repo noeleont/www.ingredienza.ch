@@ -180,12 +180,13 @@ collections:
             {label: Keywords, name: keywords, widget: string}
           ]}  
           - {label: Body, name: body, widget: markdown}
-          - label: 'Produkt Tabelle'
-            name: 'fatto_table'
-            widget: 'object'
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
             fields:
-              - {label: "Überschrift", name: "heading", required: false, widget: string}
-              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
               - label: "Produkte"
                 name: "products"
                 widget: list
@@ -217,13 +218,13 @@ collections:
             {label: Keywords, name: keywords, widget: string}
           ]}  
           - {label: Body, name: body, widget: markdown}
-          - label: 'Kernsortiment'
-            name: 'gnocchi_table_1'
-            widget: 'object'
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
             fields:
-              - {label: "Überschrift", name: "heading", required: false, widget: string}
-              - {label: "Info Text", name: "outro", required:false, widget: text }  
-              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
               - label: "Produkte"
                 name: "products"
                 widget: list
@@ -242,13 +243,26 @@ collections:
                    name: "showArticleNr",
                    widget: "boolean",
                   }
-          - label: 'Saison'
-            name: 'gnocchi_table_2'
-            widget: 'object'
+      - file: "src/pages/products/ravioli.md"
+        label: "Ravioli"
+        name: "Ravioli"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "ravioli-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/ravioli/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
             fields:
-              - {label: "Überschrift", name: "heading", required: false, widget: string}
-              - {label: "Info Text", name: "outro", required:false, widget: text }  
-              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
               - label: "Produkte"
                 name: "products"
                 widget: list
@@ -267,13 +281,26 @@ collections:
                    name: "showArticleNr",
                    widget: "boolean",
                   }
-          - label: 'Spezial'
-            name: 'gnocchi_table_3'
-            widget: 'object'
+      - file: "src/pages/products/noodles.md"
+        label: "Nudeln"
+        name: "Nudeln"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "noodles-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/nudeln/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
             fields:
-              - {label: "Überschrift", name: "heading", required: false, widget: string}
-              - {label: "Info Text", name: "outro", required:false, widget: text }  
-              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean}
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
               - label: "Produkte"
                 name: "products"
                 widget: list

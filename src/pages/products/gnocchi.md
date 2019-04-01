@@ -1,5 +1,5 @@
 ---
-templateKey: gnocchi-page
+templateKey: products-page
 path: /produkte/gnocchi
 image: /assets/gnocchibg.png
 meta:
@@ -10,54 +10,53 @@ meta:
     ideal als Hauptspeise oder Beilage ► Sehen Sie sich unsere Gnocchi an
   keywords: Gnocchi 
   title: Gnocchi von Ingredienza | Ingredienza
-gnocchi_table_1:
-  heading: Gnocchi Kernsortiment
-  showColName: true
-  products:
-    - article: '60035'
-      showArticleNr: true
-    - article: '60035CH'
-      showArticleNr: true
-    - article: '60036'
-      showArticleNr: true
-    - article: '60050'
-      showArticleNr: true
-    - article: '60035SAF'
-      showArticleNr: true
-gnocchi_table_2:
-  heading: Saison-Gnocchi
-  outro: >-
-    Unsere Saison-Gnocchi sind auch ausserhalb der Saison erhältlich. <br />
-    Mindestbestellmenge 7&cent; &agrave; 3kg
-  showColName: false 
-  products:
-    - article: '60035'
-      showArticleNr: true
-    - article: '60035CH'
-      showArticleNr: true
-    - article: '60036'
-      showArticleNr: true
-    - article: '60050'
-      showArticleNr: true
-    - article: '60035SAF'
-      showArticleNr: true
-gnocchi_table_3:
-  heading: Spezial-Gnocchi
-  outro: >-
-    Unsere Spezialgnocchi sind nur auf Bestellung erhältlich. <br />
-    Mindestbestellmenge 7&cent; &agrave; 3kg
-  showColName: false 
-  products:
-    - article: '60035'
-      showArticleNr: true
-    - article: '60035CH'
-      showArticleNr: true
-    - article: '60036'
-      showArticleNr: true
-    - article: '60050'
-      showArticleNr: true
-    - article: '60035SAF'
-      showArticleNr: true
+tables:
+  - heading: Gnocchi Kernsortiment
+    outro: >-
+    showColName: true
+    products:
+      - article: '60035'
+        showArticleNr: true
+      - article: '60035CH'
+        showArticleNr: true
+      - article: '60036'
+        showArticleNr: true
+      - article: '60050'
+        showArticleNr: true
+      - article: '60035SAF'
+        showArticleNr: true
+  - heading: Saison-Gnocchi
+    outro: >-
+      Unsere Saison-Gnocchi sind auch ausserhalb der Saison erhältlich. <br />
+      Mindestbestellmenge 7&cent; &agrave; 3kg
+    showColName: false 
+    products:
+      - article: '60035'
+        showArticleNr: true
+      - article: '60035CH'
+        showArticleNr: true
+      - article: '60036'
+        showArticleNr: true
+      - article: '60050'
+        showArticleNr: true
+      - article: '60035SAF'
+        showArticleNr: true
+  - heading: Spezial-Gnocchi
+    outro: >-
+      Unsere Spezialgnocchi sind nur auf Bestellung erhältlich. <br />
+      Mindestbestellmenge 7&cent; &agrave; 3kg
+    showColName: false 
+    products:
+      - article: '60035'
+        showArticleNr: true
+      - article: '60035CH'
+        showArticleNr: true
+      - article: '60036'
+        showArticleNr: true
+      - article: '60050'
+        showArticleNr: true
+      - article: '60035SAF'
+        showArticleNr: true
 ---
 
 # Unsere abwechs&shy;lungs&shy;reichen Gnocchi-Kreationen 

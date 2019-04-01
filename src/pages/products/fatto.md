@@ -1,5 +1,5 @@
 ---
-templateKey: fatto-page
+templateKey: products-page
 path: /produkte/fatto_a_mano
 image: /assets/fattobg.png
 meta:
@@ -11,19 +11,21 @@ meta:
     von Ingredienza
   keywords: Gourmet Pasta
   title: Gourmet Ravioli von Ingredienza | Ingredienza
-fatto_table:
-  showColName: true
-  products:
-    - article: '70020'
-      showArticleNr: true
-    - article: 70020S
-      showArticleNr: true
-    - article: '700110'
-      showArticleNr: true
-    - article: '70070'
-      showArticleNr: true
-    - article: '70050'
-      showArticleNr: true
+tables:
+  - headgin:
+    outro: >-
+    showColName: true
+    products:
+      - article: '70020'
+        showArticleNr: true
+      - article: 70020S
+        showArticleNr: true
+      - article: '700110'
+        showArticleNr: true
+      - article: '70070'
+        showArticleNr: true
+      - article: '70050'
+        showArticleNr: true
 ---
 
 # Fatto a Mano
