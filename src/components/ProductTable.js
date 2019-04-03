@@ -5,15 +5,18 @@ const ProductTable = styled.table`
   border: 0px;
   border-color: #000;
   
-  width: 900px;
+  max-width: 900px;
+  min-width: 500px;
   position: relative; 
   padding: 0px;
   td {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 
   th {
-      padding-right: 0px;
+    padding-right: 0px;
+    text-align: left;
+
   }
 
   /* first column */
