@@ -65,6 +65,21 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+		{
+      resolve: `gatsby-plugin-polyfill-io`,
+      options: {
+         features: [`Array.prototype.includes`, `WeakMap`, `default-3.6`]
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Ingredienza',
+        short_name: 'Ingredienza',
+        start_url: '/',
+        icon: 'static/assets/favicon.png', // This path is relative to the root of the site.
+      },
+    },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
