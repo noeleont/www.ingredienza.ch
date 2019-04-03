@@ -1,12 +1,9 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 10 
 articleNr: ""
-description: "... mit Zitronenschale und Zitronen-Melisse"
-unit: "3kg TK"
+description_de: "... mit Zitronenschale und Zitronen-Melisse"
+description_fr: " "
+unit: "3"
 price: "11.50"
 ---
 

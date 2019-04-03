@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 5
 articleNr: ""
-description: "... mit roher Rande"
-unit: "3kg TK"
+description_de: "... mit roher Rande"
+description_fr: " "
+unit: "3"
 price: "13.--"
 ---

@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 2
-order: 6
 articleNr: "Herbst"
-description: "... mit Kürbis und Kurkuma"
-unit: "3kg TK"
+description_de: "... mit Kürbis und Kurkuma"
+description_fr: " "
+unit: "3"
 price: "11.50"
 ---

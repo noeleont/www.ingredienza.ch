@@ -25,9 +25,9 @@ const ArticlePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout lang="de">
       <ArticlePageTemplate
-        description={frontmatter.description}
+        description={frontmatter.description_de}
         articleNr={frontmatter.articleNr}
         unit={frontmatter.unit}
         price={frontmatter.price}
@@ -51,7 +51,7 @@ export const articlePageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         articleNr
-        description
+        description_de
         unit
         price
       }

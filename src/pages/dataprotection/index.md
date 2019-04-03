@@ -1,5 +1,6 @@
 ---
 templateKey: 'default-page'
+lang: de
 path: /datenschutz/
 image: 
 meta:
@@ -28,8 +29,7 @@ Diese Daten sind nicht direkt bestimmten Personen zuordenbar. Eine Zusammenführ
 Diese Daten sowie alle Daten dieser Website werden bei unserem Hosting-Provider
 Hostpoint AG, Neue Jonastrasse 60, CH-8640 Rapperswil-Jona gespeichert, deren
 Datenschutzerklärung Sie <span style="border-bottom: .1rem solid rgba( 0, 0, 0,
-.35 )">[hier](https://www.hostpoint.ch/hostpoint/kontakt-agb.html#datenschutz)
-</span>.
+.35 )">[hier](https://www.hostpoint.ch/hostpoint/kontakt-agb.html#datenschutz)</span>.
 
 ## Einbindung von polyfill.io
 

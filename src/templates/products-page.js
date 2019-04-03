@@ -11,6 +11,7 @@ export const ProductsPageTemplate = ({
   image,
   tables,
   html,
+  lang
 }) => (
     <div>
 		{ image ?
@@ -33,7 +34,9 @@ export const ProductsPageTemplate = ({
         { table.heading? <h2> {table.heading} </h2> : null }
         <ProductTable
           showHeader={table.showColName}
-          products={table.products} />
+          products={table.products}
+          lang={lang}
+        />
         { table.outro? 
           <strong>
             <br />
@@ -44,22 +47,14 @@ export const ProductsPageTemplate = ({
       </div>
     ))}
 
-    <ProductNav links={[
-      { to: "/produkte/gnocchi", text: "Gnocchi" },
-      { to: "/produkte/ravioli", text: "Ravioli" },
-      { to: "/produkte/nudeln", text: "Nudeln" },
-      { to: "/produkte/saison_und_spez", text: "Saisonprodukte & Spezialitäten" },
-      { to: "/produkte/spezial", text: "Teigwaren mit Spezialfüllung" },
-      { to: "/produkte/vegan", text: "Ingredienza goes vegan" },
-      { to: "/produkte/fatto_a_mano", text: "Fatto a mano" }
-    ]}
-    />
+    <ProductNav lang={lang}/>
   </div>
 )
 
 ProductsPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   html: PropTypes.string,
+  lang: PropTypes.string,
   tables: PropTypes.arrayOf(
     PropTypes.shape({
       heading: PropTypes.string,
@@ -97,11 +92,12 @@ const ProductsPage = ({ data }) => {
   })
 
   return (
-    <Layout meta={frontmatter.meta}>
+    <Layout lang={frontmatter.lang} meta={frontmatter.meta}>
       <ProductsPageTemplate
         image={frontmatter.image}
         tables={tables}
         html={html}
+        lang={frontmatter.lang}
       />
     </Layout>
   )
@@ -121,6 +117,7 @@ export const pageQuery = graphql`
 query ProductsPageTemplate($id: String!) {
   markdownRemark(id: { eq: $id }) {
     frontmatter {
+      lang
       image {
         childImageSharp {
           fluid(maxWidth: 2048, quality: 100) {
@@ -142,7 +139,7 @@ query ProductsPageTemplate($id: String!) {
           article {
             frontmatter {
               articleNr
-              description
+              description: description_de
               unit
               price
             }

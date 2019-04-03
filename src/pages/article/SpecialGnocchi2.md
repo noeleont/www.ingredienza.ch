@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 4
 articleNr: ""
-description: "... mit Kastanienmehl"
-unit: "3kg TK"
+description_de: "... mit Kastanienmehl"
+description_fr: " "
+unit: "3"
 price: "13.50"
 ---

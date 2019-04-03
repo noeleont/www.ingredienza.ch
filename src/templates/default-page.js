@@ -36,6 +36,7 @@ export const DefaultPageTemplate = ({
 
 DefaultPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  lang: PropTypes.string,
   title: PropTypes.string,
 	htmlAst: PropTypes.object,
 }
@@ -44,7 +45,7 @@ const DefaultPage = ({ data }) => {
   const { frontmatter, htmlAst } = data.markdownRemark
 
   return (
-    <Layout meta={frontmatter.meta}>
+    <Layout lang={frontmatter.lang} meta={frontmatter.meta}>
       <DefaultPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
@@ -68,6 +69,7 @@ export const pageQuery = graphql`
   query DefaultPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        lang
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 3
 articleNr: ""
-description: "... mit Curry und Kokosmilch"
-unit: "3kg TK"
+description_de: "... mit Curry und Kokosmilch"
+description_fr: " "
+unit: "3"
 price: "11.50"
 ---

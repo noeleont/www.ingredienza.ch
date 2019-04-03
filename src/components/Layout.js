@@ -3,18 +3,18 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
 import Navbar from '../components/Navbar'
-import { Footer } from '../components/Footer'
+import Footer from '../components/Footer'
 
 import GlobalStyle from '../components/GlobalStyle'
 import Container from '../components/Container'
 import Content from '../components/Content'
 
-const TemplateWrapper = ({ children, meta }) => (
+const TemplateWrapper = ({ children, meta, lang }) => (
   <Container>
     <GlobalStyle />
     { meta ? 
     <Helmet>
-      <html lang="de" />
+      <html lang={lang} />
       <title>{meta.title}</title>
       <meta
         name="description"
@@ -31,20 +31,12 @@ const TemplateWrapper = ({ children, meta }) => (
       <meta property="og:url" content="/" />
     </Helmet> : null }
     <Navbar
-      links={[
-        { to: "/", text: "Home" },
-        { to: "/standorte", text: "Standorte" },
-        { to: "/produkte/", text: "Produkte" },
-        { to: "/preisliste/", text: "Preisliste" },
-        { to: "/konditionen", text: "Konditionen" },
-        { to: "/kontakt", text: "Kontakt" },
-        { to: "/links", text: "Links" }
-      ]}
+      lang={lang}
     />
     <Content>
       {children}
     </Content>
-    <Footer />
+    <Footer lang={lang} />
   </Container>
 )
 
@@ -55,5 +47,6 @@ TemplateWrapper.propTypes = {
     description: PropTypes.string,
     keywords: PropTypes.string,
   }),
+  lang: PropTypes.string.isRequired,
 }
 export default TemplateWrapper

@@ -12,12 +12,9 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page"}
-      - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
       - {label: "Artikel Nummer", name: "articleNr", widget: "string"}
-      - {label: "Kategorie", name: "category", widget: "string"}
-      - {label: "Tabelle", name: "table", widget: "number"}
-      - {label: "Position", name: "order", widget: "number"}
-      - {label: "Beschreibung", name: "description", widget: "string"}
+      - {label: "Beschreibung Deutsch", name: "description_de", widget: "string"}
+      - {label: "Beschreibung Französisch", name: "description_fr", widget: "string"}
       - {label: "Einheit", name: "unit", widget: "string"}
       - {label: "Preis", name: "price", widget: "string"}
               
@@ -28,7 +25,7 @@ collections:
         label: "Hauptseite"
         name: "Index Page"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
           - {label: Path, name: path, widget: hidden, default: "/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -115,7 +112,7 @@ collections:
         label: "Kontakt"
         name: "Kontakt"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
           - {label: Path, name: path, widget: hidden, default: "/kontakt/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -137,7 +134,7 @@ collections:
             {label: Keywords, name: keywords, widget: string}
           ]}  
           - {label: Body, name: body, widget: markdown}
-      - file: "src/pages/imprint/index.md"
+      - file: "src/pages/inprint/index.md"
         label: "Impressum"
         name: "Impressum"
         fields:
@@ -171,7 +168,7 @@ collections:
         label: "Fatto a Mano"
         name: "Fatto a Mano"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "fatto-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/fatto_a_mano/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -197,7 +194,7 @@ collections:
                    widget: "relation",
                    collection: "article",
                    searchFields: ["articleNr"],
-                   displayFields: ["articleNr", "description"],
+                   displayFields: ["articleNr", "description_de"],
                    valueField: "articleNr", 
                   }
                   - {
@@ -209,7 +206,7 @@ collections:
         label: "Gnocchi"
         name: "Gnocchi"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gnocchi-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/gnocchi/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -235,7 +232,7 @@ collections:
                    widget: "relation",
                    collection: "article",
                    searchFields: ["articleNr"],
-                   displayFields: ["articleNr", "description"],
+                   displayFields: ["articleNr", "description_de"],
                    valueField: "articleNr", 
                   }
                   - {
@@ -247,7 +244,7 @@ collections:
         label: "Ravioli"
         name: "Ravioli"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "ravioli-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/ravioli/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -273,7 +270,7 @@ collections:
                    widget: "relation",
                    collection: "article",
                    searchFields: ["articleNr"],
-                   displayFields: ["articleNr", "description"],
+                   displayFields: ["articleNr", "description_de"],
                    valueField: "articleNr", 
                   }
                   - {
@@ -285,7 +282,7 @@ collections:
         label: "Nudeln"
         name: "Nudeln"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "noodles-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/nudeln/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -311,7 +308,533 @@ collections:
                    widget: "relation",
                    collection: "article",
                    searchFields: ["articleNr"],
-                   displayFields: ["articleNr", "description"],
+                   displayFields: ["articleNr", "description_de"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/season.md"
+        label: "Saisonprodukte"
+        name: "Saisonprodukte"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/saison_und_spez/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_de"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/special.md"
+        label: "Spezialitäten"
+        name: "Spezialitäten"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/spezial/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_de"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/vegan.md"
+        label: "Vegan"
+        name: "vegan"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/vegan/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_de"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+  - name: "pages_fr"
+    label: "Seiten (Französisch)"
+    files:
+      - file: "src/pages/index.fr.md"
+        label: "Hauptseite"
+        name: "Index Page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/places/index.fr.md"
+        label: "Standorte"
+        name: "Places Page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "places-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/lieux"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Standorte'
+            name: 'places'
+            widget: list
+            fields:
+              - { label: "Name", name: name, widget: string }        
+              - { label: "Adresse", name: address, widget: string }
+              - label: "Öffnungszeiten unter der Woche" 
+                name: week
+                widget: object
+                fields:
+                  - label: "Tage"
+                    name: days
+                    hint: "Mo. - Fr."
+                    widget: string
+                  - label: "Stunden"
+                    name: hours
+                    hint: "08:00 - 12:30 Uhr"
+                    widget: string
+              - label: "Öffnungszeiten am Wochenende" 
+                name: weekend
+                widget: object
+                fields:
+                  - label: "Tage"
+                    name: days
+                    hint: "Sa."
+                    widget: string
+                  - label: "Stunden"
+                    name: hours
+                    hint: "08:00 - 12:30 Uhr"
+                    widget: string
+              - label: "Infos" 
+                name: info 
+                hint: "z.B. immer Montags geschlossen"
+                required: false
+                widget: string
+      - file: "src/pages/pricelist/index.fr.md"
+        label: "Preisliste"
+        name: "Preisliste"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pricelist-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/tarifs/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/terms/index.fr.md"
+        label: "Konditionen"
+        name: "Konditionen"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/conditions"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/contact/index.fr.md"
+        label: "Kontakt"
+        name: "Kontakt"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/contact/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/dataprotection/index.fr.md"
+        label: "Datenschutz"
+        name: "Datenschutz"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/protection/"}
+          - {label: Image, required: false, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/inprint/index.fr.md"
+        label: "Impressum"
+        name: "Impressum"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/legales/"}
+          - {label: Image, required: false, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+
+  - name: "product_pages_fr"
+    label: "Produkt-Seiten (Französisch)"
+    files:
+      - file: "src/pages/products/index.fr.md"
+        label: "Hauptseite"
+        name: "Hauptseite"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+      - file: "src/pages/products/fatto.fr.md"
+        label: "Fatto a Mano"
+        name: "Fatto a Mano"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/produits/fatto_a_mano/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_fr"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/gnocchi.fr.md"
+        label: "Gnocchi"
+        name: "Gnocchi"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/produits/gnocchi"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_fr"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/ravioli.fr.md"
+        label: "Ravioli"
+        name: "Ravioli"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/produits/ravioli"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_fr"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/noodles.fr.md"
+        label: "Nudeln"
+        name: "Nudeln"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/produits/pates"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_fr"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/season.fr.md"
+        label: "Saisonprodukte"
+        name: "Saisonprodukte"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/produits/saison"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_fr"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/special.fr.md"
+        label: "Spezialitäten"
+        name: "Spezialitäten"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/produits/speciales"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_fr"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
+      - file: "src/pages/products/vegan.fr.md"
+        label: "Vegan"
+        name: "vegan"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: Path, name: path, widget: hidden, default: "/fr/produits/vegan/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_fr"],
                    valueField: "articleNr", 
                   }
                   - {

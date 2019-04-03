@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/saison_und_spez
 image: /assets/seasonbg.png
 meta:
@@ -63,9 +64,9 @@ tables:
         showArticleNr: true
 ---
  
-# Saison&shy;produkte
+# Saison­produkte
 
-## Pasta aus Saison&shy;gemüse
+## Pasta aus Saison­gemüse
 
 Bei Ingredienza setzen wir uns für regionale Produkte ein. Deshalb bieten wir
 unseren Kunden saisonale Pasta. Je nach Jahreszeit kreieren wir aus frischen

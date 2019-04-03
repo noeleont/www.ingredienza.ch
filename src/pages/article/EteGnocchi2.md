@@ -1,12 +1,9 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 2
-order: 4
 articleNr: ""
-description: "... mit Sommerkräutern (Zitronenthymian, Basilikum\nKerbel, Schnittlauch, Oregano, Lavendel, Majoran)"
-unit: "3kg TK"
+description_de: "... mit Sommerkräutern (Zitronenthymian, Basilikum\nKerbel, Schnittlauch, Oregano, Lavendel, Majoran)"
+description_fr: " "
+unit: "3"
 price: "11.50"
 ---
 

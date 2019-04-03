@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/nudeln
 image: /assets/noodlesbg.png
 meta:

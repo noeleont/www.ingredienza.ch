@@ -1,22 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProductRow = ({ product: { articleNr, description, unit, price } }) => (
-  <tr>
-    <td>{articleNr}</td>
-    <td>{description}</td>
-    {unit ? (
-      <td>
-        {String.fromCharCode(162) + " " + String.fromCharCode(224) + " " + unit}
-      </td>
-    ) : (
-      <td />
-    )}
-    {// Check if string starts with a number
-    !isNaN(parseInt(price)) ? <td>Fr. {price}</td> : <td>{price}</td>}
-  </tr>
-);
-
 const ProductTable = styled.table`
   border: 0px;
   border-color: #000;
@@ -84,21 +68,68 @@ const ResponsiveTable = styled.div`
   }
 `;
 
-export default ({ showHeader, products }) => (
+
+const TableHeader = ({ lang }) => {
+  return lang === "de" ? (<TableHeaderDe />) : (<TableHeaderFr />)
+} 
+
+
+const TableHeaderDe = () => (
+  <tr>
+    <th>Art.Nr</th>
+    <th>Produkt</th>
+    <th>Einheit</th>
+    <th>Fr. / kg</th>
+  </tr>
+)
+
+const TableHeaderFr = () => (
+  <tr>
+    <th>Réf.</th>
+    <th>Produit</th>
+    <th>Unité</th>
+    <th>fr. / kg</th>
+  </tr>
+)
+
+const ProductRow = ({ product, lang }) => {
+  return lang === "de" ? 
+    (<ProductRowDe product={product}/>) : 
+    (<ProductRowFr product={product}/>) 
+};
+
+
+
+const ProductRowDe = ({ product: { articleNr, description, unit, price } }) => (
+  <tr>
+    <td>{articleNr}</td>
+    <td>{description}</td>
+    {unit ? (<td>{`¢ à ${unit}kg TK`}</td>) : (<td />)}
+    {// Check if string starts with a number
+    !isNaN(parseInt(price)) ? <td>Fr. {price}</td> : <td>{price}</td>}
+  </tr>
+);
+
+const ProductRowFr = ({ product: { articleNr, description, unit, price } }) => (
+  <tr>
+    <td>{articleNr}</td>
+    <td>{description}</td>
+    {unit ? (<td>{`¢ de ${unit} kg surg`}</td>) : (<td />)}
+    {// Check if string starts with a number
+    !isNaN(parseInt(price)) ? <td>fr. {price}</td> : <td>{price}</td>}
+  </tr>
+);
+
+export default ({ showHeader, products, lang }) => (
   <ResponsiveTable>
     <ProductTable>
       <tbody>
         {showHeader ? (
-          <tr>
-            <th>Art.Nr</th>
-            <th>Produkt</th>
-            <th>Einheit</th>
-            <th>Fr. / kg</th>
-          </tr>
+          <TableHeader lang={lang} />
         ) : null}
 
         {products.map(product => (
-          <ProductRow key={product.description} product={product} />
+          <ProductRow key={product.description} product={product} lang={lang} />
         ))}
       </tbody>
 

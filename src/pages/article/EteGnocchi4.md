@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 2
-order: 5
 articleNr: ""
-description: "... mit getrockneten Tomaten und Basilikum"
-unit: "3kg TK"
+description_de: "... mit getrockneten Tomaten und Basilikum"
+description_fr: " "
+unit: "3"
 price: "11.50"
 ---

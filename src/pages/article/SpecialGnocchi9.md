@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 6
 articleNr: ""
-description: "... mit Quark, frischem Ingwer und schwarzem Pfeffer"
-unit: "3kg TK"
+description_de: "... mit Quark, frischem Ingwer und schwarzem Pfeffer"
+description_fr: " "
+unit: "3"
 price: "11.50"
 ---

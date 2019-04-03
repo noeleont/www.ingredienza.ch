@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 7
 articleNr: ""
-description: "... mit schwarzen Oliven"
-unit: "3kg TK"
+description_de: "... mit schwarzen Oliven"
+description_fr: " "
+unit: "3"
 price: "11.50"
 ---

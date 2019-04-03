@@ -174,7 +174,7 @@ const WeekendHours = styled.div`
   }
 `;
 
-export const Location = ({ name, address, info, week, weekend }) => {
+export const Location = ({ name, address, info, week, weekend, lang }) => {
   return (
   <Container>
     <Name>
@@ -183,7 +183,7 @@ export const Location = ({ name, address, info, week, weekend }) => {
     <Address>{address}</Address>
     <Hours>
       <HoursDescription>
-        Öffnungszeiten:
+        { lang === "de"? "Öffnungszeiten:" : "Heures d’ouverture:" }
       </HoursDescription>
       <WeekDescription>
         {week.days}

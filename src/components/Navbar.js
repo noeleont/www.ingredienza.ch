@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+import { PropTypes } from "prop-types";
+import { Link, StaticQuery, graphql } from "gatsby";
 import styled from "styled-components" 
 
 import seal from "../img/bestswiss.png";
@@ -203,7 +204,43 @@ const Seal = styled.img`
   margin-top: -20px;
 `;
 
-export default ({ links }) => (
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+        query {
+          site {
+            siteMetadata {
+              nav {
+                de {
+                  main {
+                    to
+                    text
+                  }
+                }
+                fr {
+                  main {
+                    to
+                    text
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      `}
+    render={data => {
+      const { de, fr } = data.site.siteMetadata.nav
+      if (props.lang === "de")
+        return (<HeaderTemplate links={de.main} {...props} />)
+      if (props.lang === "fr")
+        return (<HeaderTemplate links={fr.main} {...props} />)
+    }}
+  />
+)
+
+const HeaderTemplate = ({ links }) => (
   <Header>
     <LanguageSelector>
       <Link to="/">De</Link>  <span> | </span> <Link to="/fr">Fr</Link>
@@ -231,3 +268,10 @@ export default ({ links }) => (
     </Navigation>
   </Header>
 );
+
+HeaderTemplate.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.shape({
+    to: PropTypes.string,
+    text: PropTypes.string,
+  })).isRequired,
+}

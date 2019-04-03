@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/fatto_a_mano
 image: /assets/fattobg.png
 meta:

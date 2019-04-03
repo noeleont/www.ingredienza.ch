@@ -1,5 +1,6 @@
 ---
 templateKey: default-page
+lang: de
 path: /
 image: /assets/indexbg.png
 meta:

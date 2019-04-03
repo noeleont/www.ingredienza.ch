@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 9
 articleNr: ""
-description: "... Süsskartoffel-Gnocchi Mindestbestellung 48kg"
-unit: "3kg TK"
+description_de: "... Süsskartoffel-Gnocchi Mindestbestellung 48kg"
+description_fr: " "
+unit: "3"
 price: "13.50"
 ---

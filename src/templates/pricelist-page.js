@@ -39,14 +39,15 @@ export const PricelistPageTemplate = ({
 
 PricelistPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  html: PropTypes.object,
+  html: PropTypes.string,
+  lang: PropTypes.string,
 }
 
 const PricelistPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
-    <Layout meta={frontmatter.meta}>
+    <Layout lang={frontmatter.lang} meta={frontmatter.meta}>
       <PricelistPageTemplate
         image={frontmatter.image}
         html={html}
@@ -66,8 +67,8 @@ PricelistPage.propTypes = {
 export default PricelistPage
 
 export const pageQuery = graphql`
-query PricelistPageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "pricelist-page"}}) {
+query PricelistPageTemplate($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         image {
           childImageSharp {
@@ -76,6 +77,7 @@ query PricelistPageTemplate {
             }
           }
         }
+        lang
         meta {
           title
           description

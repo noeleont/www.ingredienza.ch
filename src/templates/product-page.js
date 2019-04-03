@@ -9,6 +9,7 @@ import ProductNav from '../components/ProductNav'
 export const ProductPageTemplate = ({
   image,
   html,
+  lang,
 }) => (
 	<div>
 		{ image ?
@@ -25,32 +26,25 @@ export const ProductPageTemplate = ({
 			/> : <div />
 		}
 		<div dangerouslySetInnerHTML={{ __html: html }} />
-    <ProductNav links={[
-      { to: "/produkte/gnocchi", text: "Gnocchi" },
-      { to: "/produkte/ravioli", text: "Ravioli" },
-      { to: "/produkte/nudeln", text: "Nudeln" },
-      { to: "/produkte/saison_und_spez", text: "Saisonprodukte & Spezialitäten" },
-      { to: "/produkte/spezial", text: "Teigwaren mit Spezialfüllung" },
-      { to: "/produkte/vegan", text: "Ingredienza goes vegan" },
-      { to: "/produkte/fatto_a_mano", text: "Fatto a mano" }
-    ]}
-    />
+    <ProductNav lang={lang}/>
 	</div>
 )
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  html: PropTypes.object,
+  html: PropTypes.string,
+  lang: PropTypes.string,
 }
 
 const ProductPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
-    <Layout meta={frontmatter.meta}>
+    <Layout lang={frontmatter.lang} meta={frontmatter.meta}>
       <ProductPageTemplate
         image={frontmatter.image}
         html={html}
+        lang={frontmatter.lang}
       />
     </Layout>
   )
@@ -67,9 +61,10 @@ ProductPage.propTypes = {
 export default ProductPage
 
 export const pageQuery = graphql`
-query ProductPageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "product-page"}}) {
+query ProductPageTemplate($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
+        lang
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

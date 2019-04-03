@@ -1,5 +1,6 @@
 ---
 templateKey: 'pricelist-page'
+lang: de
 path: /preisliste/
 image: /assets/pricelistbg.png
 meta:

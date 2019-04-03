@@ -1,5 +1,6 @@
 ---
 templateKey: product-page
+lang: de
 path: /produkte/
 image: /assets/productsbg.png
 meta:

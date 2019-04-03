@@ -67,14 +67,22 @@ const Logo = styled.img`
     -ms-grid-column-align: center;
   }
 `
-export const FooterFr = () => (
+
+export default props => {
+  if (props.lang === "de")
+    return (<Footer />)
+  if (props.lang === "fr")
+    return (<FooterFr />)
+}
+
+const FooterFr = () => (
   <Container>
     <Text>
-      <Link to="/fr/impressum">
+      <Link to="/fr/legales">
         Mentions légales 
       </Link>
       <span> | </span>
-      <Link to="/fr/dataprotection">
+      <Link to="/fr/protection">
         Protection des données
       </Link>
     </Text>
@@ -82,7 +90,7 @@ export const FooterFr = () => (
   </Container>
 );
 
-export const Footer = () => (
+const Footer = () => (
   <Container>
     <Text>
       <Link to="/impressum">

@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 3
-order: 2
 articleNr: ""
-description: "... mit frischen Brennesseln"
-unit: "3kg TK"
+description_de: "... mit frischen Brennesseln"
+description_fr: " "
+unit: "3"
 price: "13.--"
 ---

@@ -1,5 +1,6 @@
 ---
 templateKey: places-page
+lang: de
 path: /standorte/
 image: /assets/placesbg.png
 meta:

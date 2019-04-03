@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "ravioli"
-table: 1
-order: 11
 articleNr: "BITA005"
-description: "Bio Ricotta-Zitronen-Rondellen im Eierteig"
-unit: "2kg TK"
+description_de: "Bio Ricotta-Zitronen-Rondellen im Eierteig"
+description_fr: " "
+unit: "2"
 price: "23.--"
 ---

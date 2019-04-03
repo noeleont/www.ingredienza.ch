@@ -10,6 +10,7 @@ export const PlacesPageTemplate = ({
   image,
   html,
   places,
+  lang,
 }) => (
 	<div>
 		{ image ?
@@ -27,8 +28,7 @@ export const PlacesPageTemplate = ({
 		}
 		<div dangerouslySetInnerHTML={{ __html: html }} />
     { places.map(place => (
-      <Location key={place.name} {...place}
-      />
+      <Location key={place.name} {...place} lang={lang} />
     )) }
 	</div>
 )
@@ -37,17 +37,19 @@ PlacesPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   html: PropTypes.string,
   places: PropTypes.array,
+  lang: PropTypes.string,
 }
 
 const PlacesPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
-    <Layout meta={frontmatter.meta}>
+    <Layout lang={frontmatter.lang} meta={frontmatter.meta}>
       <PlacesPageTemplate
         image={frontmatter.image}
         html={html}
         places={frontmatter.places}
+        lang={frontmatter.lang}
       />
     </Layout>
   )
@@ -64,8 +66,8 @@ PlacesPage.propTypes = {
 export default PlacesPage
 
 export const pageQuery = graphql`
-query PlacesPageTemplate {
-  markdownRemark(frontmatter: {templateKey: {eq: "places-page"}}) {
+query PlacesPageTemplate($id: String!) {
+    markdownRemark(id: { eq: $id }) { 
       frontmatter {
         image {
           childImageSharp {
@@ -74,6 +76,7 @@ query PlacesPageTemplate {
             }
           }
         }
+        lang
         meta {
           title
           description

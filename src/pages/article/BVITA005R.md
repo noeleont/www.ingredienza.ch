@@ -1,11 +1,8 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "vegan"
-table: 1
-order: 6
 articleNr: "BVITA005R"
-description: "Bio vegane Zitronen-Thymian-Rondellen im weissen Teig"
-unit: "2kg TK"
+description_de: "Bio vegane Zitronen-Thymian-Rondellen im weissen Teig"
+description_fr: " "
+unit: "2"
 price: "25.--"
 ---

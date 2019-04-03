@@ -69,16 +69,98 @@ module.exports = {
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
   mapping: {
-    'MarkdownRemark.frontmatter.fatto_table.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.gnocchi_table_1.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.gnocchi_table_2.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.gnocchi_table_3.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.ravioli_table_1.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.ravioli_table_2.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.ravioli_table_3.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.ravioli_table_4.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.noodles_tables.products.article': `MarkdownRemark.frontmatter.articleNr`,
-    'MarkdownRemark.frontmatter.season_tables.products.article': `MarkdownRemark.frontmatter.articleNr`,
     'MarkdownRemark.frontmatter.tables.products.article': `MarkdownRemark.frontmatter.articleNr`,
+  },
+  siteMetadata: {
+    nav: {
+      de: {
+        main: [
+          { to: "/", text: "Home" },
+          { to: "/standorte", text: "Standorte" },
+          { to: "/produkte/", text: "Produkte" },
+          { to: "/preisliste/", text: "Preisliste" },
+          { to: "/konditionen", text: "Konditionen" },
+          { to: "/kontakt", text: "Kontakt" },
+          { to: "/links", text: "Links" }
+        ],
+        sub: {
+          heading: "Unsere Produkt&shy;kategorien",
+          links: [
+            { 
+              to: "/produkte/gnocchi", 
+              text: "Gnocchi" 
+            },
+            { 
+              to: "/produkte/ravioli",
+              text: "Ravioli"
+            },
+            {
+              to: "/produkte/nudeln",
+              text: "Nudeln"
+            },
+            {
+              to: "/produkte/saison_und_spez",
+              text: "Saisonprodukte & Spezialitäten"
+            },
+            {
+              to: "/produkte/spezial",
+              text: "Teigwaren mit Spezialfüllung"
+            },
+            {
+              to: "/produkte/vegan",
+              text: "Ingredienza goes vegan"
+            },
+            {
+              to: "/produkte/fatto_a_mano",
+              text: "Fatto a mano"
+            }
+          ]
+        }
+      },
+      fr: {
+        main: [
+          { to: "/fr/", text: "Page d’accueil" },
+          { to: "/fr/lieux", text: "Lieux de vente" },
+          { to: "/fr/produits/", text: "Produits" },
+          { to: "/fr/tarifs/", text: "Tarifs" },
+          { to: "/fr/conditions", text: "Conditions de vente" },
+          { to: "/fr/contact", text: "Contact" },
+          { to: "/fr/links", text: "Liens" }
+        ],
+        sub: {
+          heading: "Nos catégories de produits",
+          links: [
+            { 
+              to: "/fr/produits/gnocchi", 
+              text: "Gnocchi" 
+            },
+            { 
+              to: "/fr/produits/ravioli",
+              text: "Ravioli"
+            },
+            {
+              to: "/fr/produits/pates",
+              text: "Pâtes"
+            },
+            {
+              to: "/fr/produits/saison",
+              text: "Produits de saison"
+            },
+            {
+              to: "/fr/produits/speciales",
+              text: "Pâtes et farces spéciales"
+            },
+            {
+              to: "/fr/produits/vegan",
+              text: "Ingredienza version végétalienne"
+            },
+            {
+              to: "/fr/produits/fatto_a_mano",
+              text: "Fatto a mano"
+            },
+          ]
+        }
+      }
+    }
   }
 }

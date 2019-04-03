@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/vegan
 image: /assets/veganbg.png
 meta:

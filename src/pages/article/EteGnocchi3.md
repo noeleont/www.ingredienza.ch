@@ -1,12 +1,9 @@
 ---
 templateKey: "article-page"
-lang: "de"
-category: "gnocchi"
-table: 2
-order: 3
 articleNr: ""
-description: "... mit frischem Rosmarin"
-unit: "3kg TK"
+description_de: "... mit frischem Rosmarin"
+description_fr: " "
+unit: "3"
 price: "13.--"
 ---
 
