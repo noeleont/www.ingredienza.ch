@@ -1,8 +1,9 @@
 ---
-templateKey: "article-page"
-articleNr: ""
-description_de: "... mit Steinpilzen"
-description_fr: " "
-unit: "3"
-price: "11.50"
+templateKey: article-page
+articleNr: Automne
+description_de: '  '
+description_fr: ' … aux bolets'
+unit: '3'
+price: '11.50'
 ---
+
