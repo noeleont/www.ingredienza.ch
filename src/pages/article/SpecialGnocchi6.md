@@ -1,8 +1,9 @@
 ---
-templateKey: "article-page"
-articleNr: ""
-description_de: "... mit schwarzen Oliven"
-description_fr: " "
-unit: "3"
-price: "11.50"
+templateKey: article-page
+articleNr: '60052'
+description_de: ... mit schwarzen Oliven
+description_fr: ' … aux olives noires'
+unit: '3'
+price: '11.50'
 ---
+
