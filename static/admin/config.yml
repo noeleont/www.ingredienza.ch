@@ -9,7 +9,9 @@ collections:
   - name: "article"
     label: "Artikel"
     folder: "src/pages/article"
+    slug: "{{slug}}"
     create: true
+    identifier_field: articleNr
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page"}
       - {label: "Artikel Nummer", name: "articleNr", widget: "string"}
