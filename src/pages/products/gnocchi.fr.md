@@ -1,6 +1,5 @@
 ---
 templateKey: products-fr-page
-lang: fr
 path: /fr/produits/gnocchi
 image: /assets/gnocchibg.png
 meta:
@@ -9,55 +8,63 @@ meta:
     ainsi sont les gnocchis d’Ingredienza. Ils présentent une vaste palette de
     goûts et se dégustent en accompagnement ou en plat principal. ► Découvrir
     nos gnocchis
-  keywords: Gnocchi 
+  keywords: Gnocchi
   title: Gnocchi d'Ingredienza | Ingredienza
 tables:
-  - heading: Assortiment courant de gnocchi 
-    outro: >-
-    showColName: true
+  - heading: Assortiment courant de gnocchi
+    outro: ''
     products:
       - article: '60035'
         showArticleNr: true
-      - article: '60035CH'
+      - article: 60035CH
         showArticleNr: true
       - article: '60036'
         showArticleNr: true
       - article: '60050'
         showArticleNr: true
-      - article: '60035SAF'
+      - article: 60035SAF
         showArticleNr: true
-  - heading: Gnocchi saisonniers 
+    showColName: true
+  - heading: Gnocchi saisonniers
     outro: >-
       Les gnocchi saisonales sont aussi disponibles hors saison. <br />
       Quantité minimale: 7&cent; de 3kg
-    showColName: false 
     products:
-      - article: '60035'
+      - article: 60035Juli
         showArticleNr: true
-      - article: '60035CH'
+      - article: 60035ROS
         showArticleNr: true
-      - article: '60036'
+      - article: 60035Juni
         showArticleNr: true
-      - article: '60050'
+      - article: Automne
         showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: Gnocchi spéciaux 
+    showColName: false
+  - heading: Gnocchi spéciaux
     outro: >-
       Les gnocchi spéciaux sont disponibles sur commande uniquement.<br />
       Quantité minimale: 7&cent; de 3kg
-    showColName: false 
     products:
-      - article: '60035'
+      - article: 60035R
         showArticleNr: true
-      - article: '60035CH'
+      - article: '60056'
         showArticleNr: true
-      - article: '60036'
+      - article: 60035J
         showArticleNr: true
-      - article: '60050'
+      - article: '60055'
         showArticleNr: true
-      - article: '60035SAF'
+      - article: 60035N
         showArticleNr: true
+      - article: '60052'
+        showArticleNr: true
+      - article: '60058'
+        showArticleNr: true
+      - article: '60057'
+        showArticleNr: true
+      - article: '60045'
+        showArticleNr: true
+      - article: 60035F
+        showArticleNr: true
+    showColName: false
 ---
 
 # Des gnocchis aussi créatifs que variés
