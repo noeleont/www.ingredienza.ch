@@ -34,12 +34,42 @@ tables:
         showArticleNr: true
       - article: Sommer
         showArticleNr: true
+      - article: 60035ROS
+        showArticleNr: true
+      - article: 60035Juli
+        showArticleNr: true
+      - article: 60035Juni
+        showArticleNr: true
+      - article: Herbst
+        showArticleNr: true
+      - article: 60035S
+        showArticleNr: true
     showColName: false
   - heading: Spezial-Gnocchi
     outro: >-
       Unsere Spezialgnocchi sind nur auf Bestellung erhältlich. <br />
       Mindestbestellmenge 7&cent; &agrave; 3kg
-    products: []
+    products:
+      - article: 60035N
+        showArticleNr: true
+      - article: '60058'
+        showArticleNr: true
+      - article: 60035J
+        showArticleNr: true
+      - article: '60056'
+        showArticleNr: true
+      - article: 60035R
+        showArticleNr: true
+      - article: '60045'
+        showArticleNr: true
+      - article: '60052'
+        showArticleNr: true
+      - article: '60055'
+        showArticleNr: true
+      - article: '60057'
+        showArticleNr: true
+      - article: 60035F
+        showArticleNr: true
     showColName: false
 ---
 
