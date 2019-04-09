@@ -1,6 +1,5 @@
 ---
 templateKey: products-page
-lang: de
 path: /produkte/vegan
 image: /assets/veganbg.png
 meta:
@@ -9,39 +8,39 @@ meta:
     das Passende. Genau das Richtige für Ihre vegane Kunden. Pasta kann auch
     vegan wunderbar schmecken. Mit Aubergine, Basilikum oder Spinat im Dinkel-
     oder Kurkumateig.  ► Entdecken Sie unsere veganen Teigwaren
-  keywords: Vegane Teigwaren 
+  keywords: Vegane Teigwaren
   title: Vegane Teigwaren von Ingredienza | Ingredienza
 tables:
-  - heading:
-    outro: >-
-      Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.  <br />
-      Mindestbestellung 5&cent; &agrave; 3kg
+  - outro: ''
+    products:
+      - article: BVITA007
+        showArticleNr: true
+      - article: BV40002
+        showArticleNr: true
+      - article: BV50012
+        showArticleNr: true
+      - article: BVITA005
+        showArticleNr: true
+      - article: BVITA005R
+        showArticleNr: true
+      - article: V40003
+        showArticleNr: true
+      - article: V40001
+        showArticleNr: true
+      - article: V40005
+        showArticleNr: true
+    showColName: false
+  - outro: |-
+      Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.
+      Mindestbestellung 5¢ à 3kg
+    products:
+      - article: BV600025
+        showArticleNr: true
+      - article: BV600135
+        showArticleNr: true
     showColName: true
-    products:
-      - article: 'B60002'
-        showArticleNr: true
-      - article: '60035CH'
-        showArticleNr: true
-      - article: '60036'
-        showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: 
-    outro: >-
-    showColName: false 
-    products:
-      - article: '60003'
-        showArticleNr: true
-      - article: '60035CH'
-        showArticleNr: true
-      - article: '60036'
-        showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
+  - outro: Vegane Wunsch-Nudeln auf Anfrage.
+    showColName: true
 ---
  
 # Vegane Teig&shy;waren aus Bern
