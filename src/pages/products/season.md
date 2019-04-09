@@ -1,6 +1,5 @@
 ---
 templateKey: products-page
-lang: de
 path: /produkte/saison_und_spez
 image: /assets/seasonbg.png
 meta:
@@ -9,59 +8,69 @@ meta:
     Saisonprodukte. Wir kreieren für unsere Kunden saisongerechte Pasta aus
     Saisongemüse. Frischer geht's nicht. ► Entdecken Sie unsere
     Saison-Empfehlungen
-  keywords: Pasta, Saisongemüse 
+  keywords: 'Pasta, Saisongemüse'
   title: Pasta aus Saisongemüse | Ingredienza
 tables:
-  - heading: Frühling Februar bis Mai 
-    outro: >-
+  - heading: Frühling Februar bis Mai
+    outro: ''
+    products:
+      - article: B40013
+        showArticleNr: true
+      - article: '40019'
+        showArticleNr: true
+      - article: '50017'
+        showArticleNr: true
+      - article: '50007'
+        showArticleNr: true
+      - article: B60024
+        showArticleNr: true
+      - article: '60037'
+        showArticleNr: true
     showColName: true
+  - heading: Sommer Juni bis August
+    outro: ''
     products:
-      - article: 'B60002'
+      - article: B20004
         showArticleNr: true
-      - article: '60035CH'
+      - article: B40040
         showArticleNr: true
-      - article: '60036'
+      - article: BITA002
         showArticleNr: true
-      - article: '60050'
+      - article: '50020'
         showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: Sommer Juni bis August 
-    outro: >-
-    showColName: true 
+    showColName: true
+  - heading: 'Herbst / Winter, September bis Januar'
+    outro: ''
     products:
-      - article: '60003'
+      - article: B40007
         showArticleNr: true
-      - article: '60035CH'
+      - article: BITA009
         showArticleNr: true
-      - article: '60036'
+      - article: '40020'
         showArticleNr: true
-      - article: '60050'
+      - article: '40041'
         showArticleNr: true
-      - article: '60035SAF'
+      - article: B60016
         showArticleNr: true
-  - heading: Herbst / Winter, September bis Januar 
-    outro: >-
-    showColName: true 
-    products:
-      - article: 'B60015'
+      - article: B60007
         showArticleNr: true
-      - article: '60035CH'
+      - article: B60025
         showArticleNr: true
-      - article: '60036'
+      - article: '60028'
         showArticleNr: true
-      - article: '60050'
+      - article: 60035RK
         showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
+    showColName: true
   - heading: Spezialitäten
-    outro: >-
-    showColName: true 
+    outro: ''
     products:
-      - article: 'B60015'
+      - article: BITA001
         showArticleNr: true
-      - article: '60035CH'
+      - article: BITA011
         showArticleNr: true
+      - article: 60035RS
+        showArticleNr: true
+    showColName: true
 ---
  
 # Saison­produkte
