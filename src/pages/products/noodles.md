@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/nudeln
 image: /assets/noodlesbg.png
 meta:
@@ -20,7 +21,9 @@ tables:
         showArticleNr: true
     showColName: true
   - heading: Konventionelle Nudeln
-    outro: ''
+    outro: >-
+      Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.  <br />
+      Mindestbestellung 5&cent; &agrave; 3kg
     products:
       - article: '60003'
         showArticleNr: true
@@ -28,9 +31,7 @@ tables:
         showArticleNr: true
     showColName: true
   - heading: ''
-    outro: >-
-      Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.  <br />
-      Mindestbestellung 5&cent; &agrave; 3kg
+    outro: ''
     products:
       - article: B60015
         showArticleNr: true

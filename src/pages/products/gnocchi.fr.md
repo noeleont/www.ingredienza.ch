@@ -1,5 +1,6 @@
 ---
 templateKey: products-fr-page
+lang: fr
 path: /fr/produits/gnocchi
 image: /assets/gnocchibg.png
 meta:

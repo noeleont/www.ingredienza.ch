@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/ravioli
 image: /assets/raviolibg.png
 meta:

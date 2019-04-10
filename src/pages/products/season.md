@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/saison_und_spez
 image: /assets/seasonbg.png
 meta:

@@ -28,6 +28,7 @@ collections:
         name: "Index Page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -41,6 +42,7 @@ collections:
         name: "Places Page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "places-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/standorte/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -89,6 +91,7 @@ collections:
         name: "Preisliste"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pricelist-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/preisliste/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -102,6 +105,7 @@ collections:
         name: "Konditionen"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/konditionen/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -115,6 +119,7 @@ collections:
         name: "Kontakt"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/kontakt/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -128,6 +133,7 @@ collections:
         name: "Datenschutz"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/datenschutz/"}
           - {label: Image, required: false, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -141,6 +147,7 @@ collections:
         name: "Impressum"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/impressum/"}
           - {label: Image, required: false, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -158,6 +165,7 @@ collections:
         name: "Hauptseite"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -171,6 +179,7 @@ collections:
         name: "Fatto a Mano"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/fatto_a_mano/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -209,6 +218,7 @@ collections:
         name: "Gnocchi"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/gnocchi/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -247,6 +257,7 @@ collections:
         name: "Ravioli"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/ravioli/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -285,6 +296,7 @@ collections:
         name: "Nudeln"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/nudeln/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -323,6 +335,7 @@ collections:
         name: "Saisonprodukte"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/saison_und_spez/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -361,6 +374,7 @@ collections:
         name: "Spezialitäten"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/spezial/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -399,6 +413,7 @@ collections:
         name: "vegan"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/vegan/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -440,6 +455,7 @@ collections:
         name: "Index Page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -453,6 +469,7 @@ collections:
         name: "Places Page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "places-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/lieux"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -501,6 +518,7 @@ collections:
         name: "Preisliste"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pricelist-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/tarifs/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -514,6 +532,7 @@ collections:
         name: "Konditionen"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/conditions"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -527,6 +546,7 @@ collections:
         name: "Kontakt"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/contact/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -540,6 +560,7 @@ collections:
         name: "Datenschutz"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/protection/"}
           - {label: Image, required: false, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -553,6 +574,7 @@ collections:
         name: "Impressum"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "default-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/legales/"}
           - {label: Image, required: false, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -570,6 +592,7 @@ collections:
         name: "Hauptseite"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/produkte/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -583,6 +606,7 @@ collections:
         name: "Fatto a Mano"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/produits/fatto_a_mano/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -621,6 +645,7 @@ collections:
         name: "Gnocchi"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/produits/gnocchi"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -659,6 +684,7 @@ collections:
         name: "Ravioli"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/produits/ravioli"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -697,6 +723,7 @@ collections:
         name: "Nudeln"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/produits/pates"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -735,6 +762,7 @@ collections:
         name: "Saisonprodukte"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/produits/saison"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -773,6 +801,7 @@ collections:
         name: "Spezialitäten"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/produits/speciales"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [
@@ -811,6 +840,7 @@ collections:
         name: "vegan"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-fr-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "fr"}
           - {label: Path, name: path, widget: hidden, default: "/fr/produits/vegan/"}
           - {label: Image, name: image, widget: image}
           - {label: Meta, name: meta, widget: object, fields: [

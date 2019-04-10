@@ -1,5 +1,6 @@
 ---
 templateKey: products-page
+lang: de
 path: /produkte/vegan
 image: /assets/veganbg.png
 meta:
@@ -11,7 +12,9 @@ meta:
   keywords: Vegane Teigwaren
   title: Vegane Teigwaren von Ingredienza | Ingredienza
 tables:
-  - outro: ''
+  - outro: >-
+      Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.
+      Mindestbestellung 5¢ à 3kg
     products:
       - article: BVITA007
         showArticleNr: true
@@ -29,18 +32,14 @@ tables:
         showArticleNr: true
       - article: V40005
         showArticleNr: true
-    showColName: false
-  - outro: |-
-      Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.
-      Mindestbestellung 5¢ à 3kg
+    showColName: true 
+  - outro: Vegane Wunsch-Nudeln auf Anfrage.
     products:
       - article: BV600025
         showArticleNr: true
       - article: BV600135
         showArticleNr: true
-    showColName: true
-  - outro: Vegane Wunsch-Nudeln auf Anfrage.
-    showColName: true
+    showColName: false 
 ---
  
 # Vegane Teig&shy;waren aus Bern
