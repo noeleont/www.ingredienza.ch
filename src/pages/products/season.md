@@ -12,7 +12,7 @@ meta:
   keywords: 'Pasta, Saisongemüse'
   title: Pasta aus Saisongemüse | Ingredienza
 tables:
-  - heading: Frühling Februar bis Mai
+  - heading: Frühling (Februar bis Mai)
     outro: ''
     products:
       - article: B40013
@@ -28,7 +28,7 @@ tables:
       - article: '60037'
         showArticleNr: true
     showColName: true
-  - heading: Sommer Juni bis August
+  - heading: Sommer (Juni bis August)
     outro: ''
     products:
       - article: B20004
@@ -40,7 +40,7 @@ tables:
       - article: '50020'
         showArticleNr: true
     showColName: true
-  - heading: 'Herbst / Winter, September bis Januar'
+  - heading: Herbst / Winter (September bis Januar)
     outro: ''
     products:
       - article: B40007
@@ -58,6 +58,8 @@ tables:
       - article: B60025
         showArticleNr: true
       - article: '60028'
+        showArticleNr: true
+      - article: 60035S
         showArticleNr: true
       - article: 60035RK
         showArticleNr: true
