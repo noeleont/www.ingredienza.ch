@@ -103,9 +103,9 @@ const ProductRow = ({ product, lang }) => {
 
 
 
-const ProductRowDe = ({ product: { articleNr, description, unit, price } }) => (
+const ProductRowDe = ({ product: { showArticleNr, articleNr, description, unit, price } }) => (
   <tr>
-    <td>{articleNr}</td>
+    {showArticleNr ? (<td> {articleNr} </td>) : (<td />)}
     <td>{description}</td>
     {unit ? (<td>{`¢ à ${unit}kg TK`}</td>) : (<td />)}
     {// Check if string starts with a number
