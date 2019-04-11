@@ -1,6 +1,6 @@
 ---
 templateKey: products-fr-page
-lang: fr 
+lang: fr
 path: /fr/produits/vegan
 image: /assets/veganbg.png
 meta:
@@ -11,40 +11,37 @@ meta:
     clientèle végétalienne sera comblée par nos préparations à base d’aubergine,
     de basilic ou d’épinard dans un habillage à l’épeautre ou au curcuma.  ►
     Découvrir nos pâtes végétaliennes
-  keywords: pâtes végétaliennes 
+  keywords: pâtes végétaliennes
   title: Pâtes végétaliennes d'Ingredienza | Ingredienza
 tables:
-  - heading:
-    outro: >-
+  - outro: >-
       Les produits suivants sont disponibles sur commande uniquement.  <br />
       Quantité minimale: 5&cent; de 3kg
+    products:
+      - article: BVITA007
+        showArticleNr: true
+      - article: BV40002
+        showArticleNr: true
+      - article: BV50012
+        showArticleNr: true
+      - article: BVITA005
+        showArticleNr: true
+      - article: BVITA005R
+        showArticleNr: true
+      - article: V40001
+        showArticleNr: true
+      - article: V40003
+        showArticleNr: true
+      - article: V40005
+        showArticleNr: true
     showColName: true
+  - outro: Pâtes véganes sur demande.
     products:
-      - article: 'B60002'
+      - article: BV600025
         showArticleNr: true
-      - article: '60035CH'
+      - article: BV600135
         showArticleNr: true
-      - article: '60036'
-        showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: 
-    outro: >-
-      Pâtes véganes sur demande.
-    showColName: false 
-    products:
-      - article: '60003'
-        showArticleNr: true
-      - article: '60035CH'
-        showArticleNr: true
-      - article: '60036'
-        showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
+    showColName: false
 ---
  
 # Pâtes végétaliennes de Berne
