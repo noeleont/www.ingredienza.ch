@@ -1,73 +1,85 @@
 ---
 templateKey: products-fr-page
-lang: fr 
+lang: fr
 path: /fr/produits/ravioli
 image: /assets/raviolibg.png
 meta:
-  description: >-
-    Nos raviolis se déclinent sous toutes les formes imaginables. Les
-    souhaitez-vous farcis à la viande ou au poisson ? Aux légumes, aux herbes ou
-    au fromage ? Nous élaborons des raviolis raffinés en explorant le champ des
-    possibles. ► Découvrir notre assortiment de raviolis
-  keywords: Bio, Ravioli 
+  description: "Nos raviolis se déclinent sous toutes les formes imaginables. Les souhaitez-vous farcis à la viande ou au poisson\_? Aux légumes, aux herbes ou au fromage\_? Nous élaborons des raviolis raffinés en explorant le champ des possibles. ► Découvrir notre assortiment de raviolis"
+  keywords: 'Bio, Ravioli'
   title: Raviolis d’Ingredienza | Ingredienza
 tables:
-  - heading: ... aux herbes et aux légumes 
-    outro: >-
+  - heading: ... aux herbes et aux légumes
+    outro: ''
+    products:
+      - article: BITA007
+        showArticleNr: true
+      - article: B20001
+        showArticleNr: true
+      - article: B10006
+        showArticleNr: true
+      - article: BITA005
+        showArticleNr: true
+      - article: B30001
+        showArticleNr: true
+      - article: B50002
+        showArticleNr: true
+      - article: B50001
+        showArticleNr: true
+      - article: BITA003
+        showArticleNr: true
+      - article: B40006
+        showArticleNr: true
+      - article: BITA008M
+        showArticleNr: true
+      - article: BITA008
+        showArticleNr: true
+      - article: '40042'
+        showArticleNr: true
+      - article: ITA004
+        showArticleNr: true
+      - article: '10003'
+        showArticleNr: true
+      - article: '40002'
+        showArticleNr: true
+      - article: '20002'
+        showArticleNr: true
     showColName: true
+  - heading: ... à la viande et au poisson
+    outro: ''
     products:
-      - article: '60035'
+      - article: '40004'
         showArticleNr: true
-      - article: '60035CH'
+      - article: '50011'
         showArticleNr: true
-      - article: '60036'
+      - article: '40030'
         showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: ... à la viande et au poisson 
-    outro: >-
     showColName: true
+  - heading: ... aux champignons
+    outro: ''
     products:
-      - article: '60035'
+      - article: '40005'
         showArticleNr: true
-      - article: '60035CH'
+      - article: '50021'
         showArticleNr: true
-      - article: '60036'
+      - article: '40010'
         showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: ... aux champignons 
-    outro: >-
-    showColName: true 
+    showColName: true
+  - heading: ... au fromage
+    outro: ''
     products:
-      - article: '60035'
+      - article: B50004
         showArticleNr: true
-      - article: '60035CH'
+      - article: B40001
         showArticleNr: true
-      - article: '60036'
+      - article: '40021'
         showArticleNr: true
-      - article: '60050'
+      - article: 40021Q
         showArticleNr: true
-      - article: '60035SAF'
+      - article: '40018'
         showArticleNr: true
-  - heading: ... au fromage 
-    outro: >-
-    showColName: true 
-    products:
-      - article: '60035'
+      - article: '40044'
         showArticleNr: true
-      - article: '60035CH'
-        showArticleNr: true
-      - article: '60036'
-        showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
+    showColName: true
 ---
 
 # Nos délicieux raviolis 
