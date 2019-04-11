@@ -9,53 +9,76 @@ meta:
     et fraîchement confectionnées, elles sont d’un bel effet dans l’assiette. De
     plus, elles sont disponibles en différentes largeurs. ► Découvrir les pâtes
     en rubans d’Ingredienza
-  keywords: Pâtes en rubans 
+  keywords: Pâtes en rubans
   title: Pâtes en rubans d’Ingredienza | Ingredienza
 tables:
-  - heading: Pâtes biologiques 
-    outro: >-
-    showColName: true
+  - heading: Pâtes biologiques
+    outro: ''
     products:
-      - article: 'B60002'
+      - article: B60002
         showArticleNr: true
-      - article: '60035CH'
+      - article: B60013
         showArticleNr: true
-      - article: '60036'
-        showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: Pâtes classiques 
+    showColName: true
+  - heading: Pâtes classiques
     outro: >-
       Les produits suivants sont disponibles sur commande uniquement. <br />
       Quantité minimale: 5&cent; de 3kg
-    showColName: true 
     products:
       - article: '60003'
         showArticleNr: true
-      - article: '60035CH'
+      - article: '60023'
         showArticleNr: true
-      - article: '60036'
-        showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: 
-    outro: >-
-    showColName: true 
+    showColName: true
+  - outro: ''
     products:
-      - article: 'B60015'
+      - article: B60005
         showArticleNr: true
-      - article: '60035CH'
+      - article: B60014
         showArticleNr: true
-      - article: '60036'
+      - article: B60015
         showArticleNr: true
-      - article: '60050'
+      - article: B60011
         showArticleNr: true
-      - article: '60035SAF'
+      - article: B60021
         showArticleNr: true
+      - article: B60026
+        showArticleNr: true
+      - article: B60008
+        showArticleNr: true
+      - article: B60046
+        showArticleNr: true
+      - article: B60027
+        showArticleNr: true
+      - article: B60029
+        showArticleNr: true
+      - article: B60017
+        showArticleNr: true
+      - article: B60018
+        showArticleNr: true
+      - article: B60042
+        showArticleNr: true
+      - article: B60022
+        showArticleNr: true
+      - article: B60012
+        showArticleNr: true
+      - article: B60030
+        showArticleNr: true
+      - article: B60032
+        showArticleNr: true
+      - article: B60033
+        showArticleNr: true
+      - article: B60001
+        showArticleNr: true
+      - article: B60020
+        showArticleNr: true
+      - article: B60006
+        showArticleNr: true
+      - article: B60010
+        showArticleNr: true
+      - article: '60019'
+        showArticleNr: true
+    showColName: true
 ---
  
 # Nos pâtes en rubans de différentes largeurs
