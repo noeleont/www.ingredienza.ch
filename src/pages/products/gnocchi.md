@@ -36,15 +36,15 @@ tables:
       - article: Sommer
         showArticleNr: true
       - article: 60035ROS
-        showArticleNr: true
+        showArticleNr: false
       - article: 60035Juli
-        showArticleNr: true
+        showArticleNr: false
       - article: 60035Juni
-        showArticleNr: true
+        showArticleNr: false
       - article: Herbst
         showArticleNr: true
-      - article: 60035S
-        showArticleNr: true
+      - article: Automne
+        showArticleNr: false
     showColName: false
   - heading: Spezial-Gnocchi
     outro: >-
