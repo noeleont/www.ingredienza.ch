@@ -36,15 +36,15 @@ tables:
       - article: Eté
         showArticleNr: true
       - article: 60035Juli
-        showArticleNr: true
+        showArticleNr: false
       - article: 60035ROS
-        showArticleNr: true
+        showArticleNr: false
       - article: 60035Juni
-        showArticleNr: true
+        showArticleNr: false
       - article: Automne
         showArticleNr: true
       - article: '60044'
-        showArticleNr: true
+        showArticleNr: false
     showColName: false
   - heading: Gnocchi spéciaux
     outro: >-
