@@ -1,6 +1,6 @@
 ---
 templateKey: products-fr-page
-lang: fr 
+lang: fr
 path: /fr/produits/saison
 image: /assets/seasonbg.png
 meta:
@@ -9,59 +9,71 @@ meta:
     nous tenons à proposer des produits en accord avec les saisons. Nous créons
     pour nos clients des pâtes aux légumes de saison. Fraîches et appétissantes.
     ► Découvrir nos recommandations de la saison
-  keywords: Pâtes,Légumes de saison 
+  keywords: 'Pâtes,Légumes de saison'
   title: Pâtes aux légumes de saison | Ingredienza
 tables:
-  - heading: Printemps, de février à mai 
-    outro: >-
+  - heading: 'Printemps, de février à mai'
+    outro: ''
+    products:
+      - article: B40013
+        showArticleNr: true
+      - article: '40019'
+        showArticleNr: true
+      - article: '50017'
+        showArticleNr: true
+      - article: '50007'
+        showArticleNr: true
+      - article: B60024
+        showArticleNr: true
+      - article: '60037'
+        showArticleNr: true
     showColName: true
+  - heading: 'Eté, de juin à août'
+    outro: ''
     products:
-      - article: 'B60002'
+      - article: BITA002
         showArticleNr: true
-      - article: '60035CH'
+      - article: B20004
         showArticleNr: true
-      - article: '60036'
+      - article: B40040
         showArticleNr: true
-      - article: '60050'
+      - article: '50020'
         showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: Eté, de juin à août 
-    outro: >-
-    showColName: true 
+    showColName: true
+  - heading: 'Automne-hiver, de septembre à janvier'
+    outro: ''
     products:
-      - article: '60003'
+      - article: BITA009
         showArticleNr: true
-      - article: '60035CH'
+      - article: B40007
         showArticleNr: true
-      - article: '60036'
+      - article: '40020'
         showArticleNr: true
-      - article: '60050'
+      - article: '40041'
         showArticleNr: true
-      - article: '60035SAF'
+      - article: B60016
         showArticleNr: true
-  - heading: Automne-hiver, de septembre à janvier 
-    outro: >-
-    showColName: true 
+      - article: B60025
+        showArticleNr: true
+      - article: B60007
+        showArticleNr: true
+      - article: '60028'
+        showArticleNr: true
+      - article: 60035S
+        showArticleNr: true
+      - article: 60035RK
+        showArticleNr: true
+    showColName: true
+  - heading: Spécialités
+    outro: ''
     products:
-      - article: 'B60015'
+      - article: BITA001
         showArticleNr: true
-      - article: '60035CH'
+      - article: BITA011
         showArticleNr: true
-      - article: '60036'
+      - article: 60035RS
         showArticleNr: true
-      - article: '60050'
-        showArticleNr: true
-      - article: '60035SAF'
-        showArticleNr: true
-  - heading: Spécialités 
-    outro: >-
-    showColName: true 
-    products:
-      - article: 'B60015'
-        showArticleNr: true
-      - article: '60035CH'
-        showArticleNr: true
+    showColName: true
 ---
  
 # Produits de saison 
