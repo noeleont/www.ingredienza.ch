@@ -31,6 +31,10 @@ tables:
       Les gnocchi saisonales sont aussi disponibles hors saison. <br />
       Quantité minimale: 7&cent; de 3kg
     products:
+      - article: Printemps
+        showArticleNr: true
+      - article: Eté
+        showArticleNr: true
       - article: 60035Juli
         showArticleNr: true
       - article: 60035ROS
@@ -38,6 +42,8 @@ tables:
       - article: 60035Juni
         showArticleNr: true
       - article: Automne
+        showArticleNr: true
+      - article: '60044'
         showArticleNr: true
     showColName: false
   - heading: Gnocchi spéciaux
