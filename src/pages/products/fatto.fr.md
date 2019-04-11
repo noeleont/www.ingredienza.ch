@@ -9,12 +9,10 @@ meta:
     sommes heureux de vous présenter notre haut de gamme, confectionné à la main
     avec le plus grand soin. Ces pâtes sont réalisées à Berne même. Pour une
     clientèle exigeante. ► Découvrir la sélection haut de gamme d’Ingredienza
-  keywords: Raviolis de gourmets 
+  keywords: Raviolis de gourmets
   title: Raviolis de gourmets d’Ingredienza | Ingredienza
 tables:
-  - headgin:
-    outro: >-
-    showColName: true
+  - outro: ''
     products:
       - article: '70020'
         showArticleNr: true
@@ -26,6 +24,7 @@ tables:
         showArticleNr: true
       - article: '70050'
         showArticleNr: true
+    showColName: true
 ---
 
 # Fatto a Mano
