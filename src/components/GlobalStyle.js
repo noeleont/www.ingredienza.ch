@@ -3,6 +3,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0px;
 
+    font-family: 'Libre Franklin','Helvetica Neue',sans-serif;
+
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-overflow-scrolling: touch;
     /*
@@ -45,6 +47,9 @@ const GlobalStyle = createGlobalStyle`
     :hover {
       border-bottom-color: rgba( 0, 0, 0, .35 );
     }
+  }
+  h1, h2, h3 {
+    font-family: 'Georgia',serif;
   }
 `
 
