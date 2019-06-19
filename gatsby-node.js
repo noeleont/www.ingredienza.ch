@@ -33,6 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(edge => {
       const id = edge.node.id
+      console.log(edge.node.frontmatter.path);
       const url = edge.node.frontmatter.path ? edge.node.frontmatter.path : edge.node.fields.slug;
       createPage({
         path: url,

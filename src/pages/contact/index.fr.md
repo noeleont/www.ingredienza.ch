@@ -1,7 +1,7 @@
 ---
 templateKey: 'default-page'
 lang: fr 
-path: /fr/contact
+path: /fr/relation
 image: /assets/contactbg.png
 meta:
   title: Contact | Ingredienza 

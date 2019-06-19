@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -139,7 +140,7 @@ module.exports = {
           { to: "/fr/produits/", text: "Produits" },
           { to: "/fr/tarifs/", text: "Tarifs" },
           { to: "/fr/conditions", text: "Conditions de vente" },
-          { to: "/fr/contact", text: "Contact" },
+          { to: "/fr/relation/", text: "Contact" },
           { to: "/fr/links", text: "Liens" }
         ],
         sub: {

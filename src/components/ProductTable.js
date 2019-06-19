@@ -6,7 +6,7 @@ const ProductTable = styled.table`
   border-color: #000;
   
   max-width: 900px;
-  min-width: 500px;
+  min-width: 520px;
   position: relative; 
   padding: 0px;
   td {
