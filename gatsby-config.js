@@ -97,7 +97,6 @@ module.exports = {
           { to: "/preisliste/", text: "Preisliste" },
           { to: "/konditionen", text: "Konditionen" },
           { to: "/kontakt", text: "Kontakt" },
-          { to: "/links", text: "Links" }
         ],
         sub: {
           heading: "Unsere Produkt&shy;kategorien",
@@ -141,7 +140,6 @@ module.exports = {
           { to: "/fr/tarifs/", text: "Tarifs" },
           { to: "/fr/conditions", text: "Conditions de vente" },
           { to: "/fr/relation/", text: "Contact" },
-          { to: "/fr/links", text: "Liens" }
         ],
         sub: {
           heading: "Nos catégories de produits",

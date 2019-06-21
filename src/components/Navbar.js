@@ -163,7 +163,7 @@ const Toggle = styled.div`
 
 const Menu = styled.ul`
   position: absolute;
-  width: 350px;
+  width: 250px;
   margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
@@ -188,7 +188,7 @@ const Menu = styled.ul`
 
   li {
       display: table;
-      padding: 10px 0 0 0;
+      padding: 20px 0 0 0;
       font-size: 22px;
       transition: all 0.3s ease;
       border-bottom: .1rem solid transparent;
@@ -253,16 +253,20 @@ const HeaderTemplate = ({ links }) => (
         <span></span>
         <Menu>
           {links.map(link =>(
-            <Link to={link.to} key={link.to}>
-              <li>{link.text}</li>
-            </Link>
+            <li>
+              <Link to={link.to} key={link.to}>
+                {link.text}
+              </Link>
+            </li>
           ))}
-          <a 
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://bestswiss.ch/marken/ingredienza">
-            <Seal src={seal} alt="Best of Swiss Logo" />
-          </a>
+          <li>
+            <a 
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://bestswiss.ch/marken/ingredienza">
+              <Seal src={seal} alt="Best of Swiss Logo" />
+            </a>
+          </li>
         </Menu>
       </Toggle>
     </Navigation>

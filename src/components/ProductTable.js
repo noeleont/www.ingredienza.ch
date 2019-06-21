@@ -22,24 +22,27 @@ const ProductTable = styled.table`
   /* first column */
   td:nth-child(1) {
       vertical-align: top;
-      width: 93px;
+      max-width: 90px;
+      min-width: 85px;
   }
 
   /* second column */
   td:nth-child(2) {
       vertical-align: top;
+      min-width: 400px;
       width: 500px;
   }
 
   /* third column */
   td:nth-child(3) {  
       vertical-align: bottom;
-      width: 178px;
+      min-width: 130px;
   }
 
   /* fourth column */
   td:nth-child(4) {  
       vertical-align: bottom;
+      min-width: 65px;
       width: 100px;
   }
 `;
