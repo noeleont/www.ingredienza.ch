@@ -50,6 +50,9 @@ const ProductTable = styled.table`
 const ResponsiveTable = styled.div`
   white-space: pre-wrap;
 
+  /* Fixes iOS text resize issues */
+  -webkit-text-size-adjust: 100%;
+
   @media (min-width: 950px) {
       .table-module--tableResponsive--uKW8e {
             overflow-x:hidden;
