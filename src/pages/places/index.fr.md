@@ -1,6 +1,6 @@
 ---
 templateKey: places-page
-lang: fr 
+lang: fr
 path: /fr/lieux/
 image: /assets/placesbg.png
 meta:
@@ -8,68 +8,84 @@ meta:
     Nous sommes Ingredienza – la qualité des ingrédients et la variété de
     l’assortiment sont nos atouts. Les particuliers peuvent aussi acquérir nos
     produits sur plusieurs points de vente à Berne. ► Trouver un point de vente
-  keywords: Ingreidenza, Lieux 
+  keywords: 'Ingreidenza, Lieux'
   title: Vente aux particuliers | Ingredienza
 places:
   - address: 'Könizstrasse 291, 3089 Köniz'
     name: ängelibeck Boulangerie und Grand Café
     week:
       days: Lun - ven
-      hours: '6 h 30 - 19 h'
+      hours: 6 h 30 - 19 h
     weekend:
       days: Sa
-      hours: '7 h 30 - 17 h'
+      hours: 7 h 30 - 17 h
   - address: 'Schüpfenried, 3043 Uettligen'
-    name: Hofladen und ängelibeck 
+    name: Hofladen und ängelibeck
     week:
       days: Lun - ven
-      hours: '7 h 30 - 18 h 30'
+      hours: 7 h 30 - 18 h 30
     weekend:
       days: Sa
-      hours: '7 h 30 - 17 h'
+      hours: 7 h 30 - 17 h
   - address: 'Monbijoustrasse 6, 3011 Bern'
-    name: Petit Couteau AG 
+    name: Petit Couteau AG
     week:
       days: Ma - ven
-      hours: '11 h - 19 h'
+      hours: 11 h - 19 h
     weekend:
       days: Sa
-      hours: '10 h - 16 h'
+      hours: 10 h - 16 h
   - address: 'Länggassstrasse 36, 3012 Bern'
-    info: 'Fermé le mercredi'
-    name: Bio-Metzgerei Wegmüller AU COCHON ROSE 
+    info: Fermé le mercredi
+    name: Bio-Metzgerei Wegmüller AU COCHON ROSE
     week:
       days: Lun - ven
-      hours: '8 h - 12 h 30\n14 h 30 - 18 h 30'
+      hours: 8 h - 12 h 30\n14 h 30 - 18 h 30
     weekend:
       days: Sa
-      hours: '8 h - 16 h'
+      hours: 8 h - 16 h
   - address: 'Weite Gasse 17, 5400 Baden'
-    info: 'Fermé le lundi'
-    name: PARADEIS 
+    info: Fermé le lundi
+    name: PARADEIS
     week:
       days: Ma - ven
-      hours: '9 h - 18 h 30'
+      hours: 9 h - 18 h 30
     weekend:
       days: Sa
-      hours: '9 h - 16 h'
+      hours: 9 h - 16 h
   - address: 'Untere Hauptgasse 5, 3600 Thun'
-    name: Simplyfine 
+    name: Simplyfine
     week:
       days: Lun - ven
-      hours: '8 h - 19 h'
+      hours: 8 h - 19 h
     weekend:
       days: Sa
-      hours: '8 h - 17 h'
+      hours: 8 h - 17 h
   - address: 'Konradstrasse 32, 4600 Olten'
-    info: 'Fermé le lundi'
-    name: Eguete delikat-essen-trinken GmbH 
+    info: Fermé le lundi
+    name: Eguete delikat-essen-trinken GmbH
     week:
       days: Ma - ven
-      hours: '9 h - 14 h\n16 h - 18 h 30'
+      hours: 9 h - 14 h\n16 h - 18 h 30
     weekend:
       days: Sa
-      hours: '8 h 30 - 16 h'
+      hours: 8 h 30 - 16 h
+  - address: Singerstrasse 12 4052 Basel (auf dem Wolf)
+    name: Frischeparadies Basel
+    week:
+      days: Lun - mer \nJeu - ven
+      hours: 10 h - 18 h \n10 h - 20 h
+    weekend:
+      days: Sa
+      hours: 7 h - 16 h
+  - address: Hardgutstrasse 11 8048 Zürich (beim Schlachthof)
+    name: Frischeparadies Zürich
+    week:
+      days: Lun - ven
+      hours: 10 h - 20 h
+    weekend:
+      days: Sa
+      hours: 9 h - 18 h
 ---
 
 # Vente aux particuliers
