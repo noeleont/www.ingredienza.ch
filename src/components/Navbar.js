@@ -190,12 +190,8 @@ const Menu = styled.ul`
       display: table;
       padding: 20px 0 0 0;
       font-size: 22px;
-      transition: all 0.3s ease;
-      border-bottom: .1rem solid transparent;
   }
-  li:hover  {
-      border-bottom-color: rgba( 0, 0, 0, .35 );
-  }
+
 `;
 
 const Seal = styled.img`
@@ -253,8 +249,8 @@ const HeaderTemplate = ({ links }) => (
         <span></span>
         <Menu>
           {links.map(link =>(
-            <li>
-              <Link to={link.to} key={link.to}>
+            <li key={link.to}>
+              <Link to={link.to}>
                 {link.text}
               </Link>
             </li>

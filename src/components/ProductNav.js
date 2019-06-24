@@ -71,10 +71,10 @@ const ProductNavigationTemplate = ({ links, heading }) => (
     <h2><div dangerouslySetInnerHTML={{ __html: heading }} /></h2>
     <ul>
       {links.map(link => (
-        <li>
-        <Link key={link.to} to={link.to}>
-          {link.text}
-        </Link>
+        <li key={link.to}>
+          <Link to={link.to}>
+            {link.text}
+          </Link>
         </li>
       ))}
     </ul>

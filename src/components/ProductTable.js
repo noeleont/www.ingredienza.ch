@@ -23,7 +23,7 @@ const ProductTable = styled.table`
   td:nth-child(1) {
       vertical-align: top;
       max-width: 90px;
-      min-width: 85px;
+      min-width: 87px;
   }
 
   /* second column */
@@ -119,9 +119,9 @@ const ProductRowDe = ({ product: { showArticleNr, articleNr, description, unit, 
   </tr>
 );
 
-const ProductRowFr = ({ product: { articleNr, description, unit, price } }) => (
+const ProductRowFr = ({ product: { showArticleNr, articleNr, description, unit, price } }) => (
   <tr>
-    <td>{articleNr}</td>
+    {showArticleNr ? (<td> {articleNr} </td>) : (<td />)}
     <td>{description}</td>
     {unit ? (<td>{`¢ de ${unit} kg surg`}</td>) : (<td />)}
     {// Check if string starts with a number
