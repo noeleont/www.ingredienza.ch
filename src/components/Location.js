@@ -186,7 +186,9 @@ export const Location = ({ name, address, info, week, weekend, lang }) => {
         { lang === "de"? "Öffnungszeiten:" : "Heures d’ouverture:" }
       </HoursDescription>
       <WeekDescription>
-        {week.days}
+				{week.days.split('\\n').map((day, key) => (
+					<span key={key}>{day}<br /></span>
+				))}
       </WeekDescription>
       <WeekHours>
 				{week.hours.split('\\n').map((hour, key) => (
