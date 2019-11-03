@@ -1,184 +1,125 @@
 import React from "react";
+import Img from "gatsby-image";
 
 import styled from "styled-components";
+
+const leftMargin = '0.1em';
+const mobileBreakPoint = '650px';
+const desktopBreakPoint = '850px';
+const between = `
+  (min-width: ${mobileBreakPoint}) and 
+  (max-width: calc(${desktopBreakPoint} - 1px))
+`;
 
 const Container = styled.div`
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
+
+  -ms-grid-columns:          auto;
       grid-template-columns: auto;
 
-  -ms-grid-rows:
-    auto auto auto;
-
-      grid-template-rows:
-    auto auto auto;
+  -ms-grid-rows:          auto auto auto; 
+      grid-template-rows: auto auto auto;
 
   margin-bottom: 20px; 
+  justify-items: center;
 
   white-space: pre-wrap;
-  @media (min-width: 650px) {
-    -ms-grid-columns: 1fr 1fr;
+  @media (min-width: ${desktopBreakPoint}) {
+    -ms-grid-columns:          1fr 1fr;
         grid-template-columns: 1fr 1fr;
 
-    -ms-grid-rows: auto auto;
-
+    -ms-grid-rows:          auto auto;
         grid-template-rows: auto auto;
   }
 `;
 
-const Name = styled.div`
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  @media (min-width: 650px) {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-`;
 
-const Address = styled.div`
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  @media (min-width: 650px) {
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-`;
-
-const Hours = styled.div`
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 3;
-  grid-row: 3;
-
+const ListItem = styled.div`
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
 
-  -ms-grid-rows:
-    auto auto auto auto;
+  -ms-grid-columns:          auto;
+      grid-template-columns: auto;
 
-      grid-template-rows:
-    auto auto auto auto;
-  @media (min-width: 650px) {
-    grid-column: 1 / 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    -ms-grid-row: 2;
-    grid-row: 2;
+  -ms-grid-rows:          auto auto auto; 
+      grid-template-rows: auto auto auto;
 
-    display: -ms-grid;
-    display: grid;
+  margin-bottom: 20px; 
 
-    -ms-grid-columns: 4fr 1fr 3fr;
-        grid-template-columns: 4fr 1fr 3fr;
+  white-space: pre-wrap;
+  @media ${between} {
+    -ms-grid-columns:          1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
-    -ms-grid-rows:
-      auto auto auto;
+    -ms-grid-rows:          auto auto;
+        grid-template-rows: auto auto;
+  
 
-    grid-template-rows:
-      auto auto auto;
+`;
+
+
+const Name = styled.h2`
+  -ms-grid-column: 1;
+      grid-column: 1;
+  -ms-grid-row: 2;
+      grid-row: 2;
+  @media ${between} {
+    margin-left: ${leftMargin};
+    -ms-grid-column: 2;
+        grid-column: 2;
+    -ms-grid-row: 1;
+        grid-row: 1;
   }
 `;
 
-const HoursDescription = styled.div`
-  grid-column: 1 / 3;
+const Description = styled.p`
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+      grid-column: 1;
+  -ms-grid-row: 3;
+      grid-row: 3;
+  @media ${between} {
+    margin-left: ${leftMargin};
+    -ms-grid-column: 2;
+        grid-column: 2;
+    -ms-grid-row: 2;
+        grid-row: 2;
+  }
+`;
+
+const Favorite = styled.p`
+  font-style:italic;
+  font-size: small;
+`;
+
+const Avatar = styled(Img)`
+  -ms-grid-column: 1;
+      grid-column: 1;
   -ms-grid-row: 1;
-  grid-row: 1;
-  @media (min-width: 650px) {
+      grid-row: 1;
+  @media ${between} {
     -ms-grid-column: 1;
-    grid-column: 1;
+        grid-column: 1;
     -ms-grid-row: 1;
-    grid-row: 1;
+    -ms-grid-row-span: 3;
+        grid-row: 1 / 4;
   }
 `;
 
-const Info = styled.div`
-  grid-column: 1 / 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  -ms-grid-row: 4;
-  grid-row: 4;
-  @media (min-width: 650px) {
-    grid-column: 2 / 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    -ms-grid-row: 3;
-    grid-row: 3;
-  }
-`;
 
-const WeekDescription = styled.div`
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  @media (min-width: 650px) {
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-`;
-
-const WeekHours = styled.div`
-  white-space: pre-line;
-  display: block;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  @media (min-width: 650px) {
-    -ms-grid-column: 3;
-    grid-column: 3;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-`;
-
-const WeekendDescription = styled.div`
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 3;
-  grid-row: 3;
-  @media (min-width: 650px) {
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-`;
-
-const WeekendHours = styled.div`
-  white-space: pre-line;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 3;
-  grid-row: 3;
-  @media (min-width: 650px) {
-    -ms-grid-column: 3;
-    grid-column: 3;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-`;
 
 export const EmployeesList = ({ employees  }) => {
   return (
   <Container>
     {employees.map( ({name, image, description }) => (
-      <div key={name}> {name} </div>))}
+      <ListItem key={name}>
+        <Avatar fixed={image.childImageSharp.fixed}/>
+        <Name>{name}</Name>
+        <Description>
+          {description}
+          <Favorite>Lieblings Pasta: Steinpilz</Favorite>
+        </Description>
+      </ListItem>))}
   </Container>
 )}
 

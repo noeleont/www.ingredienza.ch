@@ -82,7 +82,13 @@ query AboutPageTemplate($id: String!) {
         }
         employees {
           name
-          image
+          image {
+            childImageSharp {
+              fixed(width: 250) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
           description
         }
       }
