@@ -107,6 +107,15 @@ collections:
               - { label: "Name", name: name, widget: string }        
               - { label: "Bild", name: image, widget: image}        
               - { label: "Text", name: description, widget: text}        
+              - {
+                   label: "Lieblings Pasta",
+                   name: "favorite",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_de"],
+                   valueField: "articleNr", 
+                }
       - file: "src/pages/pricelist/index.md"
         label: "Preisliste"
         name: "Preisliste"

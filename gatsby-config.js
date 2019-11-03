@@ -86,6 +86,7 @@ module.exports = {
   ],
   mapping: {
     'MarkdownRemark.frontmatter.tables.products.article': `MarkdownRemark.frontmatter.articleNr`,
+    'MarkdownRemark.frontmatter.employees.favorite': `MarkdownRemark.frontmatter.articleNr`,
   },
   siteMetadata: {
     nav: {

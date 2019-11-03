@@ -108,16 +108,16 @@ const Avatar = styled(Img)`
 
 
 
-export const EmployeesList = ({ employees  }) => {
+export const EmployeesList = ({ employees }) => {
   return (
   <Container>
-    {employees.map( ({name, image, description }) => (
+    {employees.map( ({name, image, description, favorite}) => (
       <ListItem key={name}>
         <Avatar fixed={image.childImageSharp.fixed}/>
         <Name>{name}</Name>
         <Description>
           {description}
-          <Favorite>Lieblings Pasta: Steinpilz</Favorite>
+          <Favorite>Lieblinge: {favorite.frontmatter.description}</Favorite>
         </Description>
       </ListItem>))}
   </Container>

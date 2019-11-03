@@ -90,6 +90,11 @@ query AboutPageTemplate($id: String!) {
             }
           }
           description
+          favorite {
+            frontmatter {
+              description: description_de
+            }
+          }
         }
       }
       html
