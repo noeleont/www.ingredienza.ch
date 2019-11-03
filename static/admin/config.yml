@@ -86,6 +86,27 @@ collections:
                 hint: "z.B. immer Montags geschlossen"
                 required: false
                 widget: string
+      - file: "src/pages/about/index.md"
+        label: "Über uns"
+        name: "About Page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
+          - {label: Path, name: path, widget: hidden, default: "/ueberuns/"}
+          - {label: Image, required: false, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Mitarbeiter'
+            name: 'employees'
+            widget: list
+            fields:
+              - { label: "Name", name: name, widget: string }        
+              - { label: "Bild", name: image, widget: image}        
+              - { label: "Text", name: description, widget: text}        
       - file: "src/pages/pricelist/index.md"
         label: "Preisliste"
         name: "Preisliste"

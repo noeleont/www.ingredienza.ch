@@ -93,6 +93,7 @@ module.exports = {
         main: [
           { to: "/", text: "Home" },
           { to: "/standorte", text: "Standorte" },
+          { to: "/team", text: "Unser Team" },
           { to: "/produkte/", text: "Produkte" },
           { to: "/preisliste/", text: "Preisliste" },
           { to: "/konditionen", text: "Konditionen" },
