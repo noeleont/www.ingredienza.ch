@@ -51,7 +51,7 @@ collections:
             widget: string
       - {label: "Preis (EP)", name: "price_ep", widget: "string"}
       - {label: "Preis (VP)", name: "price_vp", widget: "string"}
-      - {label: Image, name: image, widget: image}
+      - {label: Image, required: false, name: image, widget: image}
               
   - name: "pages"
     label: "Seiten"
