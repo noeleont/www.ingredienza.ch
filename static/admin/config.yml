@@ -19,6 +19,21 @@ collections:
       - {label: "Beschreibung Französisch", name: "description_fr", widget: "string"}
       - {label: "Einheit", name: "unit", widget: "string"}
       - {label: "Preis", name: "price", widget: "string"}
+  - name: "pastabox"
+    label: "Pasta Box"
+    folder: "src/pages/pastabox"
+    slug: "{{slug}}"
+    create: true
+    identifier_field: articleNr
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page"}
+      - {label: "Artikel Nummer", name: "articleNr", widget: "string"}
+      - {label: "Beschreibung Deutsch", name: "description_de", widget: "string"}
+      - {label: "Beschreibung Französisch", name: "description_fr", widget: "string"}
+      - {label: "Einheit", name: "unit", widget: "string"}
+      - {label: "Preis (EP)", name: "price_ep", widget: "string"}
+      - {label: "Preis (VP)", name: "price_vp", widget: "string"}
+      - {label: Image, name: image, widget: image}
               
   - name: "pages"
     label: "Seiten"
