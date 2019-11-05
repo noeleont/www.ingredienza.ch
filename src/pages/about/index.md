@@ -8,7 +8,7 @@ meta:
     Pastakreationen und hochwertige Zutaten. Unser Sortiment gibt es nun auch
     für Privatpersonen an unterschieldlichen Standorten in Bern. ► Entdecken Sie
     unsere Standorte
-  keywords: 'Ingreidenza, Standorte'
+  keywords: 'Ingredienza, Standorte'
   title: Bezugsquellen Privatpersonen | Ingredienza
 employees:
   - description: >+
@@ -105,4 +105,4 @@ employees:
     image: /assets/ava.jpg
     name: Ava Thalheim
 ---
-hello
+## **Ingredienza stellt sich vor**
