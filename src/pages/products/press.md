@@ -2,7 +2,7 @@
 templateKey: products-page
 lang: de
 path: /produkte/pressteigwaren
-image: /assets/veganbg.png
+image: /assets/kräuter-spaghetti-dsc03683.jpg
 meta:
   description: >-
     Bei Ingredienza gibt es vegane Teigwaren – denn bei uns gibt es für jeden
@@ -32,14 +32,14 @@ tables:
         showArticleNr: true
       - article: V40005
         showArticleNr: true
-    showColName: true 
+    showColName: true
   - outro: Vegane Wunsch-Nudeln auf Anfrage.
     products:
       - article: BV600025
         showArticleNr: true
       - article: BV600135
         showArticleNr: true
-    showColName: false 
+    showColName: false
 ---
  
 # Vegane Teig&shy;waren aus Bern
