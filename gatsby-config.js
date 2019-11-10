@@ -132,6 +132,10 @@ module.exports = {
             {
               to: "/produkte/fatto_a_mano",
               text: "Fatto a mano"
+            },
+            {
+              to: "/produkte/pressteigwaren",
+              text: "Pressteigwaren à la minute",
             }
           ]
         }

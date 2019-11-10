@@ -511,6 +511,45 @@ collections:
                    name: "showArticleNr",
                    widget: "boolean",
                   }
+      - file: "src/pages/products/press.md"
+        label: "Pressteigwaren"
+        name: "press"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "products-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
+          - {label: Path, name: path, widget: hidden, default: "/produkte/pressteigwaren/"}
+          - {label: Image, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "article",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description_de"],
+                   valueField: "articleNr", 
+                  }
+                  - {
+                   label: "Artikel-Nr. anzeigen?",
+                   name: "showArticleNr",
+                   widget: "boolean",
+                  }
   - name: "pages_fr"
     label: "Seiten (Französisch)"
     files:
@@ -963,4 +1002,74 @@ collections:
             {label: Bild, name: image, widget: image},
             {label: Überschrifft, name: text, widget: string}
           ]}  
+      - file: "src/pages/boxdry/index.md"
+        label: "Trocken"
+        name: "Trocken"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "boxdetail-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
+          - {label: Path, name: path, widget: hidden, default: "/pasta-boxen/dry"}
+          - {label: Image, required: false, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "pastabox",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description"],
+                   valueField: "articleNr", 
+                  }
+
+      - file: "src/pages/boxfrozen/index.md"
+        label: "Gefroren"
+        name: "Gefroren"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "boxdetail-page"}
+          - {label: "Sprache", name: "lang", widget: "hidden", default: "de"}
+          - {label: Path, name: path, widget: hidden, default: "/pasta-boxen/frozen"}
+          - {label: Image, required: false, name: image, widget: image}
+          - {label: Meta, name: meta, widget: object, fields: [
+            {label: Titel, name: title, widget: string},
+            {label: Beschreibung, name: description, widget: text},
+            {label: Keywords, name: keywords, widget: string}
+          ]}  
+          - {label: Body, name: body, widget: markdown}
+          - label: 'Produkt Tabellen'
+            name: 'tables'
+            widget: 'list'
+            fields:
+              - {label: "Überschrift", name: "heading", required: false, widget: string }
+              - {label: "Outro", name: "outro", required: false, widget: text }  
+              - {label: "Spaltennamen Anzeigen?", name: "showColName", widget: boolean }
+              - label: "Produkte"
+                name: "products"
+                widget: list
+                fields:
+                  - {
+                   label: "Artikel",
+                   name: "article",
+                   widget: "relation",
+                   collection: "pastabox",
+                   searchFields: ["articleNr"],
+                   displayFields: ["articleNr", "description"],
+                   valueField: "articleNr", 
+                  }
+
 
