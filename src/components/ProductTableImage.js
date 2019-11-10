@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Img from "gatsby-image";
-import { connect } from "react-redux";
+import Img from 'gatsby-image';
+import { connect } from 'react-redux';
 
 const ProductTable = styled.table`
   border: 0px;
@@ -20,37 +20,37 @@ const ProductTable = styled.table`
     text-align: left;
 
   }
-
+  /* first column */
   td:nth-child(1) {
+      vertical-align: top;
       max-width: 90px;
       min-width: 87px;
-    cursor: pointer;
   }
 
   /* first column */
   td:nth-child(2) {
+      vertical-align: top;
       max-width: 90px;
       min-width: 87px;
   }
 
   /* second column */
   td:nth-child(3) {
+      vertical-align: top;
       min-width: 400px;
       width: 500px;
   }
 
   /* third column */
   td:nth-child(4) {  
+      vertical-align: bottom;
       min-width: 130px;
   }
 
   /* fourth column */
   td:nth-child(5) {  
-      min-width: 90px;
-      width: 100px;
-  }
-  td:nth-child(6) {  
-      min-width: 90px;
+      vertical-align: bottom;
+      min-width: 65px;
       width: 100px;
   }
 `;
@@ -95,15 +95,15 @@ const TableHeaderDe = () => (
   <tr>
     <th />
     <th>Art.Nr</th>
-    <th>Bezeichnung</th>
-    <th>Mengeneinheit</th>
-    <th>EP pro Box</th>
-    <th>VP pro Box</th>
+    <th>Produkt</th>
+    <th>Einheit</th>
+    <th>Fr. / kg</th>
   </tr>
 )
 
 const TableHeaderFr = () => (
   <tr>
+    <th />
     <th>Réf.</th>
     <th>Produit</th>
     <th>Unité</th>
@@ -113,8 +113,8 @@ const TableHeaderFr = () => (
 
 const ProductRow = ({ product, lang, openModal }) => {
   return lang === "de" ? 
-    (<ProductRowDe product={product} openModal={openModal} />) : 
-    (<ProductRowFr product={product} openModal={openModal} />) 
+    (<ProductRowDe product={product} openModal={openModal}/>) : 
+    (<ProductRowFr product={product} openModal={openModal}/>) 
 };
 
 const mapDispatchToProps = dispatch => {
@@ -127,22 +127,26 @@ const ConnectedRow = connect(
 )(ProductRow)
 
 
-const ProductRowDe = ({ product: { image, articleNr, product, units, price_ep, price_vp }, openModal }) => (
+const ProductRowDe = ({ product: { image, showArticleNr, description, articleNr, product, unit, price }, openModal }) => (
   <tr>
     { image ? 
     <td onClick={() => openModal(image.childImageSharp.modal)}>
       <Img fixed={image.childImageSharp.fixed} /> 
     </td> : <td /> }
-    <td>{articleNr}</td>
-    <td>{product.frontmatter.description}</td>
-    <td>{units.amount} Boxen à {units.weight}</td>
-    <td>CHF {price_ep}</td>
-    <td>CHF {price_vp}</td>
+    {showArticleNr ? (<td> {articleNr} </td>) : (<td />)}
+    <td>{description}</td>
+    {unit ? (<td>{`¢ à ${unit}kg TK`}</td>) : (<td />)}
+    {// Check if string starts with a number
+    !isNaN(parseInt(price)) ? <td>Fr. {price}</td> : <td>{price}</td>}
   </tr>
 );
 
-const ProductRowFr = ({ product: { showArticleNr, articleNr, description, unit, price } }) => (
+const ProductRowFr = ({ product: { image, showArticleNr, description, articleNr, product, unit, price }, openModal }) => (
   <tr>
+    { image ? 
+    <td onClick={() => openModal(image.childImageSharp.modal)}>
+      <Img fixed={image.childImageSharp.fixed} /> 
+    </td> : <td /> }
     {showArticleNr ? (<td> {articleNr} </td>) : (<td />)}
     <td>{description}</td>
     {unit ? (<td>{`¢ de ${unit} kg surg`}</td>) : (<td />)}
@@ -167,5 +171,3 @@ export default ({ showHeader, products, lang }) => (
     </ProductTable>
   </ResponsiveTable>
 );
-
-

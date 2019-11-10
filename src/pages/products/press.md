@@ -1,5 +1,5 @@
 ---
-templateKey: products-page
+templateKey: products-image-page
 lang: de
 path: /produkte/pressteigwaren
 image: /assets/veganbg.png

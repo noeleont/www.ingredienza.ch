@@ -1,25 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ReactModal from 'react-modal';
-import { connect } from "react-redux"
 import Img from "gatsby-image"
 
 import Layout from '../components/Layout'
 import BoxTable from '../components/BoxTable'
-
-const customStyles = {
-  content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
-  }
-};
-
-ReactModal.setAppElement('#___gatsby');
 
 export const BoxDetailPageTemplate = ({
   image,
@@ -83,7 +68,7 @@ BoxDetailPageTemplate.propTypes = {
   )
 }
 
-const BoxDetailPage = ({ data, modalIsOpen, modalClose, modalImage}) => {
+const BoxDetailPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
 
   var tables = []
@@ -107,15 +92,6 @@ const BoxDetailPage = ({ data, modalIsOpen, modalClose, modalImage}) => {
         lang={frontmatter.lang}
         tables={tables}
       />
-      <ReactModal
-          isOpen={modalIsOpen}
-          onRequestClose={modalClose}
-          contentLabel=""
-          style={customStyles}
-      >
-        {modalImage ? <Img fixed={modalImage} /> : <div /> }
-        <a style={{ cursor: 'pointer', }}onClick={modalClose} aria-label="Close Pasta Modal">&times;</a>
-      </ReactModal>   
     </Layout>
   )
 }
@@ -128,18 +104,7 @@ BoxDetailPage.propTypes = {
   }),
 }
 
-const mapStateToProps = ({ modalIsOpen, image }) => {
-  return { modalIsOpen, modalImage: image}
-}
-
-const mapDispatchToProps = dispatch => {
-  return { modalClose: () => dispatch({ type: `CLOSE_MODAL` }) }
-}
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BoxDetailPage);
+export default BoxDetailPage;
 
 export const pageQuery = graphql`
 query BoxDetailPageTemplate($id: String!) {
