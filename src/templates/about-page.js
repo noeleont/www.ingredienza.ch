@@ -84,7 +84,7 @@ query AboutPageTemplate($id: String!) {
           name
           image {
             childImageSharp {
-              fixed(width: 250) {
+              fixed(width: 300, quality: 100) {
                 ...GatsbyImageSharpFixed
               }
             }

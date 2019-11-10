@@ -22,12 +22,13 @@ const Container = styled.div`
       grid-template-rows: auto auto auto;
 
   margin-bottom: 20px; 
-  justify-items: center;
+  justify-content: space-between; 
 
   white-space: pre-wrap;
   @media (min-width: ${desktopBreakPoint}) {
-    -ms-grid-columns:          1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns:          300px 300px;
+        grid-template-columns: 300px 300px;
+    grid-column-gap: 50px;
 
     -ms-grid-rows:          auto auto;
         grid-template-rows: auto auto;
@@ -46,6 +47,8 @@ const ListItem = styled.div`
       grid-template-rows: auto auto auto;
 
   margin-bottom: 20px; 
+  align-content: flex-start;
+
 
   white-space: pre-wrap;
   @media ${between} {
