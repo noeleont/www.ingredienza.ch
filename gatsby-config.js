@@ -97,6 +97,7 @@ module.exports = {
           { to: "/standorte", text: "Standorte" },
           { to: "/team", text: "Unser Team" },
           { to: "/produkte/", text: "Produkte" },
+          { to: "/pasta-boxen/", text: "Pasta Boxen" },
           { to: "/preisliste/", text: "Preisliste" },
           { to: "/konditionen", text: "Konditionen" },
           { to: "/kontakt", text: "Kontakt" },
