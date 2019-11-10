@@ -3,13 +3,9 @@ templateKey: about-page
 lang: de
 path: /team/
 meta:
-  description: >
-    Wir sind Ingredienza – bei uns dreht sich alles um vielfältige
-    Pastakreationen und hochwertige Zutaten. Unser Sortiment gibt es nun auch
-    für Privatpersonen an unterschieldlichen Standorten in Bern. ► Entdecken Sie
-    unsere Standorte
-  keywords: 'Ingredienza, Standorte'
-  title: Bezugsquellen Privatpersonen | Ingredienza
+  description: 'Wir sind Ingredienza '
+  keywords: 'Ingredienza, Team'
+  title: Wir stellen uns vor | Ingredienza
 employees:
   - description: >+
       Inhaber, Geschäftsführer und Pastaliebhaber seit Kindsbeinen.
@@ -106,3 +102,5 @@ employees:
     name: Ava Thalheim
 ---
 # **Ingredienza stellt sich vor**
+
+![](/assets/gruppenbild-ingredienza.jpg)
