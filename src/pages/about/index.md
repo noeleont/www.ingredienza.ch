@@ -21,9 +21,9 @@ employees:
     name: Rolf Thalheim
   - description: >
       Der Informatiker und Mathematik Student arbeitet als Assistent an der Uni
-      Bern. Er unterstützt er uns in IT Fragen und ist  Schöpfer unseres
-      Webauftritts und verkauft regelmässig samstags unsere frische Pasta am
-      Marktstand auf dem Bundesplatz.
+      Bern. Er unterstützt uns in IT Fragen, ist  Schöpfer unseres Webauftritts
+      und verkauft regelmässig samstags unsere frische Pasta am Marktstand auf
+      dem Bundesplatz.
     favorite: BITA008M
     image: /assets/noe.jpg
     name: Noe Thalheim
@@ -35,9 +35,9 @@ employees:
     image: /assets/werner.jpg
     name: Werner Baumberger
   - description: >-
-      Lachsfischer in Alaska, Geografie Student und Pastaliebhaber
+      Lachsfischer in Alaska, Geografie Student und Pastaliebhaber.
 
-      Er steht drei Mal in der Woche um 4Uhr im Kühlraum und verpackt mit
+      Er steht drei Mal in der Woche um 4 Uhr früh im Kühlraum und verpackt mit
       Sorgfalt
 
       unsere Vortagesproduktion.
@@ -45,32 +45,32 @@ employees:
     image: /assets/gianluca.jpg
     name: Gianluca Righetti
   - description: >-
-      Der Spezialist für Innenausbau und  Hausschreiner von Ingredienza
-      verkauft  seit 28 Jahren regelmässig unsere frische Pasta auf dem Berner
-      Wochenmarkt auf dem Bundesplatz.
+      Der Spezialist für Innenausbau und  Hausschreiner von Ingredienza verkauft
+      seit 28 Jahren regelmässig unsere frische Pasta auf dem Berner Wochenmarkt
+      am Bundesplatz.
     favorite: '40042'
     image: /assets/urs.jpg
     name: Urs Thalheim
   - description: >-
       Die Matur in der Tasche, hat sie in ganz Europa Erfahrungen in diversen
       Berufen gesammelt und trägt diese als Multitalent in unsere Produktion.
-      Mit ihrer genauen engagierten Art ist sie eine wertvolle Ergänzung von
-      unserem Team.
+      Mit ihrer genauen engagierten Art ist sie eine wertvolle Ergänzung unseres
+      Teams.
     favorite: '40005'
     image: /assets/angelika.jpg
     name: Angelika Stankiewicz
   - description: >-
       Die ausgebildete Kauffrau in Weiterbildung zur SaBe Personalwesen ist die
       Allrounderin par excellence. Sie berät uns in Personalfragen, ist die
-      freundliche Stimme am Telefon und betreut Logistik und Verpackung. Zudem 
-      ist sie Mitverantwortliche für unseren Auftritt auf den sozialen Medien
-      und unterstützt uns, wenn nötig in der Produktion.
+      freundliche Stimme am Telefon und betreut Logistik und Verpackung. Zudem
+      ist sie Mitverantwortliche für unseren Auftritt in den sozialen Medien und
+      unterstützt uns wenn nötig in der Produktion.
     favorite: B50004
     image: /assets/lynn.jpg
     name: Lynn Thalheim
   - description: >-
       Von der Handtasche zu den Teigtaschen. Die ehemalige Inhaberin einer
-      Taschenmanufaktur ergänzt unser Team sowohl  in den Bereichen Fotografie,
+      Taschenmanufaktur ergänzt unser Team sowohl in den Bereichen Fotografie,
       Verpackungsdesign, Grafik und Gestaltung, als auch in der Herstellung von
       Nudeln, Gnocchi und Ravioli. 
     favorite: B50002
