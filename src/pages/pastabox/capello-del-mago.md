@@ -1,7 +1,7 @@
 ---
 templateKey: pastabox-page
 articleNr: Capello del mago
-product: Capello di mago
+product: Capello del mago
 units:
   amount: '6'
   weight: 250g
