@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Violette
+articleNr: Bio Violette
 product: B-Violette
 units:
   amount: '6'
