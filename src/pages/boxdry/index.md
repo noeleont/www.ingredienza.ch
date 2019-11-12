@@ -28,6 +28,8 @@ tables:
       - article: Lumache
       - article: Violette
     showColName: true
+  - heading: Bio 5-Ei Pressteigwaren
+    showColName: true
 ---
 **Lieferbedingungen:** Ab einem Bestellwert von 48 Packungen ist die Lieferung schweizweit gratis, ansonsten gelten die effektiven Versandkosten.\
 Im Raum Bern liefern wir ab einem Bestellwert von CHF 100.--.\
