@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Capello del mago
+articleNr: Bio Capello del mago
 product: B-Capello del mago
 units:
   amount: '6'
