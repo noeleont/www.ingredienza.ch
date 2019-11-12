@@ -16,6 +16,11 @@ tables:
     outro: ''
     products:
       - article: Farfalle Nr. 1
+      - article: Farfalle Nr. 2
+      - article: Farfalle Nr. 3
+      - article: Farfalle Nr. 4
+      - article: Farfalle Nr. 5
+      - article: Farfalle Nr. 6
     showColName: true
 ---
 
