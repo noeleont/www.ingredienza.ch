@@ -7,5 +7,6 @@ units:
   weight: 400g
 price_ep: '9.70'
 price_vp: 16.--
+image: /assets/pomodori-secchi.jpg
 ---
 
