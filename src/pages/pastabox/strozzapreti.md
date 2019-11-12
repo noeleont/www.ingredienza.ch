@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Bio Vegane Strozzapreti
+articleNr: Bio vegane Strozzapreti
 product: BV-Strozzapreti
 units:
   amount: '6'
