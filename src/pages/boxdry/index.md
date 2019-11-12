@@ -12,7 +12,7 @@ meta:
   keywords: Gourmet Pasta
   title: Gourmet Ravioli von Ingredienza | Ingredienza
 tables:
-  - heading: BIO
+  - heading: Farfalle
     outro: ''
     products:
       - article: Farfalle Nr. 1
@@ -21,6 +21,12 @@ tables:
       - article: Farfalle Nr. 4
       - article: Farfalle Nr. 5
       - article: Farfalle Nr. 6
+    showColName: true
+  - heading: Pressteigwaren
+    products:
+      - article: Capello del mago
+      - article: Lumache
+      - article: Violette
     showColName: true
 ---
 
