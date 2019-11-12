@@ -64,4 +64,12 @@ tables:
       - article: T60044
     showColName: true
 ---
+**Lieferbedingungen:** Ab einem Bestellwert von CHF 300.-- ist die Lieferung schweizweit gratis, ansonsten betragen die Versandkosten CHF 65.-- pro Lieferung.\
+Im Raum Bern liefern wir ab einem Bestellwert von CHF 100.--.\
+Für Selbstabholer gelten lediglich die Mindestbestellmengen.
 
+**Mindestbestellmengen:** Von jeder Sorte müssen mind. 6 Pasta-Boxen à 400g (Ravioli) bzw. 500g (Gnocchi) bestellt werden.
+
+**Lagerung & Präsentation:** Die Teigwaren werden in handliche Behälter aus Karton mit Klarsichtfolie verpackt und tiefgekühlt geliefert. In Ihrem Tiefkühlschrank mit Glasfront präsentieren sich unsere ansprechenden Pasta-Boxen optimal.
+
+**Preise:** Der jeweilige Verkaufspreis pro Pasta-Box darf nicht unterschritten werden.
