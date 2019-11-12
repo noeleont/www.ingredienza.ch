@@ -22,7 +22,7 @@ tables:
       - article: Farfalle Nr. 5
       - article: Farfalle Nr. 6
     showColName: true
-  - heading: Pressteigwaren
+  - heading: Bio vegane Pressteigwaren
     products:
       - article: Capello del mago
       - article: Lumache
