@@ -23,13 +23,20 @@ tables:
       - article: Farfalle Nr. 6
     showColName: true
   - heading: Bio vegane Pressteigwaren
-    products: []
+    products:
+      - article: Bio vegane Capello del mago
+      - article: Bio vegane Lumache
+      - article: Bio vegane Violette
+      - article: Bio vegane Macaroni
+      - article: Bio vegane Strozzapreti
     showColName: true
   - heading: Bio 5-Ei Pressteigwaren
     products:
       - article: Bio Capello del mago
       - article: Bio Lumache
       - article: Bio Violette
+      - article: Bio Macaroni
+      - article: Bio Strozzapreti
     showColName: true
 ---
 **Lieferbedingungen:** Ab einem Bestellwert von 48 Packungen ist die Lieferung schweizweit gratis, ansonsten gelten die effektiven Versandkosten.\
