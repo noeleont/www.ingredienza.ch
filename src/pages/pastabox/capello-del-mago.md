@@ -1,12 +1,12 @@
 ---
 templateKey: pastabox-page
 articleNr: Capello del mago
-product: BV-Capello del mago
+product: B-Capello del mago
 units:
   amount: '6'
   weight: 250g
-price_ep: 4.--
-price_vp: 6.--
-image: /assets/capello-di-mago.jpg
+price_ep: '5.50'
+price_vp: 8.--
+image: /assets/capello-di-mago_5ei.jpg
 ---
 
