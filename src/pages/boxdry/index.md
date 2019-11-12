@@ -29,4 +29,12 @@ tables:
       - article: Violette
     showColName: true
 ---
+**Lieferbedingungen:** Ab einem Bestellwert von 48 Packungen ist die Lieferung schweizweit gratis, ansonsten gelten die effektiven Versandkosten.\
+Im Raum Bern liefern wir ab einem Bestellwert von CHF 100.--.\
+Für Selbstabholer gelten lediglich die Mindestbestellmengen.
 
+**Mindestbestellmengen:** Von jeder Sorte müssen mind. 6 Pasta-Boxen à 250g bestellt werden.
+
+**Lagerung & Präsentation:** Die Teigwaren werden in handliche Behälter aus Karton mit Klarsichtfolie verpackt und geliefert. In Ihrem Regal präsentieren sich unsere ansprechenden Pasta-Boxen optimal.
+
+**Preise:** Der jeweilige Verkaufspreis pro Pasta-Box darf nicht unterschritten werden.
