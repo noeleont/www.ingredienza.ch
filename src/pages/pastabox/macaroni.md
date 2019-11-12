@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Macaroni
+articleNr: Bio Vegane Macaroni
 product: BV-Macaroni
 units:
   amount: '6'
