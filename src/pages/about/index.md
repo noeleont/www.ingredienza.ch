@@ -21,7 +21,7 @@ employees:
     name: Rolf Thalheim
   - description: >
       Der Informatiker und Mathematik Student arbeitet als Assistent an der Uni
-      Bern. Er unterstützt uns in IT Fragen, ist  Schöpfer unseres Webauftritts
+      Bern. Er unterstützt uns in IT Fragen, ist Schöpfer unseres Webauftritts
       und verkauft regelmässig samstags unsere frische Pasta am Marktstand auf
       dem Bundesplatz.
     favorite: BITA008M
