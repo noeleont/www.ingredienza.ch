@@ -1,10 +1,8 @@
 ---
 templateKey: article-page
 articleNr: B-Strozzapreti
-description_de: 'Bio Pressteigwaren aus: Bio Hartweizengriess und Bio Eiern'
-description_fr: >-
-  Pâtes alimentaires biologiques à base de semoule de blé dur bio et des œufs
-  bio
+description_de: Bio Hartweizengriess und Bio Eier
+description_fr: Semoule de blé dur bio et œufs bio
 unit: 250g
 price: 8.--
 ---
