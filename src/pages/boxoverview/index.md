@@ -8,13 +8,13 @@ meta:
     Pastasorten aus der Region. Wir beliefern Ihren Gastronomie betrieb mit
     frischen Teigwaren. Einzigartige Kreationen, die jeden Gourmet überraschen.
     Vielfalt und Kreativität ist bei uns Programm ► Entdecken Sie unser Angebot
-  keywords: Ingredienza, Pastasorten 
-  title: Berner Teigwaren-Manufaktur | Ingredienza 
-frozen:
-  image: /assets/indexbg.png
-  text: Gefroren
+  keywords: 'Ingredienza, Pastasorten'
+  title: Berner Teigwaren-Manufaktur | Ingredienza
 dry:
-  image: /assets/indexbg.png
-  text: Trocken 
+  image: /assets/farfalle-nr-1-148x210.jpg
+  text: Trocken
+frozen:
+  image: /assets/bärlauch.jpg
+  text: Tiefgekühlt
 ---
 
