@@ -89,7 +89,7 @@ employees:
     image: /assets/marlou.jpg
     name: Marlou Thalheim
   - description: >
-      Die studierte Gamedesignerin und 3D Artistin hat schon als Jugendliche im
+      Die studierte Gamedesignerin und 3D-Artistin hat schon als Jugendliche im
       Betrieb mitgeholfen und war während Jahren im Produktions-Team von
       Ingredienza. Bis zu Ihrer Kanadareise dürfen wir wieder mit ihrer
       tatkräftigen Unterstützung rechnen.
