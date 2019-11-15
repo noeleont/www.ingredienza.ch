@@ -82,7 +82,11 @@ const ProductsImagePage = ({ data }) => {
 
   frontmatter.tables.forEach(table => {  
     const products = table.products.map(
-      ({ article, showArticleNr }) => ( {...article.frontmatter, showArticleNr} ))
+      ({ article, showArticleNr }) => { 
+        if (article.frontmatter) {
+          return {...article.frontmatter, showArticleNr} 
+        }
+      })
     tables.push({
       heading: table.heading,
       products: products, 

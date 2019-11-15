@@ -75,7 +75,11 @@ const BoxDetailPage = ({ data }) => {
 
   frontmatter.tables.forEach(table => {  
     const products = table.products.map(
-      ({ article }) => ( {...article.frontmatter} ))
+      ({ article }) => { 
+        if (article.frontmatter) {
+          return {...article.frontmatter} 
+        }
+      })
     tables.push({
       heading: table.heading,
       products: products, 
