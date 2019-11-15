@@ -38,9 +38,7 @@ employees:
       Lachsfischer in Alaska, Geografie Student und Pastaliebhaber.
 
       Er steht drei Mal in der Woche um 4 Uhr früh im Kühlraum und verpackt mit
-      Sorgfalt
-
-      unsere Vortagesproduktion.
+      Sorgfalt unsere Vortagesproduktion.
     favorite: '40010'
     image: /assets/gianluca.jpg
     name: Gianluca Righetti
@@ -54,8 +52,8 @@ employees:
   - description: >-
       Die Matur in der Tasche, hat sie in ganz Europa Erfahrungen in diversen
       Berufen gesammelt und trägt diese als Multitalent in unsere Produktion.
-      Mit ihrer genauen engagierten Art ist sie eine wertvolle Ergänzung unseres
-      Teams.
+      Mit ihrer genauen, engagierten Art ist sie eine wertvolle Ergänzung
+      unseres Teams.
     favorite: '40005'
     image: /assets/angelika.jpg
     name: Angelika Stankiewicz
@@ -63,7 +61,7 @@ employees:
       Die ausgebildete Kauffrau in Weiterbildung zur SaBe Personalwesen ist die
       Allrounderin par excellence. Sie berät uns in Personalfragen, ist die
       freundliche Stimme am Telefon und betreut Logistik und Verpackung. Zudem
-      ist sie Mitverantwortliche für unseren Auftritt in den sozialen Medien und
+      ist sie mitverantwortlich für unseren Auftritt in den sozialen Medien und
       unterstützt uns wenn nötig in der Produktion.
     favorite: B50004
     image: /assets/lynn.jpg
@@ -91,12 +89,10 @@ employees:
     image: /assets/marlou.jpg
     name: Marlou Thalheim
   - description: >
-      Die studierte Gamedesignerin ZHdK und 3D Artistin hat schon als
-      Jugendliche im Betrieb mitgeholfen und war während Jahren im
-      Produktions-Team von Ingredienza.
-
-      Bis zu Ihrer Kanadareise dürfen wir wieder mit ihrer tatkräftigen
-      Unterstützung rechnen.
+      Die studierte Gamedesignerin und 3D Artistin hat schon als Jugendliche im
+      Betrieb mitgeholfen und war während Jahren im Produktions-Team von
+      Ingredienza. Bis zu Ihrer Kanadareise dürfen wir wieder mit ihrer
+      tatkräftigen Unterstützung rechnen.
     favorite: B50001
     image: /assets/ava.jpg
     name: Ava Thalheim
