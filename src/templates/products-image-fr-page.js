@@ -83,7 +83,7 @@ const ProductsImageFrPage = ({ data }) => {
   frontmatter.tables.forEach(table => {  
     const products = table.products.map(
       ({ article, showArticleNr }) => { 
-        if (article.frontmatter) {
+        if (article) {
           return {...article.frontmatter, showArticleNr} 
         }
       })
