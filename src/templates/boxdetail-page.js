@@ -72,20 +72,26 @@ const BoxDetailPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
 
   var tables = []
+  var problem = false;
 
   frontmatter.tables.forEach(table => {  
     const products = table.products.map(
       ({ article }) => { 
         if (article) {
           return {...article.frontmatter} 
+        } else {
+          problem = true;
         }
       })
-    tables.push({
-      heading: table.heading,
-      products: products, 
-      showColName: table.showColName,
-      outro: table.outro
-    })
+    if (!problem) {
+      tables.push({
+        heading: table.heading,
+        products: products, 
+        showColName: table.showColName,
+        outro: table.outro
+      })
+    }
+    problem = false;
   })
 
   return (
