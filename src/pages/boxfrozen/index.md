@@ -6,9 +6,9 @@ meta:
   description: >-
     Wir von Ingredienza kümmern uns um Ihre Pasta-Wünsche. Gerne präsentieren
     wir Ihnen unser exklusivstes Angebot – unsere gourmet Pasta. Diese Pasta
-    wird mit viel Sorgfalt und Liebe in Bern von Hand hergestellt. Für jeden,
-    der das Besondere liebt genau das Richtige. ► Zur einmaligen Gourmet Pasta
-    von Ingredienza
+    wird mit viel Sorgfalt und Liebe in Bern hergestellt. Für jeden, der das
+    Besondere liebt genau das Richtige. ► Zur einmaligen Gourmet Pasta von
+    Ingredienza
   keywords: Gourmet Pasta
   title: Gourmet Ravioli von Ingredienza | Ingredienza
 tables:
@@ -70,6 +70,6 @@ Für Selbstabholer gelten lediglich die Mindestbestellmengen.
 
 **Mindestbestellmengen:** Von jeder Sorte müssen mind. 6 Pasta-Boxen à 400g (Ravioli) bzw. 500g (Gnocchi) bestellt werden.
 
-**Lagerung & Präsentation:** Die Teigwaren werden in handliche Behälter aus Karton mit Klarsichtfolie verpackt und tiefgekühlt geliefert. In Ihrem Tiefkühlschrank mit Glasfront präsentieren sich unsere ansprechenden Pasta-Boxen optimal.
+**Lagerung & Präsentation:** Die Teigwaren werden in handliche Trays aus Karton mit Klarsichtfolie verpackt und tiefgekühlt geliefert. In Ihrem Tiefkühlschrank mit Glasfront präsentieren sich unsere ansprechenden Pasta-Boxen optimal.
 
 **Preise:** Der jeweilige Verkaufspreis pro Pasta-Box darf nicht unterschritten werden.
