@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Bio Macaroni
+articleNr: Macaroni
 product: B-Macaroni
 units:
   amount: '6'
