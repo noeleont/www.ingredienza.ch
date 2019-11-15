@@ -2,7 +2,7 @@
 templateKey: products-image-page
 lang: de
 path: /produkte/pressteigwaren
-image: /assets/kräuter-spaghetti-dsc03683.jpg
+image: /assets/basilikum-triangoli.jpg
 meta:
   description: >-
     Bei Ingredienza gibt es vegane Teigwaren – denn bei uns gibt es für jeden
