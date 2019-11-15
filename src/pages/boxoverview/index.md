@@ -17,4 +17,4 @@ frozen:
   image: /assets/bärlauch.jpg
   text: Tiefgekühlt
 ---
-
+Ingredienza – Ihre Berner Teigwaren-Manufaktur. Holen Sie sich getrocknete und tiefgekühlte Pasta-Sorten aus der Region. Einzigartige Kreationen, die jeden Gourmet überraschen. Vielfalt und Kreativität ist bei uns Programm ► Entdecken Sie unser Angebot
