@@ -6,9 +6,9 @@ meta:
   description: >-
     Wir von Ingredienza kümmern uns um Ihre Pasta-Wünsche. Gerne präsentieren
     wir Ihnen unser exklusivstes Angebot – unsere Gourmet Pasta. Diese Pasta
-    wird mit viel Sorgfalt und Liebe in Bern von Hand hergestellt. Für jeden,
-    der das Besondere liebt genau das Richtige. ► Zur einmaligen Gourmet Pasta
-    von Ingredienza
+    wird mit viel Sorgfalt und Liebe in Bern hergestellt. Für jeden, der das
+    Besondere liebt genau das Richtige. ► Zur einmaligen Gourmet Pasta von
+    Ingredienza
   keywords: Gourmet Pasta
   title: Gourmet Ravioli von Ingredienza | Ingredienza
 tables:
