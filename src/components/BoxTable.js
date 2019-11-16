@@ -10,46 +10,47 @@ const ProductTable = styled.table`
   max-width: 900px;
   min-width: 520px;
   position: relative; 
-  padding: 0px;
+  padding-top: 20px;
   td {
-    padding-right: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
   }
 
   th {
-    padding-right: 0px;
+    padding-right: 5px;
+    padding-bottom: 10px;
     text-align: left;
 
   }
+  
 
   td:nth-child(1) {
       max-width: 90px;
       min-width: 87px;
-    cursor: pointer;
+    img {
+      cursor: pointer;
+    }
   }
 
   /* first column */
-  td:nth-child(2) {
-      max-width: 90px;
-      min-width: 87px;
-  }
 
   /* second column */
-  td:nth-child(3) {
+  td:nth-child(2) {
       min-width: 400px;
       width: 500px;
   }
 
   /* third column */
-  td:nth-child(4) {  
+  td:nth-child(3) {  
       min-width: 130px;
   }
 
   /* fourth column */
-  td:nth-child(5) {  
+  td:nth-child(4) {  
       min-width: 90px;
       width: 100px;
   }
-  td:nth-child(6) {  
+  td:nth-child(5) {  
       min-width: 90px;
       width: 100px;
   }
@@ -93,7 +94,6 @@ const TableHeader = ({ lang }) => {
 
 const TableHeaderDe = () => (
   <tr>
-    <th />
     <th>Art.Nr</th>
     <th>Bezeichnung</th>
     <th>Mengeneinheit</th>
@@ -132,8 +132,9 @@ const ProductRowDe = ({ product: { image, articleNr, product, units, price_ep, p
     { image ? 
     <td onClick={() => openModal(image.childImageSharp.modal)}>
       <Img fixed={image.childImageSharp.fixed} /> 
-    </td> : <td /> }
-    <td>{articleNr}</td>
+      <br />
+      {articleNr}
+    </td> : <td>{articleNr}</td> }
     <td>{product.frontmatter.description}</td>
     <td>{units.amount} Boxen à {units.weight}</td>
     <td>CHF {price_ep}</td>
@@ -159,7 +160,9 @@ export default ({ showHeader, products, lang }) => (
           <TableHeader lang={lang} />
         ) : null}
 
-        {products.map(product => (
+        {products
+          .filter(product => product !== undefined)
+            .map(product => (
           <ConnectedRow key={product.description} product={product} lang={lang} />
         ))}
       </tbody>

@@ -27,6 +27,7 @@ export const BoxDetailPageTemplate = ({
       /> : <div />
     }
     <div dangerouslySetInnerHTML={{ __html: html }} />
+    <br />
     { tables.map( (table, i) => (
       <div key={i}>
         { table.heading? <h2> {table.heading} </h2> : null }

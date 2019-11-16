@@ -13,6 +13,14 @@ meta:
   keywords: Pasta-Preisliste 
 ---
 
-# Unsere Preislisten für Pasta
+# Preislisten für Pasta
 
 Unsere Preisliste können Sie als .pdf Datei [herunterladen](/assets/preisliste.pdf)
+
+# Angebotslisten und Bestellformulare für Pasta Boxen
+
+Unsere Angebotslisten für [trocken](/assets/Angebotsliste_Pasta-Box_PT.pdf) und [tiefgekühlten](/assets/Angebotsliste_Pasta-Box_TK.pdf) Pasta-Boxen können Sie als .pdf Datei herunterladen.
+
+Für Bestellungen können Sie die folgenden Formulare verwenden:
+
+[Bestellformular trocken](/assets/Bestellformular_Pasta-Box_PT.pdf) [Bestellformular tiefgekühlt](/assets/Bestellformular_Pasta-Box_TK.pdf)
