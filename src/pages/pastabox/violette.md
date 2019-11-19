@@ -1,7 +1,7 @@
 ---
 templateKey: pastabox-page
 articleNr: Bio Violette
-product: B-Violette
+product: BV-Violette
 units:
   amount: '6'
   weight: 250g

@@ -1,7 +1,7 @@
 ---
 templateKey: pastabox-page
 articleNr: Bio Lumache
-product: B-Lumache
+product: BV-Lumache
 units:
   amount: '6'
   weight: 250g

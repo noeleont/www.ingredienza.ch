@@ -15,7 +15,7 @@ tables:
   - heading: Farfalle Bio Vegan
     outro: ''
     products:
-      - article: Farfalle Nr. 1
+      - article: BVF001 
       - article: Farfalle Nr. 2
       - article: Farfalle Nr. 3
       - article: Farfalle Nr. 4
@@ -27,8 +27,8 @@ tables:
       - article: Bio Capello del mago
       - article: Bio Lumache
       - article: Bio Violette
-      - article: Bio Macaroni
-      - article: Bio Strozzapreti
+      - article: Bio vegane Macaroni
+      - article: Bio vegane Strozzapreti
     showColName: true
 ---
 **Lieferbedingungen:** Ab einem Bestellwert von 48 Packungen ist die Lieferung schweizweit gratis, ansonsten gelten die effektiven Versandkosten.\

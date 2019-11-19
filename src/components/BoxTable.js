@@ -135,8 +135,8 @@ const ProductRowDe = ({ product: { image, articleNr, product, units, price_ep, p
       <br />
       {articleNr}
     </td> : <td>{articleNr}</td> }
-    <td>{product.frontmatter.description}</td>
-    <td>{units.amount} Boxen à {units.weight}</td>
+    <td>{ product ? product.frontmatter.description : '' }</td>
+    <td>{ units ? units.amount : '' } Boxen à {units ? units.weight : '' }</td>
     <td>CHF {price_ep}</td>
     <td>CHF {price_vp}</td>
   </tr>
