@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Strozzapreti
+articleNr: Bio-Strozzapreti
 product: B-Strozzapreti
 units:
   amount: '6'

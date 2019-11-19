@@ -27,8 +27,8 @@ tables:
       - article: Bio Capello del mago
       - article: Bio Lumache
       - article: Bio Violette
-      - article: Bio vegane Macaroni
-      - article: Bio vegane Strozzapreti
+      - article: Bio Macaroni
+      - article: Bio Strozzapreti
     showColName: true
 ---
 **Lieferbedingungen:** Ab einem Bestellwert von 48 Packungen ist die Lieferung schweizweit gratis, ansonsten gelten die effektiven Versandkosten.\
