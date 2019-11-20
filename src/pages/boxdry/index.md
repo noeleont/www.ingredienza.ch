@@ -24,11 +24,11 @@ tables:
     showColName: true
   - heading: Bio 5-Ei Pressteigwaren
     products:
+      - article: B-Macaroni
+      - article: B-Strozzapreti
       - article: B-Capello del mago
       - article: B-Lumache
       - article: B-Violette
-      - article: B-Macaroni
-      - article: B-Strozzapreti
     showColName: true
 ---
 **Lieferbedingungen:** Ab einem Bestellwert von 48 Packungen ist die Lieferung schweizweit gratis, ansonsten gelten die effektiven Versandkosten.\
