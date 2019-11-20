@@ -1,7 +1,7 @@
 ---
 templateKey: pastabox-page
 articleNr: B-Macaroni
-product: B-Macaroni
+product: Bio Macaroni
 units:
   amount: '6'
   weight: 250g
