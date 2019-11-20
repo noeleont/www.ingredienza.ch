@@ -20,7 +20,7 @@ tables:
       - article: BVF003
       - article: BVF004
       - article: BVF005
-      - article: BVF006
+      - article: VF006
     showColName: true
   - heading: Bio 5-Ei Pressteigwaren
     products:
