@@ -15,7 +15,7 @@ tables:
   - heading: Farfalle Bio Vegan
     outro: ''
     products:
-      - article: BVF001 
+      - article: BVF001
       - article: Farfalle Nr. 2
       - article: Farfalle Nr. 3
       - article: Farfalle Nr. 4
@@ -37,6 +37,6 @@ Für Selbstabholer gelten lediglich die Mindestbestellmengen.
 
 **Mindestbestellmengen:** Von jeder Sorte müssen mind. 6 Pasta-Boxen à 250g bestellt werden.
 
-**Lagerung & Präsentation:** Die Teigwaren werden in handliche Trays aus Karton mit Klarsichtfolie verpackt und geliefert. In Ihrem Regal präsentieren sich unsere ansprechenden Pasta-Boxen optimal.
+**Lagerung & Präsentation:** Die Teigwaren werden in handliche Trays aus Karton mit Klarsichtfenster verpackt und geliefert. In Ihrem Regal präsentieren sich unsere ansprechenden Pasta-Boxen optimal.
 
 **Preise:** Der jeweilige Verkaufspreis pro Pasta-Box darf nicht unterschritten werden.
