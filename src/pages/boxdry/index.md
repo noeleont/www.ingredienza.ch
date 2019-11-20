@@ -16,19 +16,19 @@ tables:
     outro: ''
     products:
       - article: BVF001
-      - article: Farfalle Nr. 2
-      - article: Farfalle Nr. 3
-      - article: Farfalle Nr. 4
-      - article: Farfalle Nr. 5
-      - article: Farfalle Nr. 6
+      - article: BVF002
+      - article: BVF003
+      - article: BVF004
+      - article: BVF005
+      - article: BVF006
     showColName: true
   - heading: Bio 5-Ei Pressteigwaren
     products:
-      - article: Bio Capello del mago
-      - article: Bio Lumache
-      - article: Bio Violette
-      - article: Bio Macaroni
-      - article: Bio Strozzapreti
+      - article: B-Capello del mago
+      - article: B-Lumache
+      - article: B-Violette
+      - article: B-Macaroni
+      - article: B-Strozzapreti
     showColName: true
 ---
 **Lieferbedingungen:** Ab einem Bestellwert von 48 Packungen ist die Lieferung schweizweit gratis, ansonsten gelten die effektiven Versandkosten.\
