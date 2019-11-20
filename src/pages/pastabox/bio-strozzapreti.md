@@ -1,7 +1,7 @@
 ---
 templateKey: pastabox-page
 articleNr: B-Strozzapreti
-product: B-Strozzapreti
+product: Bio Strozzapreti
 units:
   amount: '6'
   weight: 250g
