@@ -1,8 +1,8 @@
 ---
 templateKey: article-page
 articleNr: B-Strozzapreti
-description_de: Bio Hartweizengriess und Schweizer Bio Eier
-description_fr: Semoule de blé dur bio et œufs bio suisses
+description_de: Bio Strozzapreti aus Bio Hartweizengriess und Schweizer Bio Eier
+description_fr: Strozzapreti bio aux semoule de blé dur bio et œufs bio suisses
 unit: 250g
 price: 8.--
 ---
