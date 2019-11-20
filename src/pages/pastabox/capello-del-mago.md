@@ -1,7 +1,7 @@
 ---
 templateKey: pastabox-page
 articleNr: B-Capello del mago
-product: B-Capello del mago
+product: Bio Capello del mago
 units:
   amount: '6'
   weight: 250g
