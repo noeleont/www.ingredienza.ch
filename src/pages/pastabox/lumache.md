@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Bio Lumache
+articleNr: B-Lumache
 product: B-Lumache
 units:
   amount: '6'
