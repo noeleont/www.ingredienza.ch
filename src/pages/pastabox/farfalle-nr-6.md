@@ -1,6 +1,6 @@
 ---
 templateKey: pastabox-page
-articleNr: Farfalle Nr. 6
+articleNr: VF006
 product: Farfalle 6
 units:
   amount: '6'
