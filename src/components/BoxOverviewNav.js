@@ -22,7 +22,7 @@ const BoxOverviewNavigation = styled.div`
       grid-template-rows: auto auto;
 
   margin-bottom: 20px; 
-  justify-items: center;
+  justify-content: center;
 
   white-space: pre-wrap;
   @media (min-width: ${desktopBreakPoint}) {
@@ -35,13 +35,14 @@ const BoxOverviewNavigation = styled.div`
     
 `;
 
-const FrozenLink = styled.a`
+const FrozenLink = styled.div`
   -ms-grid-column: 1;
       grid-column: 1;
   -ms-grid-row: 1;
       grid-row: 1;
   @media ${between} {
     margin-left: ${leftMargin};
+    -ms-grid-row-align:
     -ms-grid-column: 1;
         grid-column: 1;
     -ms-grid-row: 1;
@@ -50,7 +51,7 @@ const FrozenLink = styled.a`
 `;
 
 
-const DryLink = styled.a`
+const DryLink = styled.div`
   -ms-grid-column: 1;
       grid-column: 1;
   -ms-grid-row: 2;
@@ -94,13 +95,17 @@ export default props => {
 }
 const BoxOverviewNavigationTemplate = ({ links, frozen, dry}) => (
   <BoxOverviewNavigation>
-    <FrozenLink href={links.dry.url}>
-      <Img fixed={dry.image.childImageSharp.fixed} />
-      <h2>{dry.text}</h2>
+    <FrozenLink>
+      <a href={links.dry.url}>
+        <Img fixed={dry.image.childImageSharp.fixed} />
+        <h2>{dry.text}</h2>
+      </a>
     </FrozenLink>
-    <DryLink href={links.frozen.url}>
-      <Img fixed={frozen.image.childImageSharp.fixed} />
-      <h2>{frozen.text}</h2>
+    <DryLink>
+      <a href={links.frozen.url}>
+        <Img fixed={frozen.image.childImageSharp.fixed} />
+        <h2>{frozen.text}</h2>
+      </a>
     </DryLink>
   </BoxOverviewNavigation>
 );
