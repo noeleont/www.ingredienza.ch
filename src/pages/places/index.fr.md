@@ -30,11 +30,11 @@ places:
   - address: 'Monbijoustrasse 6, 3011 Bern'
     name: Petit Couteau AG
     week:
-      days: Ma - ven
-      hours: 11 h - 19 h
+      days: Lun - ven
+      hours: 8 h - 19 h
     weekend:
       days: Sa
-      hours: 10 h - 16 h
+      hours: 9 h - 16 h
   - address: 'Länggassstrasse 36, 3012 Bern'
     info: Fermé le mercredi
     name: Bio-Metzgerei Wegmüller AU COCHON ROSE
