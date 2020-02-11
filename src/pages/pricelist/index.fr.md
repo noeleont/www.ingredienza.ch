@@ -15,4 +15,4 @@ meta:
 
 # Nos tarifs pour les pâtes
 
-Vous pouvez [télécharger](preisliste_fr.pdf) notre liste de prix au format.pdf
+Vous pouvez [télécharger](/assets/preisliste_fr.pdf) notre liste de prix au format.pdf
