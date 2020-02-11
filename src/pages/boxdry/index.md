@@ -24,10 +24,11 @@ tables:
     showColName: true
   - heading: Bio 5-Ei Pressteigwaren
     products:
-      - article: B-Macaroni
-      - article: B-Strozzapreti
       - article: B-Capello del mago
       - article: B-Lumache
+      - article: B-Macaroni
+      - article: B-Mafaldine
+      - article: B-Strozzapreti
       - article: B-Violette
     showColName: true
 ---
