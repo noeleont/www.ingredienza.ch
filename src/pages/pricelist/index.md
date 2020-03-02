@@ -21,6 +21,9 @@ Unsere Preisliste können Sie als .pdf Datei [herunterladen](/assets/preisliste.
 
 Unsere Angebotslisten für [trocken](/assets/Angebotsliste_Pasta-Box_PT.pdf) und [tiefgekühlten](/assets/Angebotsliste_Pasta-Box_TK.pdf) Pasta-Boxen können Sie als .pdf Datei herunterladen.
 
+**Wichtig:** Die Angebotslisten sind passwortgeschützt. Sie können
+[hier](mailto:info@ingredienza.ch?subject=Passwort%20Anfrage) das Passwort anfragen. 
+
 Für Bestellungen können Sie die folgenden Formulare verwenden:
 
 [Bestellformular trocken](/assets/Bestellformular_Pasta-Box_PT.pdf) [Bestellformular tiefgekühlt](/assets/Bestellformular_Pasta-Box_TK.pdf)

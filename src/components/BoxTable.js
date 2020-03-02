@@ -47,13 +47,13 @@ const ProductTable = styled.table`
 
   /* fourth column */
   td:nth-child(4) {  
+      min-width: 120px;
+      width: 150px;
+  }
+  /* td:nth-child(5) {  
       min-width: 90px;
       width: 100px;
-  }
-  td:nth-child(5) {  
-      min-width: 90px;
-      width: 100px;
-  }
+  } */
 `;
 
 const ResponsiveTable = styled.div`
@@ -97,8 +97,7 @@ const TableHeaderDe = () => (
     <th>Art.Nr</th>
     <th>Bezeichnung</th>
     <th>Mengeneinheit</th>
-    <th>EP pro Box</th>
-    <th>VP pro Box</th>
+    <th>Preis pro Box</th>
   </tr>
 )
 
@@ -136,8 +135,7 @@ const ProductRowDe = ({ product: { image, articleNr, product, units, price_ep, p
       {articleNr}
     </td> : <td>{articleNr}</td> }
     <td>{ product ? product.frontmatter.description : '' }</td>
-    <td>{ units ? units.amount : '' } Boxen à {units ? units.weight : '' }</td>
-    <td>CHF {price_ep}</td>
+    <td>Box à {units ? units.weight : '' }</td>
     <td>CHF {price_vp}</td>
   </tr>
 );
