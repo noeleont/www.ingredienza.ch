@@ -13,11 +13,16 @@ const reducer = (state, action) => {
 			image: '',
     })
   }
+	if (action.type === `CLOSE_INDEX_MODAL`) {
+    return Object.assign({}, state, {
+      indexModalIsOpen: false,
+    })
+  }
 	
   return state
 }
 
-const initialState = { modalIsOpen: false, image: '' }
+const initialState = { modalIsOpen: false, image: '', indexModalIsOpen: true }
 
 const createStore = () => reduxCreateStore(reducer, initialState)
 export default createStore
