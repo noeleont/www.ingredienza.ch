@@ -1,7 +1,18 @@
 import React from 'react';
-import Modal from 'react-modal'
-import Img from 'gatsby-image'
+import Modal from 'react-modal';
+import Img from 'gatsby-image';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
+
+const Link = styled.a`
+
+  text-decoration: none;
+  color: #000;
+  transition: all .2s ease-in-out;
+  border-bottom: .15rem solid;
+  border-bottom-color: rgba( 0, 0, 0, .35 );
+
+`;
 
 const customStyles = {
   content : {
@@ -37,13 +48,18 @@ const IndexModal = ({image, modalIsOpen, modalClose}) => (
     </p>
     <p>
       Bei Fragen oder für Bestellungen erreichen Sie uns am besten
-      telefonisch 031 382 42 42 oder per Mail info@ingredienza.ch
-      Wir sagen Danke für Ihre Unterstützung!
+      telefonisch 031 382 42 42 oder per Mail <Link href="mailto:info@ingredienza.ch">
+      info@ingredienza.ch </Link> 
+    </p>
+    <p>
+      Wir sagen Danke für Ihre Unterstützung! <br />
       Ihr Ingredienza-Team
-      Unter folgendem Link finden Sie weitere Geschäfte die unsere
+    </p>
+    <p>
+      Unter folgendem <Link href="/standorte">Link</Link> finden Sie weitere Geschäfte die unsere
       Pasta im Offenverkauf oder als tiefgekühlte Pasta-Boxen verkaufen.
     </p>
-    <a style={{ cursor: 'pointer', }} onClick={modalClose} aria-label="Close Pasta Modal">&times;</a>
+    <a style={{ cursor: 'pointer', position: 'absolut', top: '10px', right: '10px' }} onClick={modalClose} aria-label="Close Pasta Modal">&times;</a>
   </Modal>
 ); 
 
