@@ -3,6 +3,7 @@ import rehypeReact from 'rehype-react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Img from "gatsby-image"
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Contact from '../components/Contact'
@@ -13,6 +14,15 @@ const renderAst = new rehypeReact({
   components: { "contact": Contact }
 }).Compiler
 
+// Always show a bottom border for download link
+const Content = styled.div`
+  a {
+    text-decoration: none;
+    border-bottom: .1rem solid rgba( 0, 0, 0, .35 );
+    color: #000;
+  }
+`
+
 export const IndexPageTemplate = ({
   image,
   imageModal,
@@ -20,21 +30,10 @@ export const IndexPageTemplate = ({
 }) => (
 
 	<div>
-		{ image ?
-			<Img
-				style={{
-					zIndex: -1,
-					position: "fixed",
-					right: 0,
-					bottom: 0,
-					height: "100vh",
-					width: "100vw",  
-				}}
-				fluid={image.childImageSharp.fluid}
-			/> : <div />
+		{ imageModal ?
+			<Img fluid={imageModal.childImageSharp.fluid} /> : <div />
 		}
-    <div>{renderAst(htmlAst)}</div> 
-    <IndexModal image={imageModal} />
+    <Content>{renderAst(htmlAst)}</Content> 
 	</div>
 )
 
@@ -47,7 +46,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter, htmlAst } = data.markdownRemark
-  console.log(frontmatter);
 
   return (
     <Layout lang={frontmatter.lang} meta={frontmatter.meta}>

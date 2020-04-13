@@ -14,32 +14,24 @@ meta:
   title: Berner Teigwaren-Manufaktur | Ingredienza 
 ---
 
-# Ingredienza
+**Es gibt keinen Grund, auf Ihre Lieblingsteigwaren zu verzichten.
+Wir haben für Sie von Montag – Freitag von 8 – 16 Uhr geöffnet.**
 
-## frisch zubereitete Pastasorten aus Bern 
+Neben unseren praktischen Pasta-Boxen à 400gr (2-3 Portionen)
+können auch Sie, als Privatperson bei uns Gastro-Einheiten
+à2kg oder 3kg zu Gastropreisen kaufen – wie die Profis!
+Lassen Sie sich in unserem Fabrik-Laden an der Güterstrasse oder
+auf unserer Website von unserem grossen Sortiment inspirieren.
+Wenn Sie nicht persönlich vorbeikommen können, beliefern wir Sie
+bis auf weiteres in Bern und nächster Umgebung ab einem 
+Warenwert von Fr. 50.-
 
-INGREDIENZA... heisst Zutaten und ist ein Unternehmen, welches sich ganz der
-Herstellung von erstklassigen Teigwarenspezialitäten widmet. 
+Bei Fragen oder für Bestellungen erreichen Sie uns am besten
+telefonisch 031 382 42 42 oder per Mail [info@ingredienza.ch](mailto:info@ingredienza.ch)
 
-Was im Februar 1990 mit 3 Sorten gefüllten Teigwaren begonnen hat,
-entwickelte sich bis heute zu einem abwechslungsreichen, fantasievollen
-und qualitativ hochwertigen Pasta-Angebot auf dem Schweizer Gastromarkt.
+Wir sagen Danke für Ihre Unterstützung!
 
-Nebst saisonalen Spezialitäten führen wir über 50 Sorten gefüllte
-Teigwaren, ein grosses Nudelangebot in verschiedenen Schnittbreiten
-sowie delikate Kartoffel-Gnocchi mit diversen saisonalen Zutaten.
+Ihr Ingredienza-Team
 
-Unsere Linie “Fatto a mano” gehört zum Exklusivsten, was es
-im Pastasektor zu entdecken gibt. Diese Produkte werden, wie der Name
-verspricht, von Hand hergestellt. 
-
-INGREDIENZA... heisst Zutaten, weil es uns wichtig ist, woher unsere
-Lebensmittel kommen. Da wir selbst seit Jahren unsere Teigwaren
-auf dem Berner Wochenmarkt anbieten, haben wir uns ein breites Netz an
-Landwirtschaftsbetrieben aufgebaut, welche uns mit Gemüsen und Kräutern
-beliefern. Einen grossen Teil unserer Produkte stellen wir in lizenzierter
-Bio-Qualität her, aus Überzeugung und Liebe zum besseren Produkt.
-
-INGREDIENZA... heisst Zutaten. 
-
-Lassen Sie unsere Produkte eine wertvolle Zutat in Ihrer Küche sein.
+Unter folgendem [Link](/standorte) finden Sie weitere Geschäfte die unsere
+Pasta im Offenverkauf oder als tiefgekühlte Pasta-Boxen verkaufen.
