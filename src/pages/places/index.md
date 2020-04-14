@@ -20,22 +20,6 @@ places:
     weekend:
       days: Sa.
       hours: '07:30 - 17:00 Uhr'
-  - address: 'Schüpfenried, 3043 Uettligen'
-    name: Hofladen und ängelibeck
-    week:
-      days: Mo. - Fr.
-      hours: '07:30 - 18:30 Uhr'
-    weekend:
-      days: Sa.
-      hours: '07:30 - 17:00 Uhr'
-  - address: 'Monbijoustrasse 6, 3011 Bern'
-    name: Petit Couteau AG
-    week:
-      days: Mo. - Fr.
-      hours: '08:00 - 19:00 Uhr'
-    weekend:
-      days: Sa.
-      hours: '09:00 - 16:00 Uhr'
   - address: 'Länggassstrasse 36, 3012 Bern'
     info: Mittwoch ganzer Tag geschlossen
     name: Bio-Metzgerei Wegmüller AU COCHON ROSE
@@ -45,23 +29,15 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
-  - address: 'Weite Gasse 17, 5400 Baden'
+  - address: 'Marktstrasse 21, 5630 Muri AG'
     info: Montag ganzer Tag geschlossen
-    name: PARADEIS
+    name: Chäsi Muri
     week:
       days: Di. - Fr.
-      hours: '09:00 - 18:30 Uhr'
+      hours: '09:00 - 12:00 Uhr\n14:00 - 18:30 Uhr'
     weekend:
       days: Sa.
-      hours: '09:00 - 16:00 Uhr'
-  - address: 'Untere Hauptgasse 5, 3600 Thun'
-    name: Simplyfine
-    week:
-      days: Mo. - Fr.
-      hours: '08:00 - 19:00 Uhr'
-    weekend:
-      days: Sa.
-      hours: '08:00 - 17:00 Uhr'
+      hours: '08:00 - 14:00 Uhr'
   - address: 'Konradstrasse 32, 4600 Olten'
     info: Montag ganzer Tag geschlossen
     name: Eguete delikat-essen-trinken GmbH
@@ -71,6 +47,14 @@ places:
     weekend:
       days: Sa.
       hours: '08:30 - 16:00 Uhr'
+  - address: 'Brunnadernstrasse 71, 3006 Bern'
+    name: Elfenau-Laden
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 16:00 Uhr'
   - address: Singerstrasse 12 4052 Basel (auf dem Wolf)
     name: Frischeparadies Basel
     week:
@@ -87,6 +71,117 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 18:00 Uhr'
+  - address: 'Schüpfenried, 3043 Uettligen'
+    name: Hofladen und ängelibeck
+    week:
+      days: Mo. - Fr.
+      hours: '07:30 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '07:30 - 17:00 Uhr'
+  - address: 'Kramgasse 80, 3011 Bern'
+    info: Montag ganzer Tag geschlossen
+    name: Ingredienza der Laden
+    week:
+      days: Di. - Fr.
+      hours: '09:30 - 19:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 17:00 Uhr'
+  - address: 'Poststrasse 8, 3400 Burgdorf'
+    info: Montag ganzer Tag geschlossen
+    name: Integral Bioladen
+    week:
+      days: Di. - Fr.
+      hours: '09:00 - 12:00 Uhr\n15:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '09:00 - 16:00 Uhr'
+  - address: 'Bernstrasse 57, 3066 Stettlen'
+    name: Maxi Stettlen
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 12:15 Uhr\n14:00 - 18:00 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 16:00 Uhr'
+  - address: 'Belpbergstrasse 14, 3123 Belp'
+    info: Mittwoch ganzer Tag geschlossen
+    name: Metzgerei Reber AG
+    week:
+      days: 'Mo., Di., Do., Fr.'
+      hours: '08:00 - 12:00 Uhr\n14:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '07:30 - 16:00 Uhr'
+  - address: 'Bergackerweg 1, 3054 Schüpfen'
+    info: Montag ganzer Tag geschlossen
+    name: Metzgerei Stettler
+    week:
+      days: Di. - Fr.
+      hours: '08:00 - 12:00 Uhr\n14:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '07:00 - 15:00 Uhr'
+  - address: 'Spiegelstrasse 106, 3095 Spiegel b. Bern'
+    info: Montag und Dienstag ganzer Tag geschlossen
+    name: Metzg im Spiegel
+    week:
+      days: Mi. - Fr.
+      hours: '07:30 - 12:00 Uhr\n15:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '07:30 - 13:00 Uhr'
+  - address: 'Mindstrasse 10, 3006 Bern'
+    info: Dienstag ganzer Tag geschlossen
+    name: Murifeld-Laden
+    week:
+      days: 'Mo., Mi., Do., Fr.'
+      hours: '08:00 - 12:30 Uhr\n16:00 - 18:00 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 12:30'
+  - address: 'Braschlergasse 8, 8610 Uster'
+    name: Öpfelbaum Bioladen
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 16:00 Uhr'
+  - address: 'Weite Gasse 17, 5400 Baden'
+    info: Montag ganzer Tag geschlossen
+    name: PARADEIS
+    week:
+      days: Di. - Fr.
+      hours: '09:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '09:00 - 16:00 Uhr'
+  - address: 'Monbijoustrasse 6, 3011 Bern'
+    name: Petit Couteau AG
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 19:00 Uhr'
+    weekend:
+      days: Sa.
+      hours: '09:00 - 16:00 Uhr'
+  - address: 'Untere Hauptgasse 5, 3600 Thun'
+    name: Simplyfine
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 19:00 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 17:00 Uhr'
+  - address: 'Stadtplatz 34, 3570 Aarberg'
+    name: stedtlichäsi Aarberg
+    week:
+      days: Mo. - Fr.
+      hours: '08:00 - 12:30 Uhr\n14:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '08:00 - 16:00 Uhr'
 ---
 # Bezugs&shy;quellen für Privat&shy;personen
 
