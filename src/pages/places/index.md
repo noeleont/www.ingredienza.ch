@@ -12,14 +12,6 @@ meta:
   keywords: 'Ingreidenza, Standorte'
   title: Bezugsquellen Privatpersonen | Ingredienza
 places:
-  - address: 'Könizstrasse 291, 3089 Köniz'
-    name: ängelibeck Boulangerie und Grand Café
-    week:
-      days: Mo. - Fr.
-      hours: '06:30 - 19:00 Uhr'
-    weekend:
-      days: Sa.
-      hours: '07:30 - 17:00 Uhr'
   - address: 'Länggassstrasse 36, 3012 Bern'
     info: Mittwoch ganzer Tag geschlossen
     name: Bio-Metzgerei Wegmüller AU COCHON ROSE
@@ -29,6 +21,15 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
+  - address: 'Neue Bahnhofstrasse 8, 3110 Münsingen'
+    info: Montag und Dienstag ganzer Tag geschlossen
+    name: Caffè Julia
+    week:
+      days: Mi. - Fr.
+      hours: '06:30 - 18:00 Uhr'
+    weekend:
+      days: Sa. - So.
+      hours: '09:00 - 18:00 Uhr'
   - address: 'Marktstrasse 21, 5630 Muri AG'
     info: Montag ganzer Tag geschlossen
     name: Chäsi Muri
