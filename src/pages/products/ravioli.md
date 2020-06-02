@@ -77,11 +77,11 @@ tables:
         showArticleNr: true
       - article: B40021
         showArticleNr: true
+      - article: B40021Q
+        showArticleNr: true
       - article: B40018
         showArticleNr: true
       - article: '40044'
-        showArticleNr: true
-      - article: 40021Q
         showArticleNr: true
     showColName: true
 ---
