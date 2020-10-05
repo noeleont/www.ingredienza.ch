@@ -56,14 +56,6 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
-  - address: Singerstrasse 12 4052 Basel (auf dem Wolf)
-    name: Frischeparadies Basel
-    week:
-      days: Mo. - Mi. \nDo. - Fr.
-      hours: '10:00 - 18:00 Uhr \n10:00 - 20:00 Uhr'
-    weekend:
-      days: Sa.
-      hours: '07:00 - 16:00 Uhr'
   - address: Hardgutstrasse 11 8048 Zürich (beim Schlachthof)
     name: Frischeparadies Zürich
     week:
