@@ -64,14 +64,6 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 18:00 Uhr'
-  - address: 'Schüpfenried, 3043 Uettligen'
-    name: Hofladen und ängelibeck
-    week:
-      days: Mo. - Fr.
-      hours: '07:30 - 18:30 Uhr'
-    weekend:
-      days: Sa.
-      hours: '07:30 - 17:00 Uhr'
   - address: 'Kramgasse 80, 3011 Bern'
     info: Montag ganzer Tag geschlossen
     name: Ingredienza der Laden
