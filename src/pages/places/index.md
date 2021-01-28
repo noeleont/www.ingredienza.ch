@@ -56,6 +56,14 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
+  - address: 'Dorfplatz 2, 3176 Neuenegg'
+    name: Feinwerk&Co.
+    week:
+      days: siehe Webseite
+      hours: 'https://www.feinwerkundco.ch/'
+    weekend:
+      days: So.
+      hours: geschlossen
   - address: Hardgutstrasse 11 8048 Zürich (beim Schlachthof)
     name: Frischeparadies Zürich
     week:
@@ -151,6 +159,15 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 16:00 Uhr'
+  - address: 'Ritterquai 2–4, 4500 Solothurn'
+    info: 'Öffnungszeiten Do.: 09:00 - 12:30 Uhr\n14:00 - 20:00 Uhr'
+    name: pur & wild GmbH
+    week:
+      days: Di. - Fr.
+      hours: '09:00 - 12:30 Uhr\n14:00 - 18:30 Uhr'
+    weekend:
+      days: Sa.
+      hours: '09:00 - 17:00 Uhr'
   - address: 'Untere Hauptgasse 5, 3600 Thun'
     name: Simplyfine
     week:
