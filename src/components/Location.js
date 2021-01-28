@@ -6,13 +6,13 @@ const Container = styled.div`
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  grid-template-columns: auto;
 
   -ms-grid-rows:
-    auto auto auto;
+    auto auto auto auto;
 
-      grid-template-rows:
-    auto auto auto;
+  grid-template-rows:
+    auto auto auto auto;
 
   margin-bottom: 20px; 
 
@@ -21,9 +21,8 @@ const Container = styled.div`
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
 
-    -ms-grid-rows: auto auto;
-
-        grid-template-rows: auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
   }
 `;
 
@@ -174,7 +173,13 @@ const WeekendHours = styled.div`
   }
 `;
 
-export const Location = ({ name, address, info, week, weekend, lang }) => {
+const LinkDescription = styled.div`
+  white-space: pre-line;
+
+
+`;
+
+export const Location = ({ name, address, info, week, weekend, lang, link }) => {
   return (
   <Container>
     <Name>
@@ -186,24 +191,26 @@ export const Location = ({ name, address, info, week, weekend, lang }) => {
         { lang === "de"? "Öffnungszeiten:" : "Heures d’ouverture:" }
       </HoursDescription>
       <WeekDescription>
-				{week.days.split('\\n').map((day, key) => (
-					<span key={key}>{day}<br /></span>
-				))}
+        {week.days.split('\\n').map((day, key) => (
+          <span key={key}>{day}<br /></span>
+        ))}
       </WeekDescription>
       <WeekHours>
-				{week.hours.split('\\n').map((hour, key) => (
-					<span key={key}>{hour}<br /></span>
-				))}
+        {week.hours.split('\\n').map((hour, key) => (
+          <span key={key}>{hour}<br /></span>
+        ))}
       </WeekHours>
       <WeekendDescription>
         {weekend.days}
       </WeekendDescription>
       <WeekendHours>
-				{weekend.hours}
+        {weekend.hours}
       </WeekendHours>
       {info ? (
         <Info>
-          <strong>{info}</strong>
+          <strong>{info.split('\\n').map((txt, key) => (
+            <span key={key}>{txt}<br /></span>
+          ))}</strong>
         </Info>
       ) : (
         <div />

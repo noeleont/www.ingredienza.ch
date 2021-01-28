@@ -12,7 +12,7 @@ const Infos = styled.div`
 `;
 
 const TelInfo = styled.div`
-	-ms-grid-row: 1;
+  -ms-grid-row: 1;
   grid-row: 1;  
 
   -ms-grid-column: 1;
@@ -20,16 +20,16 @@ const TelInfo = styled.div`
 `;
 
 const TelContent = styled.div`
-	-ms-grid-row: 1;
+  -ms-grid-row: 1;
   grid-row: 1;  
 
-	-ms-grid-column: 2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
 `;
 
 const FaxInfo = styled.div`
-	-ms-grid-row: 2;
+  -ms-grid-row: 2;
   grid-row: 2;  
 
   -ms-grid-column: 1;
@@ -37,16 +37,16 @@ const FaxInfo = styled.div`
 `;
 
 const FaxContent = styled.div`
-	-ms-grid-row: 2;
+  -ms-grid-row: 2;
   grid-row: 2;  
 
-	-ms-grid-column: 2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
 `;
 
 const MailInfo = styled.div`
-	-ms-grid-row: 3;
+  -ms-grid-row: 3;
   grid-row: 3;  
 
   -ms-grid-column: 1;
@@ -54,16 +54,16 @@ const MailInfo = styled.div`
 `;
 
 const MailContent = styled.div`
-	-ms-grid-row: 3;
+  -ms-grid-row: 3;
   grid-row: 3;  
 
-	-ms-grid-column: 2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
 `;
 
 
-	
+  
 
 const Contact = () => (
   <div>
@@ -76,30 +76,30 @@ const Contact = () => (
     CH-3008 Bern
     <br />
     <br />
-		<Infos>
-			<TelInfo>
-				Tel:
-			</TelInfo>
-			<FaxInfo>
-				Fax:
-			</FaxInfo>
-			<MailInfo>
-				Mail:
-			</MailInfo>
+    <Infos>
+      <TelInfo>
+        Tel:
+      </TelInfo>
+      <FaxInfo>
+        Fax:
+      </FaxInfo>
+      <MailInfo>
+        Mail:
+      </MailInfo>
       <TelContent>
         +41 (0)31 382 42 42
       </TelContent>
-			<FaxContent>
+      <FaxContent>
         +41 (0)31 382 49 05
       </FaxContent>
-			<MailContent>
+      <MailContent>
         <a
           href="mailto:info@ingredienza.ch?subject=Kontakt%20Ingredienza.ch"
         >
           info@ingredienza.ch
         </a>
       </MailContent>
-		</Infos>
+    </Infos>
   </div>
 )
 
