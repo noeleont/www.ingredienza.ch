@@ -176,6 +176,15 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 17:00 Uhr'
+  - address: 'Hauptstrasse 76a, 4457 Diegten'
+    info: 'Nur Onlineshop: https://stadtlandkorb.ch/'
+    name: 'Stadt Land Korb, J&H Boutique GmbH'
+    week:
+      days: '-'
+      hours: '-'
+    weekend:
+      days: '-'
+      hours: '-'
   - address: 'Stadtplatz 34, 3570 Aarberg'
     name: stedtlichäsi Aarberg
     week:
