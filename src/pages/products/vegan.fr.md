@@ -14,9 +14,7 @@ meta:
   keywords: pâtes végétaliennes
   title: Pâtes végétaliennes d'Ingredienza | Ingredienza
 tables:
-  - outro: >-
-      Les produits suivants sont disponibles sur commande uniquement.  <br />
-      Quantité minimale: 5&cent; de 3kg
+  - outro: ''
     products:
       - article: BVITA007
         showArticleNr: true
