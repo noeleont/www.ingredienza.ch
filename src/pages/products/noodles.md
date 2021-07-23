@@ -13,7 +13,7 @@ meta:
   title: Nudeln von Ingredienza | Ingredienza
 tables:
   - heading: Bio-Nudeln
-    outro: ""
+    outro: ''
     products:
       - article: B60002
         showArticleNr: true
@@ -23,15 +23,15 @@ tables:
   - heading: Konventionelle Nudeln
     outro: >-
       Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.  <br />
-      Mindestbestellung 5&cent; &agrave; 3kg
+      Mindestbestellung 11&cent; &agrave; 3kg
     products:
-      - article: "60003"
+      - article: '60003'
         showArticleNr: true
-      - article: "60023"
+      - article: '60023'
         showArticleNr: true
     showColName: true
-  - heading: ""
-    outro: ""
+  - heading: ''
+    outro: ''
     products:
       - article: B60015
         showArticleNr: true
@@ -40,6 +40,8 @@ tables:
       - article: B60027
         showArticleNr: true
       - article: B60029
+        showArticleNr: true
+      - article: B60061
         showArticleNr: true
       - article: B60026
         showArticleNr: true
@@ -59,6 +61,8 @@ tables:
         showArticleNr: true
       - article: B60017
         showArticleNr: true
+      - article: B60060
+        showArticleNr: true
       - article: B60011
         showArticleNr: true
       - article: B60030
@@ -71,11 +75,29 @@ tables:
         showArticleNr: true
       - article: B60010
         showArticleNr: true
+      - article: BV60002CH
+        showArticleNr: true
       - article: B60021
         showArticleNr: true
       - article: B60008
         showArticleNr: true
-      - article: "60019"
+      - article: '60019'
+        showArticleNr: true
+    showColName: true
+  - heading: Frühling
+    products:
+      - article: B60024
+        showArticleNr: true
+    showColName: true
+  - heading: Herbst / Winter
+    products:
+      - article: B60016
+        showArticleNr: true
+      - article: B60007
+        showArticleNr: true
+      - article: B60025
+        showArticleNr: true
+      - article: '60028'
         showArticleNr: true
     showColName: true
 ---
