@@ -23,18 +23,10 @@ tables:
         showArticleNr: true
       - article: '50007'
         showArticleNr: true
-      - article: B60024
-        showArticleNr: true
-      - article: '60037'
-        showArticleNr: true
     showColName: true
   - heading: 'Eté, de juin à août'
     outro: ''
     products:
-      - article: BITA002
-        showArticleNr: true
-      - article: B20004
-        showArticleNr: true
       - article: B40040
         showArticleNr: true
       - article: '50020'
@@ -50,28 +42,6 @@ tables:
       - article: '40020'
         showArticleNr: true
       - article: '40041'
-        showArticleNr: true
-      - article: B60016
-        showArticleNr: true
-      - article: B60025
-        showArticleNr: true
-      - article: B60007
-        showArticleNr: true
-      - article: '60028'
-        showArticleNr: true
-      - article: 60035S
-        showArticleNr: true
-      - article: 60035RK
-        showArticleNr: true
-    showColName: true
-  - heading: Spécialités
-    outro: ''
-    products:
-      - article: BITA001
-        showArticleNr: true
-      - article: BITA011
-        showArticleNr: true
-      - article: 60035RS
         showArticleNr: true
     showColName: true
 ---
