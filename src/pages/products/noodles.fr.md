@@ -23,7 +23,7 @@ tables:
   - heading: Pâtes classiques
     outro: >-
       Les produits suivants sont disponibles sur commande uniquement. <br />
-      Quantité minimale: 5&cent; de 3kg
+      Quantité minimale: 11&cent; de 3kg
     products:
       - article: '60003'
         showArticleNr: true
@@ -33,6 +33,10 @@ tables:
   - outro: ''
     products:
       - article: B60005
+        showArticleNr: true
+      - article: B60060
+        showArticleNr: true
+      - article: B60061
         showArticleNr: true
       - article: B60014
         showArticleNr: true
@@ -76,7 +80,25 @@ tables:
         showArticleNr: true
       - article: B60010
         showArticleNr: true
+      - article: BV60002CH
+        showArticleNr: true
       - article: '60019'
+        showArticleNr: true
+    showColName: true
+  - heading: Printemps
+    products:
+      - article: B60024
+        showArticleNr: true
+    showColName: true
+  - heading: Automne-hiver
+    products:
+      - article: B60016
+        showArticleNr: true
+      - article: B60025
+        showArticleNr: true
+      - article: B60007
+        showArticleNr: true
+      - article: '60028'
         showArticleNr: true
     showColName: true
 ---
