@@ -47,11 +47,15 @@ tables:
   - heading: ... mit Fleisch und Fisch
     outro: ''
     products:
+      - article: B40004
+        showArticleNr: true
       - article: '40004'
         showArticleNr: true
       - article: '50011'
         showArticleNr: true
       - article: '40030'
+        showArticleNr: true
+      - article: '50014'
         showArticleNr: true
     showColName: true
   - heading: ... mit Pilzen
@@ -85,4 +89,4 @@ tables:
 
 Mit unseren feinen Ravioli eröffnen sich neue Geschmackswelten. In unserer
 Teigwaren-Manufaktur werden Kreativität und Exklusivität grossgeschrieben.
-Dementsprechend variantenreich ist unser Sortiment an
+Dementsprechend variantenreich ist unser Sortiment an Ravioli.
