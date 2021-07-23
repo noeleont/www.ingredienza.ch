@@ -12,9 +12,7 @@ meta:
   keywords: Vegane Teigwaren
   title: Vegane Teigwaren von Ingredienza | Ingredienza
 tables:
-  - outro: >-
-      Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.
-      Mindestbestellung 5¢ à 3kg
+  - outro: ''
     products:
       - article: BVITA007
         showArticleNr: true
