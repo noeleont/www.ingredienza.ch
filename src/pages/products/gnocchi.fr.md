@@ -49,7 +49,7 @@ tables:
   - heading: Gnocchi spéciaux
     outro: >-
       Les gnocchi spéciaux sont disponibles sur commande uniquement.<br />
-      Quantité minimale: 7&cent; de 3kg
+      Quantité minimale: 15&cent; de 3kg
     products:
       - article: 60035R
         showArticleNr: true
