@@ -9,47 +9,43 @@ meta:
     Saisonprodukte. Wir kreieren für unsere Kunden saisongerechte Pasta aus
     Saisongemüse. Frischer geht's nicht. ► Entdecken Sie unsere
     Saison-Empfehlungen
-  keywords: 'Pasta, Saisongemüse'
+  keywords: "Pasta, Saisongemüse"
   title: Pasta aus Saisongemüse | Ingredienza
 tables:
   - heading: Frühling (Februar bis Mai)
-    outro: ''
+    outro: ""
     products:
       - article: B40013
         showArticleNr: true
-      - article: '40019'
+      - article: "40019"
         showArticleNr: true
-      - article: '50017'
+      - article: "50017"
         showArticleNr: true
-      - article: '50007'
+      - article: "50007"
         showArticleNr: true
       - article: B60024
         showArticleNr: true
-      - article: '60037'
+      - article: "60037"
         showArticleNr: true
     showColName: true
   - heading: Sommer (Juni bis August)
-    outro: ''
+    outro: ""
     products:
-      - article: B20004
-        showArticleNr: true
       - article: B40040
         showArticleNr: true
-      - article: BITA002
-        showArticleNr: true
-      - article: '50020'
+      - article: "50020"
         showArticleNr: true
     showColName: true
   - heading: Herbst / Winter (September bis Januar)
-    outro: ''
+    outro: ""
     products:
       - article: B40007
         showArticleNr: true
       - article: BITA009
         showArticleNr: true
-      - article: '40020'
+      - article: "40020"
         showArticleNr: true
-      - article: '40041'
+      - article: "40041"
         showArticleNr: true
       - article: B60016
         showArticleNr: true
@@ -57,7 +53,7 @@ tables:
         showArticleNr: true
       - article: B60025
         showArticleNr: true
-      - article: '60028'
+      - article: "60028"
         showArticleNr: true
       - article: 60035S
         showArticleNr: true
@@ -65,7 +61,7 @@ tables:
         showArticleNr: true
     showColName: true
   - heading: Spezialitäten
-    outro: ''
+    outro: ""
     products:
       - article: BITA001
         showArticleNr: true
@@ -75,7 +71,7 @@ tables:
         showArticleNr: true
     showColName: true
 ---
- 
+
 # Saison­produkte
 
 ## Pasta aus Saison­gemüse

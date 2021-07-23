@@ -13,7 +13,7 @@ meta:
   title: Nudeln von Ingredienza | Ingredienza
 tables:
   - heading: Bio-Nudeln
-    outro: ''
+    outro: ""
     products:
       - article: B60002
         showArticleNr: true
@@ -25,13 +25,13 @@ tables:
       Die nachfolgenden Nudeln sind nur auf Bestellung erhältlich.  <br />
       Mindestbestellung 5&cent; &agrave; 3kg
     products:
-      - article: '60003'
+      - article: "60003"
         showArticleNr: true
-      - article: '60023'
+      - article: "60023"
         showArticleNr: true
     showColName: true
-  - heading: ''
-    outro: ''
+  - heading: ""
+    outro: ""
     products:
       - article: B60015
         showArticleNr: true
@@ -40,8 +40,6 @@ tables:
       - article: B60027
         showArticleNr: true
       - article: B60029
-        showArticleNr: true
-      - article: B60014
         showArticleNr: true
       - article: B60026
         showArticleNr: true
@@ -77,11 +75,11 @@ tables:
         showArticleNr: true
       - article: B60008
         showArticleNr: true
-      - article: '60019'
+      - article: "60019"
         showArticleNr: true
     showColName: true
 ---
- 
+
 # Unsere varianten­reichen Nudeln in un­ter­schied­lichen Schnitt­breiten
 
 Erkunden Sie unser umfangreiches Sortiment an feinsten Nudeln. Alle Nudeln sind

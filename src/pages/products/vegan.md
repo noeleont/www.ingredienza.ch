@@ -24,24 +24,13 @@ tables:
         showArticleNr: true
       - article: BVITA005
         showArticleNr: true
-      - article: BVITA005R
-        showArticleNr: true
       - article: V40003
-        showArticleNr: true
-      - article: V40001
         showArticleNr: true
       - article: V40005
         showArticleNr: true
-    showColName: true 
-  - outro: Vegane Wunsch-Nudeln auf Anfrage.
-    products:
-      - article: BV600025
-        showArticleNr: true
-      - article: BV600135
-        showArticleNr: true
-    showColName: false 
+    showColName: true
 ---
- 
+
 # Vegane Teig&shy;waren aus Bern
 
 ## Ingredienza goes vegan
