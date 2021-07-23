@@ -51,6 +51,8 @@ tables:
       Unsere Spezialgnocchi sind nur auf Bestellung erhältlich. <br />
       Mindestbestellmenge 7&cent; &agrave; 3kg
     products:
+      - article: 60035K
+        showArticleNr: true
       - article: 60035N
         showArticleNr: true
       - article: '60058'
