@@ -17,11 +17,8 @@ frozen:
   image: /assets/baerlauch.jpg
   text: Tiefgekühlt
 ---
-
-#Pastaboxen by Ingredienza
+\#Pastaboxen by Ingredienza
 
 Holen Sie sich getrocknete und tiefgekühlte Pasta-Sorten aus der Region.
 Einzigartige Kreationen, die jeden Gourmet überraschen. Vielfalt und Kreativität
 ist bei uns Programm.
-
-Bestellformulare und Angebotslisten für **Wiederverkäufer** finden Sie [hier](/preisliste)  
