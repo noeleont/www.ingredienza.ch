@@ -15,6 +15,8 @@ tables:
   - heading: ... mit Kräutern und Gemüse
     outro: ''
     products:
+      - article: B40042
+        showArticleNr: true
       - article: BITA007
         showArticleNr: true
       - article: B50002
@@ -32,8 +34,6 @@ tables:
       - article: B30001
         showArticleNr: true
       - article: BITA005
-        showArticleNr: true
-      - article: '40042'
         showArticleNr: true
       - article: ITA004
         showArticleNr: true
