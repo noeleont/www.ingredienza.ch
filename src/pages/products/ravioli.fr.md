@@ -13,8 +13,6 @@ tables:
     products:
       - article: BITA007
         showArticleNr: true
-      - article: B20001
-        showArticleNr: true
       - article: B10006
         showArticleNr: true
       - article: BITA005
@@ -25,15 +23,11 @@ tables:
         showArticleNr: true
       - article: B50001
         showArticleNr: true
-      - article: BITA003
-        showArticleNr: true
       - article: B40006
         showArticleNr: true
       - article: BITA008M
         showArticleNr: true
-      - article: BITA008
-        showArticleNr: true
-      - article: '40042'
+      - article: B40042
         showArticleNr: true
       - article: ITA004
         showArticleNr: true
