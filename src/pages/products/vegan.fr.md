@@ -26,22 +26,11 @@ tables:
         showArticleNr: true
       - article: BVITA005
         showArticleNr: true
-      - article: BVITA005R
-        showArticleNr: true
-      - article: V40001
-        showArticleNr: true
       - article: V40003
         showArticleNr: true
       - article: V40005
         showArticleNr: true
     showColName: true
-  - outro: Pâtes véganes sur demande.
-    products:
-      - article: BV600025
-        showArticleNr: true
-      - article: BV600135
-        showArticleNr: true
-    showColName: false
 ---
  
 # Pâtes végétaliennes de Berne
