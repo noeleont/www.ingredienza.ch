@@ -47,11 +47,15 @@ tables:
   - heading: ... à la viande et au poisson
     outro: ''
     products:
+      - article: B40004
+        showArticleNr: true
       - article: '40004'
         showArticleNr: true
       - article: '50011'
         showArticleNr: true
       - article: '40030'
+        showArticleNr: true
+      - article: '50014'
         showArticleNr: true
     showColName: true
   - heading: ... aux champignons
