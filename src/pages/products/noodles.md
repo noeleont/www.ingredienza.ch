@@ -88,7 +88,7 @@ tables:
     products:
       - article: B60024
         showArticleNr: true
-    showColName: true
+    showColName: false
   - heading: Herbst / Winter
     products:
       - article: B60016
@@ -99,7 +99,7 @@ tables:
         showArticleNr: true
       - article: '60028'
         showArticleNr: true
-    showColName: true
+    showColName: false
 ---
 
 # Unsere varianten­reichen Nudeln in un­ter­schied­lichen Schnitt­breiten
