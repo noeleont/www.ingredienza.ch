@@ -126,11 +126,11 @@ places:
       days: Sa.
       hours: '07:30 - 13:00 Uhr'
   - address: 'Mindstrasse 10, 3006 Bern'
-    info: Dienstag ganzer Tag geschlossen
+    info: Dienstag und Sonntag geschlossen
     name: Murifeld-Laden
     week:
       days: 'Mo., Mi., Do., Fr.'
-      hours: '08:00 - 12:30 Uhr\n16:00 - 18:00 Uhr'
+      hours: '07:00 - 12:30 Uhr\n16:00 - 19:00 Uhr'
     weekend:
       days: Sa.
       hours: '08:00 - 12:30'
