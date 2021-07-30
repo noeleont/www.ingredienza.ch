@@ -24,12 +24,6 @@ tables:
         showArticleNr: true
       - article: BVITA005
         showArticleNr: true
-      - article: BVITA005R
-        showArticleNr: true
-      - article: V40003
-        showArticleNr: true
-      - article: V40001
-        showArticleNr: true
       - article: V40005
         showArticleNr: true
     showColName: true
