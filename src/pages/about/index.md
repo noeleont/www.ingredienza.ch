@@ -20,7 +20,7 @@ employees:
     image: /assets/rolf.jpg
     name: Rolf Thalheim
   - description: >
-      Der Informatiker und Mathematik Student arbeitet als Assistent an der Uni
+      Der Informatiker und Mathematik Student arbeitet als Software Entwickler an der Uni
       Bern. Er unterstützt uns in IT Fragen, ist Schöpfer unseres Webauftritts
       und verkauft regelmässig samstags unsere frische Pasta am Marktstand auf
       dem Bundesplatz.
@@ -28,14 +28,7 @@ employees:
     image: /assets/noe.jpg
     name: Noe Thalheim
   - description: >-
-      Das Ingredienza Urgestein ist seit über 20 Jahren festes  Mitglied unserer
-      Crew. Als ehemaliger stellvertretender Geschäftsführer unterstützt er uns
-      wo immer Not am Mann ist – trotz Pensionierung.
-    favorite: '50020'
-    image: /assets/werner.jpg
-    name: Werner Baumberger
-  - description: >-
-      Lachsfischer in Alaska, Geografie Student und Pastaliebhaber.
+      Lachsfischer in Alaska, Chemie Student und Pastaliebhaber.
 
       Er steht drei Mal in der Woche um 4 Uhr früh im Kühlraum und verpackt mit
       Sorgfalt unsere Vortagesproduktion.
@@ -46,7 +39,7 @@ employees:
       Der Spezialist für Innenausbau und  Hausschreiner von Ingredienza verkauft
       seit 28 Jahren regelmässig unsere frische Pasta auf dem Berner Wochenmarkt
       am Bundesplatz.
-    favorite: '40042'
+    favorite: 'B40042'
     image: /assets/urs.jpg
     name: Urs Thalheim
   - description: >-
@@ -58,7 +51,7 @@ employees:
     image: /assets/angelika.jpg
     name: Angelika Stankiewicz
   - description: >-
-      Die ausgebildete Kauffrau in Weiterbildung zur SaBe Personalwesen ist die
+      Die ausgebildete Kauffrau mit Weiterbildung zur SaBe Personalwesen ist die
       Allrounderin par excellence. Sie berät uns in Personalfragen, ist die
       freundliche Stimme am Telefon und betreut Logistik und Verpackung. Zudem
       ist sie mitverantwortlich für unseren Auftritt in den sozialen Medien und
@@ -75,27 +68,12 @@ employees:
     image: /assets/fränzi.jpg
     name: Franziska Ellenberger
   - description: >-
-      Die ausgebildete Kunsttherapeutin mit dem fröhlichen Wesen betreut
-      Logistik und Lager, beliefert unsere Berner Kundschaft und zaubert veganes
-      Essen auf unseren Mittagstisch.
-    favorite: BVITA007
-    image: /assets/erika.jpg
-    name: Erika Laiber
-  - description: >-
       Die Surferin und Velokurierin mit abgeschlossener Matur ist seit 3 Jahren
       regelmässig am Ingredienza Marktstand auf dem Berner Bundesplatz
       anzutreffen.
     favorite: '40002'
     image: /assets/marlou.jpg
     name: Marlou Thalheim
-  - description: >
-      Die studierte Gamedesignerin und 3D-Artistin hat schon als Jugendliche im
-      Betrieb mitgeholfen und war während Jahren im Produktions-Team von
-      Ingredienza. Bis zu Ihrer Kanadareise dürfen wir wieder mit ihrer
-      tatkräftigen Unterstützung rechnen.
-    favorite: B50001
-    image: /assets/ava.jpg
-    name: Ava Thalheim
 ---
 # **Ingredienza stellt sich vor**
 
