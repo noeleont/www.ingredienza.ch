@@ -183,7 +183,7 @@ export const Location = ({ name, address, info, week, weekend, lang, link }) => 
   return (
   <Container>
     <Name>
-      <strong>{name}</strong>
+      <strong>{ link ? <a href={link}>{ name }</a> : name }</strong>
     </Name>
     <Address>{address}</Address>
     <Hours>

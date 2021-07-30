@@ -21,6 +21,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
+    link: ''
   - address: 'Neue Bahnhofstrasse 8, 3110 Münsingen'
     info: Montag und Dienstag ganzer Tag geschlossen
     name: Caffè Julia
@@ -30,6 +31,7 @@ places:
     weekend:
       days: Sa. - So.
       hours: '09:00 - 18:00 Uhr'
+    link: ''
   - address: 'Marktstrasse 21, 5630 Muri AG'
     info: Montag ganzer Tag geschlossen
     name: Chäsi Muri
@@ -39,6 +41,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 14:00 Uhr'
+    link: ''
   - address: 'Konradstrasse 32, 4600 Olten'
     info: Montag ganzer Tag geschlossen
     name: Eguete delikat-essen-trinken GmbH
@@ -48,6 +51,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:30 - 16:00 Uhr'
+    link: ''
   - address: 'Brunnadernstrasse 71, 3006 Bern'
     name: Elfenau-Laden
     week:
@@ -56,6 +60,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
+    link: ''
   - address: 'Dorfplatz 2, 3176 Neuenegg'
     name: Feinwerk&Co.
     week:
@@ -64,6 +69,7 @@ places:
     weekend:
       days: So.
       hours: geschlossen
+    link: ''
   - address: Hardgutstrasse 11 8048 Zürich (beim Schlachthof)
     name: Frischeparadies Zürich
     week:
@@ -72,6 +78,7 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 18:00 Uhr'
+    link: ''
   - address: 'Kramgasse 80, 3011 Bern'
     info: Montag ganzer Tag geschlossen
     name: Ingredienza der Laden
@@ -81,6 +88,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 17:00 Uhr'
+    link: ''
   - address: 'Poststrasse 8, 3400 Burgdorf'
     info: Montag ganzer Tag geschlossen
     name: Integral Bioladen
@@ -90,6 +98,7 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 16:00 Uhr'
+    link: ''
   - address: 'Bernstrasse 57, 3066 Stettlen'
     name: Maxi Stettlen
     week:
@@ -98,6 +107,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
+    link: ''
   - address: 'Belpbergstrasse 14, 3123 Belp'
     info: Mittwoch ganzer Tag geschlossen
     name: Metzgerei Reber AG
@@ -107,6 +117,7 @@ places:
     weekend:
       days: Sa.
       hours: '07:30 - 16:00 Uhr'
+    link: ''
   - address: 'Bergackerweg 1, 3054 Schüpfen'
     info: Montag ganzer Tag geschlossen
     name: Metzgerei Stettler
@@ -116,6 +127,7 @@ places:
     weekend:
       days: Sa.
       hours: '07:00 - 15:00 Uhr'
+    link: ''
   - address: 'Spiegelstrasse 106, 3095 Spiegel b. Bern'
     info: Montag und Dienstag ganzer Tag geschlossen
     name: Metzg im Spiegel
@@ -125,6 +137,7 @@ places:
     weekend:
       days: Sa.
       hours: '07:30 - 13:00 Uhr'
+    link: ''
   - address: 'Mindstrasse 10, 3006 Bern'
     info: Dienstag und Sonntag geschlossen
     name: Murifeld-Laden
@@ -134,6 +147,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 12:30'
+    link: ''
   - address: 'Braschlergasse 8, 8610 Uster'
     name: Öpfelbaum Bioladen
     week:
@@ -142,6 +156,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
+    link: ''
   - address: 'Weite Gasse 17, 5400 Baden'
     info: Montag ganzer Tag geschlossen
     name: PARADEIS
@@ -151,6 +166,7 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 16:00 Uhr'
+    link: ''
   - address: 'Monbijoustrasse 6, 3011 Bern'
     name: Petit Couteau AG
     week:
@@ -159,6 +175,7 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 16:00 Uhr'
+    link: ''
   - address: 'Ritterquai 2–4, 4500 Solothurn'
     info: 'Öffnungszeiten Do.: 09:00 - 12:30 Uhr\n14:00 - 20:00 Uhr'
     name: pur & wild GmbH
@@ -168,6 +185,7 @@ places:
     weekend:
       days: Sa.
       hours: '09:00 - 17:00 Uhr'
+    link: ''
   - address: 'Untere Hauptgasse 5, 3600 Thun'
     name: Simplyfine
     week:
@@ -176,8 +194,9 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 17:00 Uhr'
+    link: ''
   - address: 'Hauptstrasse 76a, 4457 Diegten'
-    info: 'Nur Onlineshop: https://stadtlandkorb.ch/'
+    info: 'Nur Onlineshop'
     name: 'Stadt Land Korb, J&H Boutique GmbH'
     week:
       days: '-'
@@ -185,6 +204,7 @@ places:
     weekend:
       days: '-'
       hours: '-'
+    link: 'https://stadtlandkorb.ch/'
   - address: 'Stadtplatz 34, 3570 Aarberg'
     name: stedtlichäsi Aarberg
     week:
@@ -193,6 +213,7 @@ places:
     weekend:
       days: Sa.
       hours: '08:00 - 16:00 Uhr'
+    link: ''
 ---
 # Bezugs&shy;quellen für Privat&shy;personen
 

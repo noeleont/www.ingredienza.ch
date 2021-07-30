@@ -19,6 +19,7 @@ places:
     weekend:
       days: Sa
       hours: 7 h 30 - 17 h
+    link: ''
   - address: 'Schüpfenried, 3043 Uettligen'
     name: Hofladen und ängelibeck
     week:
@@ -27,6 +28,7 @@ places:
     weekend:
       days: Sa
       hours: 7 h 30 - 17 h
+    link: ''
   - address: 'Monbijoustrasse 6, 3011 Bern'
     name: Petit Couteau AG
     week:
@@ -35,6 +37,7 @@ places:
     weekend:
       days: Sa
       hours: 9 h - 16 h
+    link: ''
   - address: 'Länggassstrasse 36, 3012 Bern'
     info: Fermé le mercredi
     name: Bio-Metzgerei Wegmüller AU COCHON ROSE
@@ -44,6 +47,7 @@ places:
     weekend:
       days: Sa
       hours: 8 h - 16 h
+    link: ''
   - address: 'Weite Gasse 17, 5400 Baden'
     info: Fermé le lundi
     name: PARADEIS
@@ -53,6 +57,7 @@ places:
     weekend:
       days: Sa
       hours: 9 h - 16 h
+    link: ''
   - address: 'Untere Hauptgasse 5, 3600 Thun'
     name: Simplyfine
     week:
@@ -61,6 +66,7 @@ places:
     weekend:
       days: Sa
       hours: 8 h - 17 h
+    link: ''
   - address: 'Konradstrasse 32, 4600 Olten'
     info: Fermé le lundi
     name: Eguete delikat-essen-trinken GmbH
@@ -70,6 +76,7 @@ places:
     weekend:
       days: Sa
       hours: 8 h 30 - 16 h
+    link: ''
   - address: Singerstrasse 12 4052 Basel (auf dem Wolf)
     name: Frischeparadies Basel
     week:
@@ -78,6 +85,7 @@ places:
     weekend:
       days: Sa
       hours: 7 h - 16 h
+    link: ''
   - address: Hardgutstrasse 11 8048 Zürich (beim Schlachthof)
     name: Frischeparadies Zürich
     week:
@@ -86,6 +94,7 @@ places:
     weekend:
       days: Sa
       hours: 9 h - 18 h
+    link: ''
 ---
 
 # Vente aux particuliers
