@@ -128,11 +128,7 @@ module.exports = {
             {
               to: "/produkte/vegan",
               text: "Ingredienza goes vegan"
-            },
-            {
-              to: "/produkte/fatto_a_mano",
-              text: "Fatto a mano"
-            },
+            }
           ]
         }
       },
@@ -171,11 +167,7 @@ module.exports = {
             {
               to: "/fr/produits/vegan",
               text: "Ingredienza version végétalienne"
-            },
-            {
-              to: "/fr/produits/fatto_a_mano",
-              text: "Fatto a mano"
-            },
+            }
           ]
         }
       }
