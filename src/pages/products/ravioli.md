@@ -21,8 +21,6 @@ tables:
         showArticleNr: true
       - article: B50002
         showArticleNr: true
-      - article: B20001
-        showArticleNr: true
       - article: B10006
         showArticleNr: true
       - article: B40006
