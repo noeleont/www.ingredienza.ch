@@ -94,6 +94,7 @@ query PlacesPageTemplate($id: String!) {
             days
             hours
           }
+          link
         }
       }
       html
